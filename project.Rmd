@@ -24,9 +24,16 @@ Identify the clinical characteristics and molecular profiles of responding patie
 
 <br>
 
+### Major Risk Factors of Low Birth Weight Babies
+
++ [Paper](/content/project/lowbirthweight.pdf)
+
+<br>
+
 ### Primary Injury Factors of Ulnar Collateral Ligament Reconstruction for Major League Baseball Pitchers by Statcast Measures
 
 Design a study to identify major factors of Ulnar Collateral Ligament Reconstruction (a.k.a. Tommy John Surgery) for Major League Baseball Pitchers by Statcast Measures
 
 + [Paper](/content/project/TJS_paper.pdf)
 + [Slide](/content/project/TJS_slide.pdf)
+
