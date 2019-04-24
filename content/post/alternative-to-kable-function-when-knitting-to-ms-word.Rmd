@@ -1,0 +1,160 @@
+---
+title: "Alternative to kable function when knitting to MS word"
+output:
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(flextable)
+```
+
+### Note
+For those who want to shadow this process, you may need two packages, `tidyverse` and `flextable`. This memo has been created under R version 3.5.1 (2018-07-02).
+
+<br><br><br>
+
+### 1. Overview
+You may be sick and tired of broken table by `kable()` in `knitr` package when outputting your report to Microsoft Word format. Here is my alternative to `kable()` function using `flextable` package. The example below used `mtcars` dataset.
+
+<br><br><br>
+
+### 2. Fixing automatic rowname drop problem
+
+Unlike `kable()` function, table formats in the `flextable` package automatically **drops your rownames of your dataframe**. In order to prevent this, we can use `colkey = ` option in `regulartable()` or `flextable()` function. It is convenient when you create a dataset. However, it is not when you just format your data frame with long rownames. My suggestion is to save the rownames as a new column before formatting.
+
+<br><br>
+
+```{r}
+dat <- mtcars[, 1:6] %>% 
+    mutate(model = rownames(mtcars)) %>%
+    select(ncol(.), 1:(ncol(.)-1))
+```
+
+<br><br><br>
+
+### 3. Formatting the table
+
++ Basic theme: `regulartable()`, `flextable()`
++ Automatic column width adjustment by `autofit()`
+
+<br><br>
+
+First of all, let's start with the basic theme functions in the `flextable` package: `regulartable()` and `flextable()`.
+
+<br><br>
+
+```{r}
+dat %>% head() %>% regulartable()
+dat %>% head() %>% flextable()
+```
+
+<br><br>
+
+In case the width of your table needs adjusting, make use of `autofit()` function. It will automatically adjust your table's column width.
+
+<br><br>
+
+```{r}
+head(dat) %>%
+    regulartable() %>%
+    autofit()
+```
+
+<br><br><br>
+
+### 4. Add a footnote at the bottom of your table
+
++ Add a footer (footnote) at the bottom of the table: `add_footer()`
++ Merge the bottom row for footer space: `merge_at()`
+
+<br><br>
+
+When you want to attach a footnote at the bottom of your table, you can use `add_footer()` function in the `flextable` package. Howver, there is some tricky part to understand how this function works. First of all, you have to specify the place where your footnote begins by column name.
+
+<br><br>
+
++ add_footer([your dataframe], [column name] = "text")
+
+<br><br>
+
+Moreover, your footnote will goes to the second line easily, if you only apply this function in adition to your previous code.
+
+<br><br>
+
+```{r}
+head(dat) %>%
+    regulartable() %>%
+    autofit() %>%
+    add_footer(., model = "* The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).")
+```
+
+<br><br>
+
+This happens because there are invisible compartments between columns at the footnote row. In order to fix this problem, we need to merge the footnote's row by using `merge_at()` function in the `flextable` package.
+
+<br><br>
+
+```{r}
+head(dat) %>%
+    regulartable() %>%
+    autofit() %>%
+    add_footer(., model = "* The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).") %>%
+    merge_at(., i=1, j = 1:ncol(dat), part = "footer")
+```
+
+<br><br>
+
+If you want to add multiple footnotes at the bottom of your table, you can change the row number `i=1` to `i=2` and determine whether it goes above or below the first footnote by using `top=` option.
+
+<br><br>
+
+```{r}
+head(dat) %>%
+    regulartable() %>%
+    autofit() %>%
+    add_footer(., model = "* The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).") %>%
+    merge_at(., i = 1, j = 1:ncol(dat), part = "footer") %>%
+    add_footer(., model = "** This is a data frame with 32 observations on 11 (numeric) variables. The source is from Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411.", top = F) %>%
+    merge_at(., i=2, j = 1:ncol(dat), part = "footer")
+```
+
+<br><br><br>
+
+### 5. Add a header (i.e. caption or table title) at the top of your table
+
++ Add a table title: `add_header()`
++ Merge the row for header space: `merge_at()`
++ Align the row: `align()`
+
+<br><br>
+
+In addition to footnotes, you may want to attach a title of your table. It is quite similar to footnote method.
+
+<br><br>
+
+```{r}
+head(dat) %>%
+    regulartable() %>%
+    autofit() %>%
+    add_footer(., model = "* The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).") %>%
+    merge_at(., i = 1, j = 1:ncol(dat), part = "footer") %>%
+    add_footer(., model = "** This is a data frame with 32 observations on 11 (numeric) variables. The source is from Henderson and Velleman (1981), Building multiple regression models interactively. Biometrics, 37, 391–411.", top = F) %>%
+    merge_at(., i=2, j = 1:ncol(dat), part = "footer") %>%
+    add_header(., model = "Table1. First six car models in the mtcars dataset", top = T) %>%
+    merge_at(., i = 1, j = 1:ncol(dat), part = "header") %>%
+    align(., i = 1, j = 1:ncol(dat), align = "center", part = "header")
+```
+
+
+<br><br><br>
+
+Reference: https://cran.r-project.org/web/packages/flextable/flextable.pdf
+
+(End of document)
