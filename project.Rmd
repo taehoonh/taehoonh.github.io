@@ -10,27 +10,61 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-## 2018
+## 2019
+
+<br>
+
+#### Reproduction of SDY210 clinical trial
+
+**Adding Exhaled Nitric Oxide to Guideline-based Asthma Treatment in Inner-City Adolescents and Young Adults: a Randomized Controlled Trial**
+
++ Original study: [SDY210](https://www.immport.org/shared/study/SDY210)
++ [Paper](/content/project/SDY210_paper.pdf)
++ [Slide](/content/project/SDY210_slide.pdf)
+
+<br>
+
+#### Rate Of General Anesthesia Use For Cesarean Delivery Among Anesthesiologists With And Without Fellowship Training in Obstetric Anesthesia
+
+This report presents a retrospective statistical analysis of cesarean delivery among attending anesthesiologists with and without fellowship training in obstetric anesthesia who were seen at the NYP between 2009 and 2014 and had their rate of general anesthesia use assessed. Demographic, training / service experience, and outcomes of anesthesia were summarized. Logistic regression model was used to identify whether the fellowship-trained anesthesiologists are more or less likely to provide general anesthesia for non-routine c-section as compared to non-fellowship trained anesthesiologists.
+
++ [Report](/content/project/anesthesia_paper.pdf)
++ [Slide](/content/project/anesthesia_slide.pdf)
+
+<br>
+
+#### Cost-Effective Optimization of Model-Based Prediction of Cardiovascular Disease (CVD)
+
+Determine the demographics and medical tests that help predict the likelihood and optimize in a cost-effective manner.
+
++ [Poster](/content/project/CVD_poster.pdf)
 
 <br><br>
 
-### Neuroendrocine prostate cancer (NEPC)
+***
+
+## 2018
+
+<br>
+
+#### Neuroendrocine prostate cancer (NEPC)
 
 Identify the clinical characteristics and molecular profiles of responding patients to define distinct cohorts most likely to benefit.
 
-+ [Code](/content/project/NEPC.html)
 + [Paper](/content/project/NEPC_paper.pdf)
 + [Slide](/content/project/NEPC_slide.pdf)
 
 <br>
 
-### Major Risk Factors of Low Birth Weight Babies
+#### Major Risk Factors of Low Birth Weight Babies
 
 + [Paper](/content/project/lowbirthweight.pdf)
 
 <br>
 
-### Primary Injury Factors of Ulnar Collateral Ligament Reconstruction for Major League Baseball Pitchers by Statcast Measures
+#### Study design of Tommy John Surgery for MLB Pitchers by *Statcast* Measurements
+
+**Primary Injury Factors of Ulnar Collateral Ligament Reconstruction for Major League Baseball Pitchers by Statcast Measures**
 
 Design a study to identify major factors of Ulnar Collateral Ligament Reconstruction (a.k.a. Tommy John Surgery) for Major League Baseball Pitchers by Statcast Measures
 
