@@ -1,0 +1,799 @@
+---
+title: "Neuroendrocine prostate cancer (NEPC)"
+description: "Identify the clinical characteristics and molecular profiles of responding patients to define distinct cohorts most likely to benefit."
+author: "Taehoon Ha, Diane Li, Lingchen Lou"
+output:
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, fig.align = 'center')
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+library(wesanderson)
+library(gridExtra)
+library(ggpubr)
+```
+
+### NEPC
+The goal of this project is to identify the clinical characteristics and molecular profiles of responding patients (those who did not have disease progression at 3 months) to define distinct cohorts most likely to benefit. Of particular interest is whether there are differences in outcome (3-month progression-free survival) and other variables between patients with neuroendrocine prostate cancer (NEPC) and patients who have a non-NEPC metastatic prostate cancer.
+
+In particular, your analysis should include (but not be limited to) the answers to the following questions:
+
+1. What is the observed 3-month progression free survival rate for men with metastatic prostate cancer treated with alisertib?
+
+2. What variables are associated with 3-month progression status?
+
+3. Is there an association between gene abnormalities and 3 month progression status?
+
+4. Are there different gene abnormalities and other variables associated with NEPC?
+
+*** 
+
+### Background
+Sixty men were treated with alisertib 50 mg twice daily for 7 days every 21 days. Eligibility included metastatic prostate cancer. Pretreatment biopsies were evaluated by whole exome and RNA-seq to determine gene abnormalities. There is some evidence that NEPC is an aggressive variant of prostate cancer that may develop as a mechanism of treatment resistance and it was felt that alisertib would benefit these patients most. In the lab, it was found that alisertib inhibits the interaction between N-myc (MYCN) and its stabilizing factor Aurora-A (AURKA), inhibiting N-myc signaling, and suppressing tumor growth.
+
+#### Data
+The variables of interest include the following: `Gleason score`, `PSA at baseline (ng/mL)`, `number of prior systemic treatments`, `NEPC`, `time from PCA diagnosis to starting alisertib`, `visceral disease`, `elevated LDH`, `progression-free at 3 months`, `RB1` status, `TP53` status, `PTEN` status, `BRAC2` status, `AR` status, `AURKA` status, `MYCN` status.
+
+The data and variables codes are available in an Excel file.
+
+| Variable Name                | Definition                                                       | 
+|------------------------------|------------------------------------------------------------------| 
+| rc_id                        | Patient ID                                                       | 
+| gleason_biop                 | Baseline Gleason score                                           | 
+| psa                          | Baseline prostate specific antigen ()                            | 
+| priorTherapies_numLines      | Number of cancer therapy lines prior to baseline                 | 
+| NEPC                         | Indicator of neuroendocrine prostate cancer                      | 
+| diagToC1d1_mo                | Months from initial prostate cancer diagnosis to study baseline  | 
+| visceralDisease              | Visceral disease at baseline                                     | 
+| screenLabs_ldhAbnormal       | Baseline LDH abnormal                                            | 
+| progressed_3mo               | Progression status at 3 months                                   | 
+| RB1 $\cdots$ mycn_mutation   | Mutation (1: Yes, 0: No)                                         | 
+
+***
+
+### Read the data set
+```{r warning = FALSE}
+dat_nepc <- readxl::read_xlsx('group01_dataNEPC.xlsx', sheet = 1, na = "")
+dat_nepc$gleason_biop <- as.numeric(dat_nepc$gleason_biop)
+dat_nepc$NEPC <- as.factor(dat_nepc$NEPC)
+dat_nepc$diagToC1d1_mo <- as.numeric(dat_nepc$diagToC1d1_mo)
+dat_nepc$visceralDisease <- as.factor(dat_nepc$visceralDisease)
+dat_nepc$screenLabs_ldhAbnormal <- as.factor(as.logical(dat_nepc$screenLabs_ldhAbnormal))
+dat_nepc$progressed_3mo <- as.factor(dat_nepc$progressed_3mo)
+dat_nepc$rb1_mutation <- as.factor(as.numeric(dat_nepc$rb1_mutation))
+dat_nepc$tp53_mutation <- as.factor(as.numeric(dat_nepc$tp53_mutation))
+dat_nepc$pten_mutation <- as.factor(as.numeric(dat_nepc$pten_mutation))
+dat_nepc$brca2_mutation <- as.factor(as.numeric(dat_nepc$brca2_mutation))
+dat_nepc$ar_mutation <- as.factor(as.numeric(dat_nepc$ar_mutation))
+dat_nepc$aurka_mutation <- as.factor(as.numeric(dat_nepc$aurka_mutation))
+dat_nepc$mycn_mutation <- as.factor(as.numeric(dat_nepc$mycn_mutation))
+```
+
+### Rename the data
+```{r}
+dat_nepc <- dat_nepc %>%
+  rename(gleason = gleason_biop,
+         prtherapy = priorTherapies_numLines,
+         intdiag = diagToC1d1_mo,
+         visceral = visceralDisease,
+         LDHab = screenLabs_ldhAbnormal,
+         prog3mon = progressed_3mo,
+         rb1 = rb1_mutation,
+         tp53 = tp53_mutation,
+         pten = pten_mutation,
+         brca2 = brca2_mutation,
+         ar = ar_mutation,
+         aurka = aurka_mutation,
+         mycn = mycn_mutation)
+```
+
+### Check NAs in the data set
+```{r}
+#Summary of NA's in dataset
+summary(dat_nepc)
+dim(dat_nepc)
+str(dat_nepc)
+
+na_count <-sapply(dat_nepc, function(y) sum(length(which(is.na(y)))))
+na_count <- data.frame(na_count)
+na_count <- rownames_to_column(na_count) %>% 
+  mutate(na_percent=round((na_count/nrow(dat_nepc))*100,1))
+
+knitr::kable(na_count, col.names = c("Variable","Number of NAs", "%")) %>% 
+  kable_styling(full_width = F)
+```
+
+> + There are many missing values for gene abnoramlities. More then 1/4 of observations of each variable have missing values. This could cause a significant problem, especially in power to detect the significant difference.
+
+### Check each variable one by one
+(1) Continuous variables of non-gene abnormalities: `gleason`, `psa`, `prtherapy`, and `intdiag`
+```{r fig.width = 8, fig.height= 4, fig.align='center'}
+
+# Checking the distributions of continuous variables
+colors <- c('#FA6E59', '#31A98B', '#E29930', '#4897D8')
+
+p1 <- ggplot(data = dat_nepc) + geom_histogram(aes(x = gleason), fill = colors[1], color = "black", bins = 5) + theme_classic() + guides(fill = F) + ylab("Frequency") + xlab("Gleason score")
+p2 <- ggplot(data = dat_nepc) + geom_histogram(aes(x = psa), fill = colors[2], color = "black", bins = 8) + theme_classic() + guides(fill = F) + ylab("Frequency") + xlab("PSA (ng/mL)")
+p3 <- ggplot(data = dat_nepc) + geom_histogram(aes(x = prtherapy), fill = colors[3], color = "black", bins = 6) + theme_classic() + guides(fill = F) + ylab("Frequency") + xlab("# of prior therapies")
+p4 <- ggplot(data = dat_nepc) + geom_histogram(aes(x = intdiag), fill = colors[4], color = "black", bins = 20)+ theme_classic() + guides(fill = F) + ylab("Frequency") + xlab("Diagnosis to treatment")
+
+p5 <- ggplot(dat_nepc) + geom_boxplot(aes(y = gleason), fill = colors[1], color = "black", varwidth = T) + theme_classic() + guides(fill = F) + ylab("") + xlab("Gleason score")
+p6 <- ggplot(dat_nepc) + geom_boxplot(aes(y = psa), fill = colors[2], color = "black") + theme_classic() + guides(fill = F) + ylab("") + xlab("PSA (ng/mL)")
+p7 <- ggplot(dat_nepc) + geom_boxplot(aes(y = prtherapy), fill = colors[3], color = "black") + theme_classic() + guides(fill = F) + ylab("") + xlab("# of prior therapies")
+p8 <- ggplot(dat_nepc) + geom_boxplot(aes(y = intdiag), fill = colors[4], color = "black") + theme_classic() + guides(fill = F) + ylab("") + xlab("Diagnosis to treatment")
+
+grid.arrange(p5, p6, p7, p8, p1, p2, p3, p4, ncol = 4)
+```
+
+> + Since the distributions of PSA and Time from initial diagnosis to treatement are right-skewed, the team decided to use Wilcoxon rank sum test instead of t-test.
+> + Some continous variables include a number of outliers: `intdiag` and `psa`. However, the team decided to include them because the sample size is small and there are many missing values. Thus, we need to maximize our power to detect the significant difference.
+
+
+(2) Categorical varaibles (including gene abnormalities): 
++ Non-gene abnormality variables: `NEPC`, `visceral`, `LDHab`, and `prog3mon`
++ Genetic mutations: `rb1`, `tp53`, `pten`, `brca2`, `ar`, `aurka`, and `mycn`
+```{r}
+# non-gene abonormality variables
+p9 <- ggplot(dat_nepc, aes(x=LDHab,fill=LDHab))+
+  geom_bar()+
+  xlab("LDHab") + theme_classic()
+
+p10 <- ggplot(dat_nepc, aes(x=visceral,fill=visceral))+
+  geom_bar()+
+  xlab("visceral") + theme_classic()
+
+p11 <- ggplot(dat_nepc, aes(x=NEPC ,fill=NEPC ))+
+  geom_bar()+
+  xlab("NEPC") + theme_classic()
+
+p12 <- ggplot(dat_nepc, aes(x=prog3mon ,fill=prog3mon ))+
+  geom_bar()+
+  xlab("NEPC") + theme_classic()
+
+grid.arrange(p9, p10, p11, p12, ncol=2)
+
+# Genetic mutations
+p13 <- ggplot(dat_nepc, aes(x=rb1, fill=rb1))+
+  geom_bar()+
+  xlab("RB1") + theme_classic()
+
+p14 <- ggplot(dat_nepc, aes(x=tp53,fill=tp53))+
+  geom_bar()+
+  xlab("TP53") + theme_classic()
+
+p15 <- ggplot(dat_nepc, aes(x=pten ,fill=pten ))+
+  geom_bar()+
+  xlab("PTEN") + theme_classic()
+
+p16 <- ggplot(dat_nepc, aes(x=brca2 ,fill=brca2 ))+
+  geom_bar()+
+  xlab("BRCA2") + theme_classic()
+
+p17 <- ggplot(dat_nepc, aes(x=ar ,fill=ar ))+
+  geom_bar()+
+  xlab("AR") + theme_classic()
+
+p18 <- ggplot(dat_nepc, aes(x=aurka ,fill=aurka ))+
+  geom_bar()+
+  xlab("AURKA") + theme_classic()
+
+p19 <- ggplot(dat_nepc, aes(x=mycn ,fill=mycn ))+
+  geom_bar()+
+  xlab("N-MYC") + theme_classic()
+
+
+grid.arrange(p9, p10, p11, p12, ncol=2)
+grid.arrange(p13, p14, p15, p16, p17, p18, p19, ncol=2)
+```
+
+```{r}
+cat_vars <- dat_nepc %>%
+    select(NEPC, visceral, LDHab, prog3mon, rb1, tp53, pten, brca2, ar, aurka, mycn)
+
+observed_table <- function () {
+    tab <- list()
+    for (i in 1:ncol(cat_vars)) {
+        tab[[i]] <-  table(cat_vars[i], useNA = "ifany")
+    }
+     names(tab) <- c("NEPC", "visceral", "LDHab", "prog3mon", 
+                    "rb1", "tp53", "pten", "brca2", "ar", "aurka", "mycn")
+    tab
+}
+
+observed_table()
+```
+
+> + All the gene abnormalities have some `TRUE` values; they have very small counts of `TRUE` values.
+> + The categorical variables only have `FALSE` values and missing values: `rb1`, `aurka`, `mycn`. For these variables, we are not able to apply any statistical test to check the association.
+
+***
+
+### Question 1
+What is the observed 3-month progression free survival rate for men with metastatic prostate cancer treated with alisertib?
+```{r}
+NEPCq1 <- dat_nepc %>% 
+  select(prog3mon) %>% 
+  group_by(prog3mon) %>% 
+  count(.) %>% 
+  mutate(perc = paste0(n, "\n(",round((n/60)*100,2), "%)"))
+
+ggplot(NEPCq1, aes(x = prog3mon, y = n, fill = prog3mon)) +
+    geom_col(width = 0.5, color = 'black') +
+    geom_text(aes(label = perc, vjust = 1.5), colour = "white", size = 5) + 
+    ggtitle("3-Month Progression Free Survival Rate (N=60)") +
+    xlab("Progression") + 
+    ylab("N") +
+    guides(fill = FALSE) + 
+    scale_fill_manual(values = wes_palette(n = 2, name = "Zissou1")) + 
+    theme_classic() +
+    theme(plot.title = element_text(hjust = 0.5, size = 18, face = "bold"),
+          axis.text=element_text(size = 13),
+          axis.title=element_text(size = 13,face="bold"),
+          axis.text.x = element_text(hjust = 0.5,
+                                   size = 13,
+                                   color = 'black',
+                                   margin = margin(10, 0, 0, 0)),
+        axis.text.y = element_text(angle = 90, 
+                                   hjust = 0.5, 
+                                   size = 13, 
+                                   color = 'black',
+                                   margin = margin(0, 10, 0, 0)))
+
+#Confidence interval for the proportion
+prog3NO <- sum(dat_nepc$prog3mon=="Did not progress")
+prog3LENGTH <- length(dat_nepc$prog3mon)
+binom.test(prog3NO,prog3LENGTH, conf.level = .95)$conf.int %>% round(4)
+```
+
+### Question 2
+What variables are associated with 3-month progression status?
+
+(With Question 3 altogether)
+
+<br>
+
+### Question 3
+Is there an association between gene abnormalities and 3 month progression status?
+
+(1) Continuous variables: 
++ `psa` and `intdiag`: Wilcoxon rank sum test
++ `gleason` and `prtherapy`: Two sample t-test
+
++ In the Exploratory Data Analysis (EDA) step, according to the boxplots and histograms above, `psa` and `intdiag` are right-skewed, while `gleason` and `prtherapy` has some skewness but not that extreme.
++ Hence Wilcoxon rank sum test has been conducted for `psa` and `intdiag`.
++ Here, just in case, we plotted the boxplots by `prog3mon` to double-check.
+
+```{r}
+# Boxplots by 3-month progression status just in case
+gleason.box <- dat_nepc %>% 
+  ggplot(aes(y=gleason, x=prog3mon,fill=prog3mon))+
+  geom_boxplot()+
+  guides(fill=FALSE)+
+  ylab("Gleason")+
+  xlab("Progression 3 Months?") + theme_classic()
+
+prtherapy.box <-dat_nepc %>% 
+  ggplot(aes(y=prtherapy, x=prog3mon,fill=prog3mon))+
+  geom_boxplot()+
+  guides(fill=FALSE)+
+  ylab("Prtherapy")+
+  xlab("Progression 3 Months?") + theme_classic()
+
+psa.box <- dat_nepc %>% 
+  ggplot(aes(y=psa, x=prog3mon,fill=prog3mon))+
+  geom_boxplot()+
+  guides(fill=FALSE)+
+  ylab("PSA")+
+  xlab("Progression 3 Months?") + theme_classic()
+
+intdiag.box <- dat_nepc %>% 
+  ggplot(aes(y=intdiag, x=prog3mon,fill=prog3mon)) +
+  geom_boxplot()+
+  guides(fill=FALSE)+
+  ylab("Initial diagnosis")+
+  xlab("Progression 3 Months?") + theme_classic()
+
+grid.arrange(gleason.box,prtherapy.box, psa.box, intdiag.box, nrow = 2)
+```
+
++ Testing association for continuous variables:
+```{r}
+# psa
+wilcox.test(dat_nepc$psa ~ dat_nepc$prog3mon,conf.int=TRUE,correct=F)
+  
+# intdiag
+wilcox.test(dat_nepc$intdiag ~ dat_nepc$prog3mon,conf.int=TRUE,correct=F)
+
+# gleason
+t.test(dat_nepc$gleason ~ dat_nepc$prog3mon)
+
+# prtherapy
+t.test(dat_nepc$prtherapy ~ dat_nepc$prog3mon)
+```
+
+(2) Categorical variables
++ Chi-square test: `LDHab`, `visceral`, and `NEPC`  
++ Fisher's exact test: `tp53`, `pten`, `brca2`, and `ar`
++ Test not applicable (due to no occurences of genetic mutations): `rb1`, `aurka`, and `mycn`
++ Looking at the expected tables, it looks like we will need to use Fisher's exact test for all the gene abnormalities that we can test because all expected tables have a cell that is < 5.
++ Testing association for categorical variables:
+```{r}
+# Expected table
+chisq.test(table(dat_nepc$prog3mon,dat_nepc$LDHab))$expected %>% round #chi-square
+chisq.test(table(dat_nepc$prog3mon,dat_nepc$visceral))$expected %>% round #chi-square
+chisq.test(table(dat_nepc$prog3mon,dat_nepc$NEPC))$expected %>% round #chi-square
+
+chisq.test(table(dat_nepc$prog3mon,dat_nepc$LDHab),correct=FALSE, na.action(na.exclude))
+chisq.test(table(dat_nepc$prog3mon,dat_nepc$visceral),correct=FALSE, na.action(na.exclude))
+chisq.test(table(dat_nepc$prog3mon,dat_nepc$NEPC),correct=FALSE, na.action(na.exclude))
+
+#Use `prop.test()` to get the confidence intervals
+prop.test(c(9,6),c(28,29),correct=F)$conf.int #LDH
+prop.test(c(8,8),c(19,41),correct=F)$conf.int #Visceral
+prop.test(c(5,11),c(22,38),correct=F)$conf.int #NEPC 
+
+#Trying out Mosaic plot - could work for visualization
+#mosaicplot(table(dat_nepc$prog3mon,dat_nepc$visceral), shade=TRUE)
+#mosaicplot(table(dat_nepc$prog3mon,dat_nepc$LDHab), shade=TRUE)
+```
+
+#### Comprehensive Table One for Q2 and Q3
+```{r}
+# plus-minus symbol
+pm = " ± "
+
+# a function for showing p-value as "<0.001" if the p-value is too small to show.
+p.output <- function(p) {
+  if(p < 0.001) p.txt <- "<0.001"
+  else p.txt <- round(p, 2)
+  p.txt
+}
+
+# observed table and expected table
+exptvalue <- function(table) {
+    rowss <- rowSums(table)
+    colss <- colSums(table)
+
+    new <- matrix(nrow=nrow(table), ncol=ncol(table))
+    
+    for (i in 1:nrow(table)){
+        for (j in 1:ncol(table)) {
+            new[i,j] <- rowss[i]*colss[j]/sum(table)
+        }
+    }
+    
+    colnames(new) <- colnames(table)
+    rownames(new) <- rownames(table)
+    new
+ }
+
+# Continuous varaibles: `gleason`, `prtherapy` == t-test and `psa`, `intdiag` == 'Wilcoxon rank sum test`
+contin <- function(data = dat_nepc, 
+                   x, realx,
+                   y = prog3mon, realy = dat_nepc$prog3mon) {
+  xx <- enquo(x)
+  yy <- enquo(y)
+  
+  t2 <- data %>%
+    group_by(!!yy) %>%
+    summarise(mean = mean(!!xx, na.rm = T),
+              sd = sd(!!xx, na.rm = T),
+              median=median(!!xx, na.rm = T),
+              min = min(!!xx, na.rm = T),
+              max = max(!!xx, na.rm = T))
+  
+  t2.1 <- matrix(nrow = 3, ncol = 2)
+  
+  for (i in 1:2) {
+    t2.1[1,i] <- ""
+    t2.1[2,i] <- paste0(round(t2$mean[i], 1), pm, round(t2$sd[i], 1))
+    t2.1[3,i] <- paste0(round(t2$median[i], 1),
+                        " (", round(t2$min[i], 1),", ",
+                        round(t2$max[i],1), ")")}
+  
+  xvar <- as.character(deparse(substitute(realx)))
+  quote_x <- gsub(".*\\$","", xvar)
+  
+  if (quote_x %in% c("gleason","prtherapy")) {
+    p <- t.test(realx ~ realy)$p.value
+    p <- c(paste0(p.output(p), "****") , "", "")
+  }
+  
+  else{
+    p <- wilcox.test(realx ~ realy)$p.value
+    p <- c(paste0(p.output(p), "*****") , "", "")
+  }
+  
+  name <- c(xvar,
+            paste0("  Mean", pm, "SD"),
+            "  Median (min, max)")
+  t <- cbind(name, t2.1, p)
+  t
+}
+
+# Categorical variables
+categ <- function(data = dat_nepc, x, realx,
+                  realy = dat_nepc$prog3mon) {
+  xx <- enquo(x)
+  
+  t2 <- table(realx, realy)
+  
+  CPC <- round(prop.table(t2, 2) * 100, 1)
+  t2.1 <- matrix(ncol = length(levels(realy)),
+                 nrow = length(levels(realx)))
+  
+  for (j in 1:length(levels(realy))) {
+    for (i in 1:length(levels(realx))) {
+      t2.1[i,j] <- paste0(t2[i,j]," (",CPC[i,j], "%)")
+    }
+  }
+  
+  t <- rbind("", cbind("", t2.1))
+  xvar <- as.character(deparse(substitute(realx)))
+  quote_x <- gsub(".*\\$","", xvar)
+  t[ ,1] <- c(quote_x, rep("", length(levels(realx))))
+  
+  for (i in 1:length(levels(realx))) {
+    t[i+1, 1] <- paste0("  ",as.character(levels(realx)[i]))
+  }
+  
+  exp.t <- exptvalue(t2)
+  if (nrow(exp.t)==1){
+    c <- ".*"
+  } 
+  
+  else if (sum(exp.t<5) >= 1) {
+    c <- fisher.test(t2)$p.value
+    c <- paste0(p.output(c), "**")
+  }
+  
+  else { 
+    c <- chisq.test(t2)$p.value
+    c <- paste0(p.output(c), "***")
+  }
+  
+  cbind(t, c(c, rep("", length(levels(realx)))))
+}
+
+# Binding
+table.bind <- rbind(contin(x = gleason, realx = dat_nepc$gleason),
+      contin(x = psa, realx = dat_nepc$psa),
+      contin(x = prtherapy, realx = dat_nepc$prtherapy),
+      categ(x = NEPC, realx = dat_nepc$NEPC),
+      contin(x = intdiag, realx = dat_nepc$intdiag),
+      categ(x = visceral, realx = dat_nepc$visceral),
+      categ(x = LDHab, realx = dat_nepc$LDHab),
+      categ(x = rb1, realx = dat_nepc$rb1),
+      categ(x = tp53, realx = dat_nepc$tp53),
+      categ(x = pten, realx = dat_nepc$pten),
+      categ(x = brca2, realx = dat_nepc$brca2),
+      categ(x = ar, realx = dat_nepc$ar),
+      categ(x = aurka, realx = dat_nepc$aurka),
+      categ(x = mycn, realx = dat_nepc$mycn)
+      )
+
+colnames(table.bind) <- c("Characteristics",
+                          paste0("Not Progressed, N=", sum(dat_nepc$prog3mon == "Did not progress")), 
+                          paste0("Progressed, N=", sum(dat_nepc$prog3mon == "progressed")), "p-value")
+
+table.bind[ ,1][c(1, 4, 7, 10, 13, 16, 19, 22, 24, 27, 30, 33, 36, 38)] <- c("Gleason score at baseline (from 1-10)", "PSA at baseline (ng/mL)", "Number of priror systemic therapies (integer)", "NEPC status", "Time from diagnosis to study start (months)", "Visceral disease status", "Elevated LDH level at baseline", "RB1", "TP53", "PTEN", "BRCA2", "AR ", "AURKA", "MYCN")
+table.bind[ ,1][c(20, 21, 23, 25, 26, 28, 29, 31, 32, 34, 35, 37, 39)] <- c("  No", "  Yes", "  No", "  No", "  Yes", "  No", "  Yes", "  No", "  Yes", "  No", "  Yes", "  No", "  No")
+
+vec <- 1:39
+indent <- vec[-c(1, 4, 7, 10, 13, 16, 19, 22, 24, 27, 30, 33, 36, 38)]
+knitr::kable(table.bind, align=c("l", "c", "c", "r"), booktabs = T, 
+             caption = "3-Month Progression Status and Patient Characteristics (N=60)") %>% 
+    add_indent(.,indent) %>% row_spec(0, bold = TRUE) %>% 
+    footnote(general = "Since there is no TRUE or YES values, any test was not employed.",
+             general_title = "*", footnote_as_chunk = T) %>%  
+    footnote(general = "Fisher's exact test was used to generate p-value.",
+             general_title = "**", footnote_as_chunk = T) %>%    
+    footnote(general = "Chi-square test was used to generate p-value.",
+             general_title = "***", footnote_as_chunk = T) %>%
+    footnote(general = "T-test was used to generate p-value.",
+             general_title = "****", footnote_as_chunk = T) %>%
+    footnote(general = "Wilcoxon rank sum test was used to generate p-value.",
+             general_title = "*****", footnote_as_chunk = T) 
+```
+
+#### Point estimates and confidence intervals for Q2 and Q3
+
+Three-month progression free survival status with Patient Characteristics and Gene abnormalities (N=60)
+  
+  
+  | Characteristics     | Point estimate      | Confidence Interval(0.95)|
+  | --------------------|:--------------------:| :----------------------:|
+  |   Gleason score     |           0.167           |        (-0.694, 1.027)*** |  
+  |   PSA               |          -0.128      |       (-5.000, 0.330)**** | 
+  |Number of Previous Therapies|    -0.688     |       (-1.391, 0.016)***  |  
+  |Since initial diagnosis(in months)|  2.557  |       (-17.607, 39.836)**** |  
+  |Visceral disease     |           0.115     |        (-0.027, 0.479)**   |  
+  | LDH Abnormality     |             0.226         |        (-0.113, 0.342)**   |  
+  |  NEPC               |             -0.062   |      (-0.289, 0.165)** |  
+  |  RB1 mutation       |        -         |            -              | 
+  |  TP53 mutation      |           3.234           |       (0.542, 35.384)* |  
+  |    PTEN mutation    |             NA         |       (0.009, NA)*    |   
+  |    BRCA2 mutation   |              0        |       (0.000, 1.701)*      |  
+  |    AR mutation      |             NA         |        (0.0612, NA)*      | 
+  |   AURKA mutation    |               -       |              -            |  
+  |    MYCN mutation    |             -         |              -            | 
+    \* Fisher's exact test - the corresponding point estimate is the odds ratio
+    ** Chi-squared test of proportions - the corresponding point estimate is difference in the proportions of the two groups
+    *** T-test of significance without continuity correction - the corresponding point estimate is the difference in the means of the two groups
+    **** Wilcoxon-rank sum test without continuity correction - the corresponding point estimate is the difference in location
+
+
+### Question 4
+Are there different gene abnormalities and other variables associated with NEPC?
+
++ Just like Q2 and Q3, first, we plotted the boxplots for continuous varaibles by NEPC just in case.
+```{r fig.width = 8, fig.height = 4, fig.align='center'}
+# Boxplots by NEPC
+  psa<-ggplot()+geom_boxplot(data = dat_nepc, aes(y=psa, x=NEPC, fill=NEPC), na.rm = TRUE)+
+  labs(x="NEPC status",y="PSA at base line")+guides(fill=FALSE)+
+  theme(axis.line = element_line(colour = "black"))+
+  theme(panel.background =element_blank())+
+  scale_fill_manual(values=c("#429AB0","#7AB7C4"))+
+  annotate("text", x=1.7,y=570,label = c("P-value < 0.001*"), color = "black")
+
+int<-ggplot()+geom_boxplot(data = dat_nepc, aes(y=intdiag, x=NEPC, fill=NEPC), na.rm = TRUE)+
+  labs(x="NEPC status",y="Initial diagnosis to treatment (Months)")+guides(fill=FALSE)+
+  theme(axis.line = element_line(colour = "black"))+
+  theme(panel.background =element_blank())+
+  scale_fill_manual(values=c("#429AB0","#7AB7C4"))+
+  annotate("text", x=1.7,y=1500,label = c("P-value = 0.01*"), color = "black")
+
+prtherapy<-ggplot()+geom_boxplot(data = dat_nepc, aes(y=prtherapy, x=NEPC, fill=NEPC), na.rm = TRUE)+
+  labs(x="NEPC status",y="Prior therapy")+guides(fill=FALSE)+
+  theme(axis.line = element_line(colour = "black"))+
+  theme(panel.background =element_blank())+
+  scale_fill_manual(values=c("#429AB0","#7AB7C4"))+
+  annotate("text", x=1.7,y=6.6,label = c("P-value = 0.06**"), color = "black")
+
+gleason<-ggplot()+geom_boxplot(data = dat_nepc, aes(y=gleason, x=NEPC, fill=NEPC), na.rm = TRUE)+
+  labs(x="NEPC status",y="Gleason Score")+guides(fill=FALSE)+
+  theme(axis.line = element_line(colour = "black"))+
+  theme(panel.background =element_blank())+
+  scale_fill_manual(values=c("#429AB0","#7AB7C4"))+
+  annotate("text", x=1.7,y=11.2,label = c("P-value = 0.66**"), color = "black")
+
+grid.arrange(gleason,prtherapy,psa,int,ncol=4)
+```
+
+(1) Continuous variables:
++ Testing association for continuous variables:
+```{r}
+# psa
+wilcox.test(dat_nepc$psa ~ dat_nepc$NEPC)
+# intdiag
+wilcox.test(dat_nepc$intdiag ~ dat_nepc$NEPC)
+# gleason
+t.test(dat_nepc$gleason ~ dat_nepc$NEPC) 
+# prtherapy
+t.test(dat_nepc$prtherapy ~ dat_nepc$NEPC) 
+```
+
++ Testing association for categorical variables:
+```{r}
+# Expected values
+chisq.test(table(dat_nepc$NEPC,dat_nepc$LDHab))$expected #use chi-square
+chisq.test(table(dat_nepc$NEPC,dat_nepc$visceral))$expected #use chi-square
+chisq.test(table(dat_nepc$NEPC,dat_nepc$prog3mon))$expected #use chi-square
+
+#LDHab
+chisq.test(table(dat_nepc$NEPC,dat_nepc$LDHab)) #use chi-square
+#visceral
+chisq.test(table(dat_nepc$NEPC,dat_nepc$visceral)) #use chi-square
+#prog3mon
+chisq.test(table(dat_nepc$NEPC,dat_nepc$prog3mon)) #use chi-square
+```
+
++ Testing association for genetic mutations:
+```{r}
+# Eexpected tables
+chisq.test(table(dat_nepc$NEPC,dat_nepc$tp53))$expected #use chi-square 
+chisq.test(table(dat_nepc$NEPC,dat_nepc$pten))$expected #use fisher-test
+chisq.test(table(dat_nepc$NEPC,dat_nepc$brca2))$expected #use fisher-test
+chisq.test(table(dat_nepc$NEPC,dat_nepc$ar))$expected #use fisher-test
+
+# tp53
+chisq.test(table(dat_nepc$NEPC,dat_nepc$tp53))
+# pten
+fisher.test(table(dat_nepc$NEPC,dat_nepc$pten))
+# brca2
+fisher.test(table(dat_nepc$NEPC,dat_nepc$brca2))
+# ar
+fisher.test(table(dat_nepc$NEPC,dat_nepc$ar))
+```
+
+#### Comprehensive Table One for Q4
+```{r}
+```{r}
+# plus-minus symbol
+pm = " ± "
+
+# a function for showing p-value as "<0.001" if the p-value is too small to show.
+p.output <- function(p) {
+  if(p < 0.001) p.txt <- "<0.001"
+  else p.txt <- round(p, 2)
+  p.txt
+}
+
+# observed table to expected table
+exptvalue <- function(table) {
+    rowss <- rowSums(table)
+    colss <- colSums(table)
+
+    new <- matrix(nrow=nrow(table), ncol=ncol(table))
+    
+    for (i in 1:nrow(table)){
+        for (j in 1:ncol(table)) {
+            new[i,j] <- rowss[i]*colss[j]/sum(table)
+        }
+    }
+    
+    colnames(new) <- colnames(table)
+    rownames(new) <- rownames(table)
+    new
+ }
+
+# Continuous varaibles: `gleason`, `prtherapy` == t-test and `psa`, `intdiag` == 'Wilcoxon rank sum test`
+contin <- function(data = dat_nepc, 
+                   x, realx,
+                   y = NEPC, realy = dat_nepc$NEPC) {
+  xx <- enquo(x)
+  yy <- enquo(y)
+  
+  t2 <- data %>%
+    group_by(!!yy) %>%
+    summarise(mean=mean(!!xx, na.rm = T),
+              sd = sd(!!xx, na.rm = T),
+              median=median(!!xx, na.rm = T),
+              min = min(!!xx, na.rm = T),
+              max = max(!!xx, na.rm = T))
+  
+  t2.1 <- matrix(nrow = 3, ncol = 2)
+  
+  for (i in 1:2) {
+    t2.1[1,i] <- ""
+    t2.1[2,i] <- paste0(round(t2$mean[i], 1), pm, round(t2$sd[i], 1))
+    t2.1[3,i] <- paste0(round(t2$median[i], 1),
+                        " (", round(t2$min[i], 1),", ",
+                        round(t2$max[i],1), ")")}
+  
+  xvar <- as.character(deparse(substitute(realx)))
+  quote_x <- gsub(".*\\$","", xvar)
+  
+  if (quote_x %in% c("gleason","prtherapy")) {
+    p <- t.test(realx ~ realy)$p.value
+    p <- c(paste0(p.output(p), "****") , "", "")
+  }
+  
+  else{
+    p <- wilcox.test(realx ~ realy)$p.value
+    p <- c(paste0(p.output(p), "*****") , "", "")
+  }
+  
+  name <- c(xvar,
+            paste0("  Mean", pm, "SD"),
+            "  Median (min, max)")
+  t <- cbind(name, t2.1, p)
+  t
+}
+
+# Categorical variables
+categ <- function(data = dat_nepc, x, realx,
+                  realy = dat_nepc$NEPC) {
+  xx <- enquo(x)
+  
+  t2 <- table(realx, realy)
+  
+  CPC <- round(prop.table(t2, 2) * 100, 1)
+  t2.1 <- matrix(ncol = length(levels(realy)),
+                 nrow = length(levels(realx)))
+  
+  for (j in 1:length(levels(realy))) {
+    for (i in 1:length(levels(realx))) {
+      t2.1[i,j] <- paste0(t2[i,j]," (",CPC[i,j], "%)")
+    }
+  }
+  
+  t <- rbind("", cbind("", t2.1))
+  xvar <- as.character(deparse(substitute(realx)))
+  quote_x <- gsub(".*\\$","", xvar)
+  t[ ,1] <- c(quote_x, rep("", length(levels(realx))))
+  
+  for (i in 1:length(levels(realx))) {
+    t[i+1, 1] <- paste0("  ",as.character(levels(realx)[i]))
+  }
+  
+  exp.t <- exptvalue(t2)
+  if (nrow(exp.t)==1){
+    c <- ".*"
+  } 
+  
+  else if (sum(exp.t<5) >= 1) {
+    c <- fisher.test(t2)$p.value
+    c <- paste0(p.output(c), "**")
+  }
+  
+  else { 
+    c <- chisq.test(t2)$p.value
+    c <- paste0(p.output(c), "***")
+  }
+  
+  cbind(t, c(c, rep("", length(levels(realx)))))
+}
+
+table.bind <- rbind(contin(x = gleason, realx = dat_nepc$gleason),
+      contin(x = psa, realx = dat_nepc$psa),
+      contin(x = prtherapy, realx = dat_nepc$prtherapy),
+      contin(x = intdiag, realx = dat_nepc$intdiag),
+      categ(x = visceral, realx = dat_nepc$visceral),
+      categ(x = LDHab, realx = dat_nepc$LDHab),
+      categ(x = prog3mon, realx = dat_nepc$prog3mon),
+      categ(x = rb1, realx = dat_nepc$rb1),
+      categ(x = tp53, realx = dat_nepc$tp53),
+      categ(x = pten, realx = dat_nepc$pten),
+      categ(x = brca2, realx = dat_nepc$brca2),
+      categ(x = ar, realx = dat_nepc$ar),
+      categ(x = aurka, realx = dat_nepc$aurka),
+      categ(x = mycn, realx = dat_nepc$mycn)
+      )
+
+colnames(table.bind) <- c("Characteristics",
+                          paste0("No NEPC, N=", sum(dat_nepc$NEPC == "No")), 
+                          paste0("NEPC, N=", sum(dat_nepc$NEPC == "Yes")), "p-value")
+
+table.bind[ ,1][c(1, 4, 7, 10, 13, 16, 19, 22, 24, 27, 30, 33, 36, 38)] <- c("Gleason score at baseline (from 1-10)", "PSA at baseline (ng/mL)", "Number of prior systemic therapies (integer)", "Time from diagnosis to study start (months)", "Visceral disease status", "Elevated LDH level at baseline", "Disease progression status at three months", "RB1", "TP53", "PTEN", "BRCA2", "AR", "AURKA", "MYCN")
+table.bind[ ,1][c(20, 21, 23, 25, 26, 28, 29, 31, 32, 34, 35, 37, 39)] <- c("  No", "  Yes", "  No", "  No", "  Yes", "  No", "  Yes", "  No", "  Yes", "  No", "  Yes", "  No", "  No")
+
+vec <- 1:39
+indent <- vec[-c(1, 4, 7, 10, 13, 16, 19, 22, 24, 27, 30, 33, 36, 38)]
+knitr::kable(table.bind, align=c("l", "c", "c", "r"), booktabs = T, 
+             caption = "NEPC and Patient Characteristics (N=60)") %>% 
+    add_indent(.,indent) %>%
+    row_spec(0, bold = TRUE) %>% 
+    footnote(general = "Since there is no TRUE or YES values, any test was not employed.",
+             general_title = "*", footnote_as_chunk = T) %>%  
+    footnote(general = "Fisher's exact test was used to generate p-value.",
+             general_title = "**", footnote_as_chunk = T) %>%    
+    footnote(general = "Chi-square test was used to generate p-value.",
+             general_title = "***", footnote_as_chunk = T) %>%
+    footnote(general = "T-test was used to generate p-value.",
+             general_title = "****", footnote_as_chunk = T) %>%
+    footnote(general = "Wilcoxon rank sum test was used to generate p-value.",
+             general_title = "*****", footnote_as_chunk = T) 
+```
+
+#### Point estimates and confidence intervals for Q4
++ NEPC with Patient Characteristics and Gene abnormalities (N=60)
+  
+| Characteristics       | Point estimate       | Confidence Interval(95%)|
+  | --------------------|:--------------------:| :----------------------:|
+  |   Gleason score     | -0.17                |       (-0.944, 0.604)*** |  
+  |   PSA               | 12.899               |       (1.250,25.290)**** | 
+  |Number of Previous Therapies| 0.720     |       (-0.045,1.486)***  |  
+  |Since initial diagnosis(in months)| 41      |       (6.885,65.803)**** |  
+  |Visceral disease     | 0.146               |       (-0.139, 0.430)** |  
+  | LDH Abnormality     | -0.099              |       (-0.404, 0.206)** |  
+  |  Progresssion status| -0.062              |       (-0.325, 0.201)** |  
+  |  RB1 mutation       |        -              |             -             | 
+  |  TP53 mutation      |       0.113          |       (-0.220, 0.446)** |  
+  |    PTEN mutation    |         0             |       (0, 24.556)*      |   
+  |    BRCA2 mutation   |          0            |       (0, 8.486)*       |  
+  |    AR mutation      |           0           |        (0, 3.288)*       | 
+  |   AURKA mutation    |           -           |             -             |  
+  |    MYCN mutation    |           -           |            -            | 
+    \* Fisher's exact test - the corresponding point estimate is the odds ratio
+    ** Chi-squared test of proportions - the corresponding point estimate is difference in the proportions of the two groups
+    *** T-test of significance without continuity correction - the corresponding point estimate is the difference in the means of the two groups
+    **** Wilcoxon-rank sum test without continuity correction - the corresponding point estimate is the difference in location

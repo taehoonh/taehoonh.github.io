@@ -1,0 +1,21 @@
+---
+title: "project"
+output:
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+### 2018
+
+#### Neuroendrocine prostate cancer (NEPC)
+
+Identify the clinical characteristics and molecular profiles of responding patients to define distinct cohorts most likely to benefit.
+
++ [Code](/content/project/NEPC.html)
++ [Report](/content/project/NEPD_paper.pdf)
