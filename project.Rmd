@@ -19,4 +19,14 @@ output:
 Identify the clinical characteristics and molecular profiles of responding patients to define distinct cohorts most likely to benefit.
 
 + [Code](/content/project/NEPC.html)
-+ [Report](/content/project/NEPC_paper.pdf)
++ [Paper](/content/project/NEPC_paper.pdf)
++ [Slide](/content/project/NEPC_slide.pdf)
+
+<br>
+
+### Primary Injury Factors of Ulnar Collateral Ligament Reconstruction for Major League Baseball Pitchers by Statcast Measures
+
+Design a study to identify major factors of Ulnar Collateral Ligament Reconstruction (a.k.a. Tommy John Surgery) for Major League Baseball Pitchers by Statcast Measures
+
++ [Paper](/content/project/TJS_paper.pdf)
++ [Slide](/content/project/TJS_slide.pdf)
