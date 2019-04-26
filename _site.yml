@@ -1,4 +1,7 @@
-name: "Taehoon"
+name: "Taehoon Ha"
+title: "Taehoon Ha"
+base_url: https://taehoonh.github.io/
+google_analytics: "UA-139119461-1"
 output_dir: "."
 navbar:
   title: "Taehoon Ha"
