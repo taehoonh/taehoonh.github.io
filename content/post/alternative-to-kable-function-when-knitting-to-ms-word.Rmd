@@ -152,6 +152,12 @@ head(dat) %>%
     align(., i = 1, j = 1:ncol(dat), align = "center", part = "header")
 ```
 
+<br><br><br>
+
+### 6. Output example in Microsoft Word
+
+![](https://ws2.sinaimg.cn/large/006tNc79ly1g30u0vl2ctj30zk0nedrh.jpg)
+
 
 <br><br><br>
 
