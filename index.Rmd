@@ -1,5 +1,4 @@
 ---
-title: "Taehoon Ha"
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
@@ -7,15 +6,15 @@ title: "Taehoon Ha"
 <br>
 
 <p align="center">
-<img src="images/taehoonh.jpg" style="width:50%; border:1px solid; margin-right: 20px" align="center">
+<img src="images/taehoonh.jpg" style="width:40%; border:1px solid; margin-right: 20px" align="center">
 </p>
 <br>
 
 I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to obesity and breast cancer through my work as a Research Assistant at [Weill Cornell Medicine](https://weill.cornell.edu/). 
 
-I graduated from [Sungkyunkwan University](https://www.skku.edu/eng/) with a Bachelor of Business Administration with an emphasis on Computer Science and [Duke University](https://www.duke.edu/) with a Master of Science in Quantitative Management and Analytics. In 2018, I began working toward my second MS degree in Biostatistics and Data Science at [Weill Cornell Medicine](https://weill.cornell.edu/), where I am investigating statistical methods for complex biological data including RNA-seq gene expression, microbiome, and other types of high throughput biological data from observational studies and designed experiments under the advisement of [Xi Kathy Zhou, Ph.D., M.S.](http://hpr.weill.cornell.edu/divisions/biostatistics/xi_kathy_zhou_profile.html) at Weill Cornell Medicine in the department of Biostatistics and Epidemiology. 
+I graduated from [Sungkyunkwan University](https://www.skku.edu/eng/) with a Bachelor of Business Administration with an emphasis on Computer Science and [Duke University](https://www.duke.edu/) with a Master of Science in Quantitative Management: Business Analytics. In 2018, I began working toward my second MS degree in Biostatistics and Data Science at [Weill Cornell Medicine](https://weill.cornell.edu/), where I am investigating statistical methods for complex biological data including RNA-seq gene expression, microbiome, and other types of high throughput biological data from observational studies and designed experiments under the advisement of [Xi Kathy Zhou, Ph.D., M.S.](http://hpr.weill.cornell.edu/divisions/biostatistics/xi_kathy_zhou_profile.html) at Weill Cornell Medicine in the department of Biostatistics and Epidemiology. 
 
-I am also working on analyzing systematic effect of $\text{PM}_{2.5}$ exposure on metabolism (Insulin Resistance), especially brain part, under the supervision of [Bongsoo Park, PhD](https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park) at [Johns Hopkins University](https://www.jhsph.edu/). I expect to graduate by the end of 2019.
+I am also working on analyzing systematic effect of $\text{PM}_{2.5}$ exposure on metabolism (Insulin Resistance), especially brain part, under the supervision of [Bongsoo Park, PhD](https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park) at [Johns Hopkins University](https://www.jhsph.edu/). 
 
-My full CV is available [here](files/cv.pdf).
+I expect to graduate by the end of 2019. My full CV is available [here](files/cv.pdf).
 
