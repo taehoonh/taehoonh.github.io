@@ -1,0 +1,112 @@
+---
+title: "Monte Carlo Simulation for Causal Inference (G-computation formula)"
+output:
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+### A specific data generating process
+
+In this simulation, we will generate the observed data O in the following way.
+
+1. Draw $W1$ from a Bernoulli($p = 0.20$)
+
+2. Given $W1$, draw $W2$ from a $Bernoulli(p = expit(0.5 * W1))$
+
+3. Given $W1$, $W2$ draw $A$ from a $Bernoulli(p = expit[W1 * W2])$
+
+4. Given $W1$, $W2$, $A$ draw $C$ from a $Bernoulli(p = expit[-A + 0.3 * W1 - W2])$
+
+5. Given $W1$, $W2$, $A$, $C$, draw $Y$ from a $Normal(\mu = (4.4 * A + 0.7 * W1 - 2 *A * W2 - 2 * A * C), \sigma = 0.3^2)$ The random errors are independent.
+
+<br>
+
+#### 1. Use Monte Carlo simulation to evaluate the true value of the following parameter of the observed data distribution : 
+
+$$
+\phi = E_{0,W1,W2,C} [ \mathrm{E}(Y|A=1, W1, W2, C) - \mathrm{E}(Y|A=0, W1, W2, C)]
+$$
+
+
+```{r}
+n <- 5000
+R <- 10000 # 10K simulations
+phi <- rep(NA, R)
+
+for (r in 1:R) {
+  W1 <- rbinom(n, 1, prob=0.20)
+  W2 <- rbinom(n, 1, prob=plogis(0.5*W1))
+  A <- rbinom(n, 1,  prob=plogis(W1*W2))
+  C <- rbinom(n, 1, prob=plogis(-A+0.3*W1-W2))
+  Y <- rnorm(n=n, mean = 4.4*A + 0.7*W1 - 2*A*W2 - 2*A*C, sd = 0.3)
+  
+  Y_1 <- 4.4 * 1 + 0.7 * W1 - 2 * 1 * W2 - 2 * 1 * C
+  Y_0 <- 4.4 * 0 + 0.7 * W1 - 2 * 0 * W2 - 2 * 0 * C
+  phi[r] <- mean(Y_1 - Y_0)
+}
+
+mean(phi)
+```
+
+<br>
+
+> Based on 10000 Monte Carlo simulations, the true value of the following parameter of the observed data distribution, was `r mean(phi) %>% round(3)`. 
+> $\phi = E_{0,W1,W2,C} [ \mathrm{E}(Y|A=1, W1, W2, C) - \mathrm{E}(Y|A=0, W1, W2, C)] =$ `r mean(phi) %>% round(3)`.
+
+<br>
+
+#### 2. Use Monte Carlo simulation to evaluate the true value of the average treatment effect: 
+$$
+\theta^{*} = \mathrm{E}^*(Y_1)- \mathrm{E}^*(Y_0)
+$$
+
+```{r}
+estimates <- rep(NA, R)
+
+for (r in 1:R) {
+  W1 <- rbinom(n, 1, prob=0.20)
+  W2 <- rbinom(n, 1, prob=plogis(0.5*W1))
+  A <- rbinom(n, 1,  prob=plogis(W1*W2))
+  C <- rbinom(n, 1, prob=plogis(-A+0.3*W1-W2))
+  Y <- rnorm(n=n, mean = 4.4*A + 0.7*W1 - 2*A*W2 - 2*A*C, sd = 0.3)
+  
+    
+  Obs <- data.frame(W1, W2, A, C, Y)
+    
+  txt <- control <- Obs
+  
+  txt$A <- 1
+  control$A <- 0
+  
+  reg1 <- glm(Y ~ A + W1 + W2 + C, data=Obs)
+  
+  # reg1
+  pred1.txt <- predict(reg1, newdata = txt)
+  pred1.ctrl <- predict(reg1, newdata = control)
+    
+  theta_star <- mean(pred1.txt-pred1.ctrl)
+    
+  estimates[r] <- theta_star
+}
+
+mean(estimates)
+```
+
+<br>
+
+> Based on 10000 Monte Carlo simulations, the true value of the average treatment effect, was `r mean(estimates) %>% round(3)`. $\theta^{*}(P^{*}) = `r mean(estimates) %>% round(3)`$ is the difference in the counterfactual expected weight gain if all children were given RUTF and the counterfactual expected weight gain if all children were given the standard supplement.
+
+<br>
+
+***
+
+<center><strong>End of Document</strong></center>
