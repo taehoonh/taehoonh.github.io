@@ -1,0 +1,463 @@
+---
+title: "Quick reference: data.table"
+author: "Taehoon Ha"
+date: "7/15/2019"
+output: 
+    html_document:
+        toc: TRUE
+        toc_float:
+            collapsed: TRUE
+            smooth_scroll: FALSE
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+knitr::opts_chunk$set(echo = TRUE, message = F, warning = F, fig.align = "center")
+library(tidyverse)
+library(data.table)
+library(lubridate)
+```
+
+### 1. Package loading
+
+```{r}
+library(data.table)
+```
+
+### 2. Example data: flights
+
+```{r}
+flights <- fread("Data/flights.csv")
+head(flights) %>% knitr::kable()
+```
+
+### 3. What is `data.table`?
+
+```{r}
+class(flights)
+```
+
+> It is an extension of the `data.frame` class.
+
+<br>
+
+### 4. Subsetting a `data.table`
+
+$$
+DT[i, j, by] \\
+\begin{aligned}
+i&: \text{filters rows (analagous to a WHERE clause in SQL)} \\
+j&: \text{is how you select/compute on columns} \\
+by&: \text{is where you can group computations} \end{aligned}
+$$
+
+<br>
+
+#### 1) $i$
+
++ first index is ALWAYS rows, regardless of commas
+
+```{r}
+identical(flights[2], flights[2,])
+```
+
+<br>
+
++ Compare to `data.frame`
+
+```{r}
+as.data.frame(flights)[2]  %>% dim
+as.data.frame(flights)[2,] %>% dim
+```
+
+<br>
+
++ Use $i$ to select rows
+
+```{r}
+flights[1:2] # first and second row
+flights[2:1] # second and first row
+```
+
+<br>
+
++ Logical expressions
+
+```{r, eval = F}
+flights[MONTH == 1]
+flights[MONTH == 1 & DISTANCE > 1000]
+```
+
+<br>
+
++ `identical()` function
+
+```{r}
+identical(flights[-1:-100000], flights[!1:100000])
+```
+
+<br>
+
++ `order()`: optimized within a `data.table`
+
+> + makes sorting a cinch
+> + sort by one column and then another 
+> + minus ('-') means descending order
+
+```{r}
+flights[order(TAIL_NUMBER,-ARRIVAL_DELAY)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+> sort by a function on our data
+
+```{r}
+flights[order(substr(ORIGIN_AIRPORT,1,1))] %>% head %>% knitr::kable()
+```
+
+<br>
+
++ chain queries together
+
+```{r}
+flights[!is.na(ARRIVAL_DELAY)][order(TAIL_NUMBER,-ARRIVAL_DELAY)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+```{r}
+flights %>%
+  .[!is.na(ARRIVAL_DELAY)] %>%
+  .[order(TAIL_NUMBER,-ARRIVAL_DELAY)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+#### 2) $j$
+
++ computations on columns
+
+```{r}
+# select columns by name in the second index parameter
+flights[ , DESTINATION_AIRPORT] %>% head() %>% knitr::kable()           # as a vector
+flights[ , list(DESTINATION_AIRPORT)] %>% head() %>% knitr::kable()     # as a data.table
+```
+
+<br>
+
++ use list to select multiple columns
+
+```{r}
+flights[ , list(DESTINATION_AIRPORT, ORIGIN_AIRPORT)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
++ `.()` is the same as `list()` in `data.table`
+
+```{r}
+flights[ , .(DESTINATION_AIRPORT, ORIGIN_AIRPORT)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
++ also computable on columns
+
+```{r}
+flights[ , unique(ORIGIN_AIRPORT)]  %>% head() %>% knitr::kable()
+flights[ , sum(AIR_TIME, na.rm = TRUE) / (1e6 * 60)]  %>% head() %>% knitr::kable()
+flights[ , summary(as.factor(CANCELLATION_REASON))]  %>% head() %>% knitr::kable()
+flights[ , .(AIR_TIME, AIR_TIME/60)] %>% head() %>% knitr::kable()# return multiple columns
+```
+
+<br>
+
++ name the items
+
+```{r}
+flights[ , .(AIR_TIME, AIR_TIME_HOURS = AIR_TIME/60)] %>% head() %>% knitr::kable()
+```
+
+> Anytime the $j$ expression returns a list, the whole expression will return a `data.table`.
+
+<br>
+
+#### 3) $i$ and $j$
+
+##### Q1. How many flights were delayed touching down?
+
+```{r}
+flights[ARRIVAL_DELAY>0, .N] 
+```
+
+> `.N` is a convenience symbol to get the number of rows in a `data.table`
+
+<br>
+
+##### Q2. What are some summary statistics of the delayed flights (in hours)?
+
+```{r}
+flights[ARRIVAL_DELAY>0, summary(ARRIVAL_DELAY/60)]
+```
+
+<br>
+
+##### Q3. How many flights were on each day of the week?
+
+```{r}
+flights[ARRIVAL_DELAY>0, plot(table(DAY_OF_WEEK))] 
+```
+
+> + we don't have to return a `data.table`
+> + an expression that returns a list in $j$ would, but here we want to plot, and `data.table` evaluates the expression correctly.
+
+<br>
+
+#### 4) `by`: grouping
+
+##### Q4. How many outgoing flights did each aiport have?
+
+```{r}
+flights[ , .N, by = ORIGIN_AIRPORT] %>% head() %>% knitr::kable()
+```
+
+<br>
+
++ Order it to see the biggest airports
+
+```{r}
+flights[ , .N, by = ORIGIN_AIRPORT][order(-N)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### Q5. Which airports had the most cancelled flights?
+
+```{r}
+flights[CANCELLED == 1, .N, by = ORIGIN_AIRPORT][order(-N)]
+```
+
+<br>
+
+```{r eval = F}
+flights %>%
+  extract(CANCELLED == 1, .N, by = ORIGIN_AIRPORT) %>%
+  extract(order(-N))
+# Here we use extract, magrittr's alias for [ rather than the .[] notation above
+```
+
+<br>
+
+##### Q6. What's the min and max departure delay for each airport, sorted by biggest difference between the two?
+
+```{r}
+flights[ , .(MinDelay = min(DEPARTURE_DELAY, na.rm = TRUE), 
+             MaxDelay = max(DEPARTURE_DELAY, na.rm = TRUE)), 
+         by = ORIGIN_AIRPORT][order(MinDelay-MaxDelay)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+#### 5) `.SD`: a special name for the subset of the data.table for each group
+
+```{r}
+mtcarsDT <- as.data.table(mtcars, keep.rownames = 'Model')
+mtcarsDT[ ,unique(cyl)] # we have three groups by cylinder count
+mtcarsDT[ , print(.SD), by = cyl] # so we have three data.tables that get printed
+```
+
+> Ref: https://www.youtube.com/watch?v=L6aT_oEhIKo
+
+<br>
+
+##### Q7. First two rows of flights from each day
+
+```{r}
+flights[ , .SD[1:2], by = .(YEAR,MONTH,DAY)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+Q8. 100 random obs from every day
+
+```{r}
+flights[ , .SD[sample(1:.N, 100)], by = .(YEAR, MONTH,DAY)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### Q8. % of flights cancelled by airport?
+
+```{r}
+flights[ , .(PctCancelled = mean(CANCELLED) %>% round(., 3)), by = ORIGIN_AIRPORT][order(-PctCancelled)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### Q9. Remove all airports from the dataset that don't have 10k flights
+
+```{r}
+flights[ , .SD[.N >= 10000], by = ORIGIN_AIRPORT] %>% head() %>% knitr::kable()
+```
+
+> + Here we're saying to group by the airport of origin
+> + So `.SD` in each case is the complete set of flights for an airport
+> + We then filter that subset. We put in a single `TRUE` or `FALSE`, is the number of rows greater than 10000? 
+> + If it is, it returns TRUE and is recycled so that every row in the subset is returned. 
+> + If not, then the FALSE is returned, recycled for all rows, and no rows are returned.
+> + `data.table` will build up the final dataset based on these little data.tables
+> + Appending zero rows to a data.table means nothing, and the airports that don't have enough rows are dropped from the final output.
+
+<br>
+
+##### Q10. Which airports don't have 10000 flights?
+
+```{r}
+flights[ , .SD[.N < 10000], by = ORIGIN_AIRPORT][ , unique(ORIGIN_AIRPORT)] %>% head()
+```
+
+<br>
+
+#### 6) Assignment
+
+> + there is an assignment operator that *modifies in place* (by reference)
+> + jargon translation: it will alter the specific object you use it on
+
+<br>
+
++ Create a date column that's in date format
+
+```{r}
+flights[ , Date := ymd(YEAR*10000+MONTH*100+DAY)] %>% head() %>% knitr::kable()
+```
+
+<br>
+
++ Reformat the dataset into boolean format
+
+```{r}
+flights[ , CANCELLED := ifelse(CANCELLED == 1, TRUE, FALSE)]
+```
+
+<br>
+
++ Create new columns
+
+```{r}
+flights[ , AvgSpeed := DISTANCE / (AIR_TIME/60)]
+```
+
+<br>
+
++ Update the `data.table` selectively
+
+```{r eval = F}
+flights[ CANCELLATION_REASON2 == 'A', CANCELLATION_REASON := 'Airline' ]
+flights[ CANCELLATION_REASON2 == 'B', CANCELLATION_REASON := 'Weather'] 
+flights[ CANCELLATION_REASON2 == 'C', CANCELLATION_REASON := 'National Air System'] 
+flights[ CANCELLATION_REASON2 == 'D', CANCELLATION_REASON := 'Security'] 
+flights[ CANCELLATION_REASON2 == '', CANCELLATION_REASON := NA] 
+```
+
+```{r eval = F}
+flights[!is.na(CANCELLATION_REASON2), .N, by = CANCELLATION_REASON2] %>%
+    ggplot(aes(x = CANCELLATION_REASON2, y = N)) +
+    geom_histogram(stat = 'identity')
+```
+
+<br>
+
+```
+[As a function]
+
+cancelReasonUpdate <- function(inStr){
+  switch(inStr,
+         "A" = "Airline",
+         "B" = "Weather",
+         "C" = "National Air System",
+         "D" = "Security",
+               NA)
+}
+
+flights[ , CANCELLATION_REASON2 := map_chr(CANCELLATION_REASON,cancelReasonUpdate)]
+```
+
+<br>
+
++ Delete columns
+
+```{r eval = F}
+flights[ , CANCELLATION_REASON2 := NULL]
+```
+
+<br>
+
++ Grouping
+
+```{r}
+flights[ , MaxAvgSpeed := max(AvgSpeed, na.rm = TRUE), by = .(ORIGIN_AIRPORT, DESTINATION_AIRPORT)]
+```
+
+> note that the group level statistic is now added to each observation
+
+<br>
+
+#### 6) `join`
+
++ Load the `airports` dataset
+
+```{r}
+airports <- fread("Data/airports.csv")
+airports %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### a. inner join
+
+```{r}
+merge(x = flights,
+      y = airports,
+      by.x = 'ORIGIN_AIRPORT',
+      by.y = 'IATA_CODE') %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### b. left outer join 
+
+```{r}
+flights[airports, on = c(ORIGIN_AIRPORT = 'IATA_CODE')] %>% head() %>% knitr::kable()
+flights[airports, on = "ORIGIN_AIRPORT == IATA_CODE"] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### c. inner join
+
+```{r}
+flights[airports, on = c(ORIGIN_AIRPORT = 'IATA_CODE'), nomatch = 0] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+##### d. not join (a.k.a anti-join)
+
+```{r}
+airports[!flights, on = "IATA_CODE == ORIGIN_AIRPORT"] %>% head() %>% knitr::kable()
+```
+
+<br>
+
+***
+
++ Ref: Cheat sheet of `data.table`: [Click]("https://github.com/rstudio/cheatsheets/raw/master/datatable.pdf")
+
+<br>
+
+***
+
+<center><strong>End of Document</strong></center>
+
+
