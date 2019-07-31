@@ -25,7 +25,7 @@ I expect to graduate by the end of 2019. My full CV is available [here](files/cv
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Project At A Glance</strong> <br>
+<strong>On-going Projects `(07/30/2019 updated)` </strong> <br>
 
 - Application of a Bayesian model averaging method to observational metabolomics data
 - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$, NIEHS-NIAID
