@@ -12,6 +12,6 @@ output:
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 
-### Classes As a Teaching Assistant
+### As a Teaching Assistant
 
 + Fall 2019: Categorical and Censored Data Analysis, Weill Cornell Medicine
