@@ -25,9 +25,10 @@ I expect to graduate by the end of 2019. My full CV is available [here](files/cv
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(07/30/2019 updated)` </strong> <br>
+<strong>On-going Projects `(08/02/2019 updated)` </strong> <br>
 
-- Application of a Bayesian model averaging method to observational metabolomics data
+- Application of a Bayesian model averaging (BMA) method to observational metabolomics data
+- Package development for BMA-Seq that helps you analyze observational gene-expression data
 - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$, NIEHS-NIAID
 - Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB) 
 
