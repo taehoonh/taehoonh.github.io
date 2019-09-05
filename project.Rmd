@@ -13,10 +13,33 @@ output:
 
 ## 2019
 
-#### Transcriptome and epigenome atlas for air pollution $PM_{2.5}$
+#### Faecalibaculum data analysis
 
-+ [Brain](/content/project/Brainmap_ComprehensiveCode.html)
-+ Currently working on BAT, WAT, Hypothalamus, Liver, and Muscle.
++ Compared the control to high fat diet group to see if there is a significant difference in relative abundance.
++ Linear mixed-effects model was used to estimate the average log transformed relative abundance value.
+
+<br>
+
+#### Wellness start-up data analysis
+
++ Collaborated with a wellness platform start-up.
++ Analyzed and compared the each group's characteristics before and after plant-based meal program.
+
+<br>
+
+#### Western diet and liver single-cell analysis, NIEHS-NIA
+
++ Time point: Wk05 and Wk17
++ Gender: Male and Female
++ Groups: Chow FA, Chow PM, High fat diet FA, and High fat diet PM
+
+<br>
+
+#### Transcriptome and epigenome atlas for air pollution $PM2.5$, NIEHS-NIAID
+
++ Divided into 6 sub-areas: Cerebellum, Cortex, Hippocampus, Hypothalamus, RVLM, and Striatum.
++ Generated the pipeline and completed the reproductability test using data from BAT, WAT, Hypothalamus, Liver, and Muscle.
++ Currently preparaing for a main research with increased sample size with multiple time points.
 
 <br>
 

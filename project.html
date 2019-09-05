@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -89,7 +90,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -250,48 +250,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4,h5",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = false;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -435,11 +396,37 @@ div.tocify {
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <div id="section" class="section level2">
 <h2>2019</h2>
-<div id="transcriptome-and-epigenome-atlas-for-air-pollution-pm_2.5" class="section level4">
-<h4>Transcriptome and epigenome atlas for air pollution <span class="math inline">\(PM_{2.5}\)</span></h4>
+<div id="faecalibaculum-data-analysis" class="section level4">
+<h4>Faecalibaculum data analysis</h4>
 <ul>
-<li><a href="/content/project/Brainmap_ComprehensiveCode.html">Brain</a></li>
-<li>Currently working on BAT, WAT, Hypothalamus, Liver, and Muscle.</li>
+<li>Compared the control to high fat diet group to see if there is a significant difference in relative abundance.</li>
+<li>Linear mixed-effects model was used to estimate the average log transformed relative abundance value.</li>
+</ul>
+<p><br></p>
+</div>
+<div id="wellness-start-up-data-analysis" class="section level4">
+<h4>Wellness start-up data analysis</h4>
+<ul>
+<li>Collaborated with a wellness platform start-up.</li>
+<li>Analyzed and compared the each group’s characteristics before and after plant-based meal program.</li>
+</ul>
+<p><br></p>
+</div>
+<div id="western-diet-and-liver-single-cell-analysis-niehs-nia" class="section level4">
+<h4>Western diet and liver single-cell analysis, NIEHS-NIA</h4>
+<ul>
+<li>Time point: Wk05 and Wk17</li>
+<li>Gender: Male and Female</li>
+<li>Groups: Chow FA, Chow PM, High fat diet FA, and High fat diet PM</li>
+</ul>
+<p><br></p>
+</div>
+<div id="transcriptome-and-epigenome-atlas-for-air-pollution-pm2.5-niehs-niaid" class="section level4">
+<h4>Transcriptome and epigenome atlas for air pollution <span class="math inline">\(PM2.5\)</span>, NIEHS-NIAID</h4>
+<ul>
+<li>Divided into 6 sub-areas: Cerebellum, Cortex, Hippocampus, Hypothalamus, RVLM, and Striatum.</li>
+<li>Generated the pipeline and completed the reproductability test using data from BAT, WAT, Hypothalamus, Liver, and Muscle.</li>
+<li>Currently preparaing for a main research with increased sample size with multiple time points.</li>
 </ul>
 <p><br></p>
 </div>
@@ -520,6 +507,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

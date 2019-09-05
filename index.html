@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -86,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -247,18 +247,6 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
@@ -334,20 +322,21 @@ $(document).ready(function () {
 <img src="images/taehoonh.jpg" style="width:40%; border:1px solid; margin-right: 20px" align="center">
 </p>
 <p><br></p>
-<p>I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to obesity and breast cancer through my work as a Research Associate at <a href="https://weill.cornell.edu/">Weill Cornell Medicine</a>.</p>
-<p>I graduated from <a href="https://www.skku.edu/eng/">Sungkyunkwan University</a> with a Bachelor of Business Administration with an emphasis on Computer Science and <a href="https://www.duke.edu/">Duke University</a> with a Master of Science in Quantitative Management: Business Analytics. In 2018, I began working toward my second MS degree in Biostatistics and Data Science at <a href="https://weill.cornell.edu/">Weill Cornell Medicine</a>, where I am investigating statistical methods for complex biological data including RNA-seq gene expression, microbiome, and other types of high throughput biological data from observational studies and designed experiments under the advisement of <a href="http://hpr.weill.cornell.edu/divisions/biostatistics/xi_kathy_zhou_profile.html">Xi Kathy Zhou, Ph.D., M.S.</a> at Weill Cornell Medicine in the department of Biostatistics and Epidemiology.</p>
-<p>I am also working on analyzing systematic effect of <span class="math inline">\(\text{PM}_{2.5}\)</span> exposure on metabolism (Insulin Resistance), especially brain part, under the supervision of <a href="https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park">Bongsoo Park, PhD</a> at <a href="https://www.jhsph.edu/">Johns Hopkins Bloomberg School of Public Heatlh</a>.</p>
+<p>I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to obesity and breast cancer through my work as a Research Associate at <a href="https://weill.cornell.edu/">Weill Cornell Medicine</a> in the Division of Biostatistics and Epidemiology in the Department of Healthcare Policy and Research.</p>
+<p>I graduated from <a href="https://www.skku.edu/eng/">Sungkyunkwan University</a> with a Bachelor of Business Administration with an emphasis on Computer Science and <a href="https://www.duke.edu/">Duke University</a> with a Master of Science in Quantitative Management: Business Analytics. In 2018, I began working toward my second MS degree in Biostatistics and Data Science at <a href="https://weill.cornell.edu/">Weill Cornell Medicine</a>, where I am investigating statistical methods for complex biological data including RNA-seq gene expression, microbiome, and other types of high throughput biological data from observational studies and designed experiments under the advisement of <a href="http://hpr.weill.cornell.edu/divisions/biostatistics/xi_kathy_zhou_profile.html">Xi Kathy Zhou, Ph.D., M.S.</a> and <a href="https://research.cornell.edu/researchers/andrew-j-dannenberg">Andrew J. Dannenberg, M.D.</a> at Weill Cornell Medicine.</p>
+<p>I am also working on analyzing systematic effect of <span class="math inline">\(\text{PM}_{2.5}\)</span> exposure on metabolism (Insulin Resistance), especially brain part, under the supervision of <a href="https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park">Bongsoo Park, PhD</a> at Johns Hopkins Bloomberg School of Public Heatlh.</p>
 <p>I expect to graduate by the end of 2019. My full CV is available <a href="files/cv.pdf">here</a>.</p>
 <p><br></p>
 <style>
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class="box">
-<p><strong>On-going Projects <code>(08/02/2019 updated)</code> </strong> <br></p>
+<p><strong>On-going Projects <code>(09/05/2019 updated)</code> </strong> <br></p>
 <ul>
 <li>Application of a Bayesian model averaging (BMA) method to observational metabolomics data</li>
-<li>Package development for BMA-Seq that helps you analyze observational gene-expression data</li>
+<li>R package development for BMA-Seq that helps you analyze observational gene-expression data</li>
 <li>Transcriptome and epigenome atlas for air pollution <span class="math inline">\(\text{PM}_{2.5}\)</span>, NIEHS-NIAID</li>
+<li>Western diet and liver single-cell analysis, NIEHS-NIA</li>
 <li>Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB)</li>
 </ul>
 </div>
@@ -369,6 +358,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

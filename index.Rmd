@@ -10,11 +10,11 @@
 </p>
 <br>
 
-I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to obesity and breast cancer through my work as a Research Associate at [Weill Cornell Medicine](https://weill.cornell.edu/). 
+I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to obesity and breast cancer through my work as a Research Associate at [Weill Cornell Medicine](https://weill.cornell.edu/) in the Division of Biostatistics and Epidemiology in the Department of Healthcare Policy and Research.
 
-I graduated from [Sungkyunkwan University](https://www.skku.edu/eng/) with a Bachelor of Business Administration with an emphasis on Computer Science and [Duke University](https://www.duke.edu/) with a Master of Science in Quantitative Management: Business Analytics. In 2018, I began working toward my second MS degree in Biostatistics and Data Science at [Weill Cornell Medicine](https://weill.cornell.edu/), where I am investigating statistical methods for complex biological data including RNA-seq gene expression, microbiome, and other types of high throughput biological data from observational studies and designed experiments under the advisement of [Xi Kathy Zhou, Ph.D., M.S.](http://hpr.weill.cornell.edu/divisions/biostatistics/xi_kathy_zhou_profile.html) at Weill Cornell Medicine in the department of Biostatistics and Epidemiology. 
+I graduated from [Sungkyunkwan University](https://www.skku.edu/eng/) with a Bachelor of Business Administration with an emphasis on Computer Science and [Duke University](https://www.duke.edu/) with a Master of Science in Quantitative Management: Business Analytics. In 2018, I began working toward my second MS degree in Biostatistics and Data Science at [Weill Cornell Medicine](https://weill.cornell.edu/), where I am investigating statistical methods for complex biological data including RNA-seq gene expression, microbiome, and other types of high throughput biological data from observational studies and designed experiments under the advisement of [Xi Kathy Zhou, Ph.D., M.S.](http://hpr.weill.cornell.edu/divisions/biostatistics/xi_kathy_zhou_profile.html) and [Andrew J. Dannenberg, M.D.](https://research.cornell.edu/researchers/andrew-j-dannenberg) at Weill Cornell Medicine.
 
-I am also working on analyzing systematic effect of $\text{PM}_{2.5}$ exposure on metabolism (Insulin Resistance), especially brain part, under the supervision of [Bongsoo Park, PhD](https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park) at [Johns Hopkins Bloomberg School of Public Heatlh](https://www.jhsph.edu/).
+I am also working on analyzing systematic effect of $\text{PM}_{2.5}$ exposure on metabolism (Insulin Resistance), especially brain part, under the supervision of [Bongsoo Park, PhD](https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park) at Johns Hopkins Bloomberg School of Public Heatlh.
 
 I expect to graduate by the end of 2019. My full CV is available [here](files/cv.pdf).
 
@@ -25,11 +25,12 @@ I expect to graduate by the end of 2019. My full CV is available [here](files/cv
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(08/02/2019 updated)` </strong> <br>
+<strong>On-going Projects `(09/05/2019 updated)` </strong> <br>
 
 - Application of a Bayesian model averaging (BMA) method to observational metabolomics data
-- Package development for BMA-Seq that helps you analyze observational gene-expression data
+- R package development for BMA-Seq that helps you analyze observational gene-expression data
 - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$, NIEHS-NIAID
+- Western diet and liver single-cell analysis, NIEHS-NIA
 - Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB) 
 
 </div>
