@@ -43,6 +43,12 @@ output:
 
 <br>
 
+#### The Effect of Right Heart Catheterization (RHC) During the First 24 Hours on 30-day Mortality of Critically Ill Patients in Intensive Care Units
+
++ [Paper](/content/project/RHC_paper.pdf)
+
+<br>
+
 #### Reproduction of SDY210 clinical trial
 
 **Adding Exhaled Nitric Oxide to Guideline-based Asthma Treatment in Inner-City Adolescents and Young Adults: a Randomized Controlled Trial**
