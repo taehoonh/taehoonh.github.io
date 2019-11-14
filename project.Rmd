@@ -11,6 +11,8 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
+<br><br><br>
+
 ## 2019
 
 #### **[In porgress]** Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
