@@ -17,7 +17,7 @@ output:
 
 #### **[In porgress]** Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
 
-+ Assist the advisor with developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.
++ Develop a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.
 + Develop R package `BMAseq` using Bayesian model averaging to analyze observational gene-expression data
 + Apply the Bayesian model averaging method to large scale public RNA-seq gene expression data
 + Apply the Bayesian model averaging method (`BMA-seq`) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting
@@ -45,7 +45,11 @@ output:
 
 #### The Effect of Right Heart Catheterization (RHC) During the First 24 Hours on 30-day Mortality of Critically Ill Patients in Intensive Care Units
 
-+ [Paper](/content/project/RHC_paper.pdf)
++ Applied data adaptation method to estimate the propensity score
++ Generated causal model estimands using multiple methods (random forest, GLM, elastic net, LASSO, and gradient boosting with SuperLearner)
++ Conducted 5-fold cross-validation to evaluate each estimand’s performance and coefficient in the ensemble estimator
+
+  [**Paper**](/content/project/RHC_paper.pdf)
 
 <br>
 
@@ -54,25 +58,29 @@ output:
 **Adding Exhaled Nitric Oxide to Guideline-based Asthma Treatment in Inner-City Adolescents and Young Adults: a Randomized Controlled Trial**
 
 + Original study: [SDY210](https://www.immport.org/shared/study/SDY210)
-+ [Paper](/content/project/SDY210_paper.pdf)
-+ [Slide](/content/project/SDY210_slide.pdf)
+
+  [**Paper**](/content/project/SDY210_paper.pdf)     
+  [**Slide**](/content/project/SDY210_slide.pdf)
 
 <br>
 
 #### Rate Of General Anesthesia Use For Cesarean Delivery Among Anesthesiologists With And Without Fellowship Training in Obstetric Anesthesia
 
-This report presents a retrospective statistical analysis of cesarean delivery among attending anesthesiologists with and without fellowship training in obstetric anesthesia who were seen at the NYP between 2009 and 2014 and had their rate of general anesthesia use assessed. Demographic, training / service experience, and outcomes of anesthesia were summarized. Logistic regression model was used to identify whether the fellowship-trained anesthesiologists are more or less likely to provide general anesthesia for non-routine c-section as compared to non-fellowship trained anesthesiologists.
++ Fitted the logistic regression model to identify whether the fellowship-trained anesthesiologists are more or less likely to provide general anesthesia for non-routine C-section as compared to non-fellowship trained anesthesiologists
++ Identified the significant difference between general and neuraxial anesthesia and the odds of using general anesthesia is 0.471 times lower in attending fellowship training anesthesiologists compared the non-fellowship training anesthesiologists
 
-+ [Report](/content/project/anesthesia_paper.pdf)
-+ [Slide](/content/project/anesthesia_slide.pdf)
+  [**Report**](/content/project/anesthesia_paper.pdf)     
+  [**Slide**](/content/project/anesthesia_slide.pdf)
 
 <br>
 
 #### Cost-Effective Optimization of Model-Based Prediction of Cardiovascular Disease (CVD)
 
-Determine the demographics and medical tests that help predict the likelihood and optimize in a cost-effective manner.
++ Aimed to increase the accuracy of CVD diagnosis using a model-based approach
++ Determined the demographic factors and medical tests that help predict the likelihood of heart disease using proportional odds model and logistics regression
++ Identified a combination of necessary medical tests that help predict the probability of heart disease in a cost-effective manner and reduced the exam cost by $110.17
 
-+ [Poster](/content/project/CVD_poster.pdf)
+  [**Poster**](/content/project/CVD_poster.pdf)
 
 <br><br>
 
@@ -84,16 +92,21 @@ Determine the demographics and medical tests that help predict the likelihood an
 
 #### Neuroendrocine prostate cancer (NEPC)
 
-Identify the clinical characteristics and molecular profiles of responding patients to define distinct cohorts most likely to benefit.
++ Identified that there is no difference in the proportions of 3-month progression status between patients in the NEPC and non-NEPC group treated with alisertib
++ Determined that there is no association between 3-month progression-free survival for all clinical characteristics and gene abnormalities
++ Identified an association between PSA level and prior systemic therapies between NEPC and non-NEPC groups treated with alisertib
 
-+ [Paper](/content/project/NEPC_paper.pdf)
-+ [Slide](/content/project/NEPC_slide.pdf)
+  [**Paper**](/content/project/NEPC_paper.pdf)      
+  [**Slide**](/content/project/NEPC_slide.pdf)
 
 <br>
 
 #### Major Risk Factors of Low Birth Weight Babies
 
-+ [Paper](/content/project/lowbirthweight.pdf)
++ Determined that low birth weight is associated with the mother’s premature labor history, race, smoking status, weight of the last menstrual period, and history of hypertension
++ Fitted multiple generalized linear models with the model selection based on deviance and p-values
+
+  [**Paper**](/content/project/lowbirthweight.pdf)
 
 <br>
 
@@ -101,8 +114,8 @@ Identify the clinical characteristics and molecular profiles of responding patie
 
 **Primary Injury Factors of Ulnar Collateral Ligament Reconstruction for Major League Baseball Pitchers by Statcast Measures**
 
-Design a study to identify major factors of Ulnar Collateral Ligament Reconstruction (a.k.a. Tommy John Surgery) for Major League Baseball Pitchers by Statcast Measures
++ Designed a study to identify major factors of Ulnar Collateral Ligament Reconstruction (a.k.a. Tommy John Surgery) for Major League Baseball Pitchers by *Statcast* measurements
 
-+ [Paper](/content/project/TJS_paper.pdf)
-+ [Slide](/content/project/TJS_slide.pdf)
+  [**Paper**](/content/project/TJS_paper.pdf)     
+  [**Slide**](/content/project/TJS_slide.pdf)
 
