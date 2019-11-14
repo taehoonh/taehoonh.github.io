@@ -13,7 +13,9 @@ output:
 
 <br><br><br>
 
-## 2019
+## *2019*
+
+<br>
 
 #### **[In porgress]** Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
 
@@ -86,7 +88,7 @@ output:
 
 ***
 
-## 2018
+## *2018*
 
 <br>
 
