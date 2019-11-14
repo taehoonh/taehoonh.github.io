@@ -13,7 +13,7 @@
 
 I am a research assistant at [Weill Cornell Medicine](https://weill.cornell.edu/) in the Department of Healthcare Policy and Research.
 
-I am graduating from [Weill Cornell Medicine](https://weill.cornell.edu/) this December with a M.S. in biostatistics. Previously, I received B.B.A with an emphasis on Quantitative Methods from [Sungkyunkwan University](https://www.skku.edu/eng/) in 2017 and M.S in Business Analytics from [Duke University](https://www.duke.edu/). 
+I am graduating from [Weill Cornell Medicine](https://weill.cornell.edu/) this December with a MS in biostatistics. Previously, I received BBA with an emphasis on quantitative methods from [Sungkyunkwan University](https://www.skku.edu/eng/) in 2017 and MS in analytics from [Duke University](https://www.duke.edu/) in 2018.
 
 I am currently working with [Xi Kathy Zhou, PhD](https://gradschool.weill.cornell.edu/faculty/xi-kathy-zhou) on a collaborative project with [Andrew J. Dannenberg, MD](https://research.cornell.edu/researchers/andrew-j-dannenberg) group that focuses on obesity → inflammation → the aromatase pathway, and their prognostic roles in cancer. 
 
