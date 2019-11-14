@@ -3,7 +3,7 @@ title: "Project"
 output:
   html_document:
     toc: true
-    toc_depth: 5
+    toc_depth: 3
     toc_float:
      collapsed: false
      smooth_scroll: false
@@ -13,33 +13,31 @@ output:
 
 ## 2019
 
-#### Faecalibaculum data analysis
+#### **[In porgress]** Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
 
-+ Compared the control to high fat diet group to see if there is a significant difference in relative abundance.
-+ Linear mixed-effects model was used to estimate the average log transformed relative abundance value.
-
-<br>
-
-#### Wellness start-up data analysis
-
-+ Collaborated with a wellness platform start-up.
-+ Analyzed and compared the each group's characteristics before and after plant-based meal program.
++ Assist the advisor with developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.
++ Develop R package `BMAseq` using Bayesian model averaging to analyze observational gene-expression data
++ Apply the Bayesian model averaging method to large scale public RNA-seq gene expression data
++ Apply the Bayesian model averaging method (`BMA-seq`) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting
 
 <br>
 
-#### Western diet and liver single-cell analysis, NIEHS-NIA
+#### **[In progress]** Liver transcriptome map of air pollution $PM_{2.5}$
 
++ Main interests: Gender and aging effect
 + Time point: Wk05 and Wk17
 + Gender: Male and Female
 + Groups: Chow FA, Chow PM, High fat diet FA, and High fat diet PM
 
 <br>
 
-#### Transcriptome and epigenome atlas for air pollution $PM2.5$, NIEHS-NIAID
+#### **[In progress]** Brain transcriptome map of air pollution $PM_{2.5}$
 
-+ Divided into 6 sub-areas: Cerebellum, Cortex, Hippocampus, Hypothalamus, RVLM, and Striatum.
-+ Generated the pipeline and completed the reproductability test using data from BAT, WAT, Hypothalamus, Liver, and Muscle.
-+ Currently preparaing for a main research with increased sample size with multiple time points.
++ Construct data pipeline of both EdgeR and DESeq2 to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5
++ Check the distribution by Relative Log Expression (RLE) and Principal Component Analysis (PCA) plots
++ Normalize each sample and removed unwanted variances and filtered top 5,000 genes by p-values from EdgeR and DESeq2
++ Perform DE (Differential Expression) analysis using EdgeR and Gene Ontology (GO) Term analysis on six different brain sub-areas and liver cells.
++ Conduct pathway analysis using Ingenuity Pathway Analysis (IPA) software
 
 <br>
 

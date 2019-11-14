@@ -3,7 +3,7 @@ title: "Class"
 output:
   html_document:
     toc: true
-    toc_depth: 5
+    toc_depth: 3
     toc_float:
      collapsed: false
      smooth_scroll: false
@@ -11,7 +11,18 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
+<br><br><br>
 
-### As a Teaching Assistant
+### *Teaching Assistant*
 
-+ Fall 2019: Categorical and Censored Data Analysis, Weill Cornell Medicine
+#### Lead lab sessions, hold regular office hours, write solutions and tutorials, and grade assignments
+
+<br>
+
++ **Spring 2020**
+  + [Master's level] [Design and Analysis of Biomedical Studies](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=spring), Weill Cornell Medicine 
+
+<br>
+
++ **Fall 2019**
+  + [Master's level] [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall), Weill Cornell Medicine 

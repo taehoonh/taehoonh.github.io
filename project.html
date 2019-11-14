@@ -396,37 +396,34 @@ div.tocify {
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <div id="section" class="section level2">
 <h2>2019</h2>
-<div id="faecalibaculum-data-analysis" class="section level4">
-<h4>Faecalibaculum data analysis</h4>
+<div id="in-porgress-bayesian-model-averaging-approach-for-rna-seq-counts-data-bma-seq-and-its-application" class="section level4">
+<h4><strong>[In porgress]</strong> Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application</h4>
 <ul>
-<li>Compared the control to high fat diet group to see if there is a significant difference in relative abundance.</li>
-<li>Linear mixed-effects model was used to estimate the average log transformed relative abundance value.</li>
+<li>Assist the advisor with developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.</li>
+<li>Develop R package <code>BMAseq</code> using Bayesian model averaging to analyze observational gene-expression data</li>
+<li>Apply the Bayesian model averaging method to large scale public RNA-seq gene expression data</li>
+<li>Apply the Bayesian model averaging method (<code>BMA-seq</code>) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting</li>
 </ul>
 <p><br></p>
 </div>
-<div id="wellness-start-up-data-analysis" class="section level4">
-<h4>Wellness start-up data analysis</h4>
+<div id="in-progress-liver-transcriptome-map-of-air-pollution-pm_2.5" class="section level4">
+<h4><strong>[In progress]</strong> Liver transcriptome map of air pollution <span class="math inline">\(PM_{2.5}\)</span></h4>
 <ul>
-<li>Collaborated with a wellness platform start-up.</li>
-<li>Analyzed and compared the each group’s characteristics before and after plant-based meal program.</li>
-</ul>
-<p><br></p>
-</div>
-<div id="western-diet-and-liver-single-cell-analysis-niehs-nia" class="section level4">
-<h4>Western diet and liver single-cell analysis, NIEHS-NIA</h4>
-<ul>
+<li>Main interests: Gender and aging effect</li>
 <li>Time point: Wk05 and Wk17</li>
 <li>Gender: Male and Female</li>
 <li>Groups: Chow FA, Chow PM, High fat diet FA, and High fat diet PM</li>
 </ul>
 <p><br></p>
 </div>
-<div id="transcriptome-and-epigenome-atlas-for-air-pollution-pm2.5-niehs-niaid" class="section level4">
-<h4>Transcriptome and epigenome atlas for air pollution <span class="math inline">\(PM2.5\)</span>, NIEHS-NIAID</h4>
+<div id="in-progress-brain-transcriptome-map-of-air-pollution-pm_2.5" class="section level4">
+<h4><strong>[In progress]</strong> Brain transcriptome map of air pollution <span class="math inline">\(PM_{2.5}\)</span></h4>
 <ul>
-<li>Divided into 6 sub-areas: Cerebellum, Cortex, Hippocampus, Hypothalamus, RVLM, and Striatum.</li>
-<li>Generated the pipeline and completed the reproductability test using data from BAT, WAT, Hypothalamus, Liver, and Muscle.</li>
-<li>Currently preparaing for a main research with increased sample size with multiple time points.</li>
+<li>Construct data pipeline of both EdgeR and DESeq2 to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5</li>
+<li>Check the distribution by Relative Log Expression (RLE) and Principal Component Analysis (PCA) plots</li>
+<li>Normalize each sample and removed unwanted variances and filtered top 5,000 genes by p-values from EdgeR and DESeq2</li>
+<li>Perform DE (Differential Expression) analysis using EdgeR and Gene Ontology (GO) Term analysis on six different brain sub-areas and liver cells.</li>
+<li>Conduct pathway analysis using Ingenuity Pathway Analysis (IPA) software</li>
 </ul>
 <p><br></p>
 </div>
@@ -542,7 +539,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3,h4,h5",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

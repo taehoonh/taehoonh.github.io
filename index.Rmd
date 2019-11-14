@@ -19,7 +19,7 @@ I am currently working with [Xi Kathy Zhou, PhD](https://gradschool.weill.cornel
 
 Some other projects include developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions. We are preparing for publication "*Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*."
 
-Beyond the campus, I am also analyzing the brain data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park) at [Johns Hopkins Bloomberg School of Public Heatlh](https://www.jhsph.edu/).
+Beyond the campus, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.jhsph.edu/faculty/directory/profile/3476/bongsoo-park) at [Johns Hopkins Bloomberg School of Public Heatlh](https://www.jhsph.edu/).
 
 My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 
@@ -33,13 +33,12 @@ My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(09/05/2019 updated)` </strong> <br>
+<strong>On-going Projects `(11/14/2019 updated)` </strong> <br>
 
-- Application of a Bayesian model averaging (BMA) method to observational metabolomics data
-- Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
-- R package development for BMA-Seq that helps you analyze observational gene-expression data
-- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$
-- Western diet and liver single-cell analysis
-- Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB) 
+- Analysis of multipe RNA-seq datasets: DEXA scan CYP19A1 fpkm data, DEXA scan qPCR data, BRCA1 and 2 data, non-tumorous breast tissue, and breast cancers
+- Bayesian model averaging approach for RNA-seq counts data (**BMA-seq**) and its application
+- R package development for **BMA-Seq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
+- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Brain and Liver
+- Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB)
 
 </div>
