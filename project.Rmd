@@ -45,6 +45,16 @@ output:
 
 <br>
 
+#### Application of a Bayesian Model Averaging Method to Observational Metabolomics Data Analysis
+
++ Assist the advisor with developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.
++ Apply the Bayesian model averaging method (`BMA-seq`) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting
+
+  [**Paper**](/content/project/BMA_metabolomics(paper).pdf)              
+  [**Slide**](/content/project/BMA_metabolomics(slide).pdf)
+
+<br>
+
 #### The Effect of Right Heart Catheterization (RHC) During the First 24 Hours on 30-day Mortality of Critically Ill Patients in Intensive Care Units
 
 + Applied data adaptation method to estimate the propensity score

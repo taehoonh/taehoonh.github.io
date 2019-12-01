@@ -266,6 +266,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -426,6 +432,16 @@ div.tocify {
 <li>Normalize each sample and removed unwanted variances and filtered top 5,000 genes by p-values from EdgeR and DESeq2</li>
 <li>Perform DE (Differential Expression) analysis using EdgeR and Gene Ontology (GO) Term analysis on six different brain sub-areas and liver cells.</li>
 <li>Conduct pathway analysis using Ingenuity Pathway Analysis (IPA) software</li>
+</ul>
+<p><br></p>
+</div>
+<div id="application-of-a-bayesian-model-averaging-method-to-observational-metabolomics-data-analysis" class="section level4">
+<h4>Application of a Bayesian Model Averaging Method to Observational Metabolomics Data Analysis</h4>
+<ul>
+<li>Assist the advisor with developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.</li>
+<li><p>Apply the Bayesian model averaging method (<code>BMA-seq</code>) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting</p>
+<p><a href="/content/project/BMA_metabolomics(paper).pdf"><strong>Paper</strong></a><br />
+<a href="/content/project/BMA_metabolomics(slide).pdf"><strong>Slide</strong></a></p></li>
 </ul>
 <p><br></p>
 </div>
