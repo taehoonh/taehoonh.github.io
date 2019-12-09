@@ -11,3 +11,5 @@ title: "Post"
 + [Summary of `data.table`](/content/post/data.table.html)
 
 + [Journal Club 08/26/2019: Profound Perturbation of the Metabolome in Obesity Is Associated with Health Risk](/content/post/Journal Club 08_26 Presentation Slide.pdf)
+
++ [Journal Club 12/02/2019: Genomic Signatures Predict the Immunogenicity of BRCA-Deficient Breast Cancer](/content/post/Journal Club 12_02 Presentation Slide.pdf)
