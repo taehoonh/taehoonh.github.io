@@ -13,11 +13,52 @@ output:
 
 <br><br><br>
 
+## *2020*
+
+<br>
+
+#### Re-analysis of the DXA study RNA-seq data
+
++ Waiting for the dataset
+
+<br>
+
+#### Analysis of data related to serine MS
+
++ Waiting for the dataset
+
+<br>
+
+#### Predicting aromatase levels using blood biomarker data
+
++ Waiting for the dataset
+
+<br>
+
+#### Taiwan study 
+
++ Data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)
++ Analysis of the Taiwan study RNA-seq data (waiting for the dataset)
+
+<br>
+
+<br><br>
+
+***
+
 ## *2019*
 
 <br>
 
-#### **[In porgress]** Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
+#### BRCA1/2 RNAseq study
+- DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) based on univariable analysis and maybe multivariable analyses later in the full cohort.
+- DE genes identification in association with having invasive disease or not in the full cohort (n=130), BRCA1 cohort(n=70), and BRCA2 cohort (n=60)
+- Univariable DEG analysis (CLSB, BMI.cat2, menopausal status) in subjects without invasive disease in the BRCA1/2 cohort (n=59), BRCA1 cohort (n=31), BRCA2 cohort (n=28)
+- DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) in subjects without invasive disease in the BRCA1/2 cohort (n=59)
+
+<br>
+
+#### Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application
 
 + Develop a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.
 + Develop R package `BMAseq` using Bayesian model averaging to analyze observational gene-expression data
@@ -26,7 +67,7 @@ output:
 
 <br>
 
-#### **[In progress]** Liver transcriptome map of air pollution $PM_{2.5}$
+#### Liver transcriptome map of air pollution $PM_{2.5}$
 
 + Main interests: Gender and aging effect
 + Time point: Wk05 and Wk17
@@ -35,7 +76,7 @@ output:
 
 <br>
 
-#### **[In progress]** Brain transcriptome map of air pollution $PM_{2.5}$
+#### Brain transcriptome map of air pollution $PM_{2.5}$
 
 + Construct data pipeline of both EdgeR and DESeq2 to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5
 + Check the distribution by Relative Log Expression (RLE) and Principal Component Analysis (PCA) plots

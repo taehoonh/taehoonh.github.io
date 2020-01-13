@@ -33,9 +33,16 @@ My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(11/14/2019 updated)` </strong> <br>
+<strong>On-going Projects `(01/13/2020 updated)` </strong> <br>
 
-- Analysis of multipe RNA-seq datasets: DEXA scan CYP19A1 fpkm data, DEXA scan qPCR data, BRCA1 and 2 data, non-tumorous breast tissue, and breast cancers
+- Re-analysis of the DXA study RNA-seq data
+- Analysis of data related to serine MS
+- Taiwan study (data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)
+- DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) based on univariable analysis and maybe multivariable analyses later in the full cohort.
+- DE genes identification in association with having invasive disease or not in the full cohort (n=130), BRCA1 cohort(n=70), and BRCA2 cohort (n=60)
+- Univariable DEG analysis (CLSB, BMI.cat2, menopausal status) in subjects without invasive disease in the BRCA1/2 cohort (n=59), BRCA1 cohort (n=31), BRCA2 cohort (n=28)
+- DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) in subjects without invasive disease in the BRCA1/2 cohort (n=59)
+- Predicting aromatase levels using blood biomarker data
 - Bayesian model averaging approach for RNA-seq counts data (**BMA-seq**) and its application
 - R package development for **BMA-Seq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
 - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Brain and Liver
