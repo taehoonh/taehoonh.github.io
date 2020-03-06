@@ -20,7 +20,9 @@ output:
 <br>
 
 + **Spring 2020**
-  + [Master's level] [Design and Analysis of Biomedical Studies](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=spring), Weill Cornell Medicine 
+  + [Master's level] [Big Data in Medicine](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=spring), Weill Cornell Medicine 
+    + biomedical imaging (e.g. MRI, CT-Scan, X-ray etc.) by Prof. [Elizabeth Sweeney](https://emsweene.github.io/)
+    + genetics and genomics by Prof. [Daivde Risso](https://drisso.github.io/)
 
 <br>
 
