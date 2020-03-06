@@ -11,9 +11,7 @@
 <br>
 
 
-I am a research assistant at [Weill Cornell Medicine](https://weill.cornell.edu/) in the Department of Healthcare Policy and Research.
-
-I am graduating from [Weill Cornell Medicine](https://weill.cornell.edu/) this December with a MS in biostatistics. Previously, I received BBA with an emphasis on quantitative methods from [Sungkyunkwan University](https://www.skku.edu/eng/) in 2017 and MS in analytics from [Duke University](https://www.duke.edu/) in 2018.
+I am a Research Assistant in [Division of Biostatistics and Epidemiology](https://hpr.weill.cornell.edu/research-collaboration/our-divisions/biostatistics) of Department of Healthcare Policy & Research at Weill Cornell Medicine. I graduated from [Weill Cornell Medical College](https://weill.cornell.edu/) with a MS in biostatistics and data science in 2019.
 
 I am currently working with [Xi Kathy Zhou, PhD](https://gradschool.weill.cornell.edu/faculty/xi-kathy-zhou) on a collaborative project with [Andrew J. Dannenberg, MD](https://research.cornell.edu/researchers/andrew-j-dannenberg) group that focuses on obesity → inflammation → the aromatase pathway, and their prognostic roles in cancer. 
 
@@ -33,19 +31,23 @@ My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(01/13/2020 updated)` </strong> <br>
+<strong>On-going Projects `(03/06/2020 updated)` </strong> <br>
 
 - Re-analysis of the DXA study RNA-seq data
 - Analysis of data related to serine MS
 - Taiwan study (data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)
-- DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) based on univariable analysis and maybe multivariable analyses later in the full cohort.
-- DE genes identification in association with having invasive disease or not in the full cohort (n=130), BRCA1 cohort(n=70), and BRCA2 cohort (n=60)
-- Univariable DEG analysis (CLSB, BMI.cat2, menopausal status) in subjects without invasive disease in the BRCA1/2 cohort (n=59), BRCA1 cohort (n=31), BRCA2 cohort (n=28)
-- DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) in subjects without invasive disease in the BRCA1/2 cohort (n=59)
 - Predicting aromatase levels using blood biomarker data
+
 - Bayesian model averaging approach for RNA-seq counts data (**BMA-seq**) and its application
 - R package development for **BMA-Seq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
-- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Brain and Liver
+
+- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Mouse brain map
+- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver
+- Grem-free mice project: brain, liver, and microbiome datasets
+- Liver single-cell (Western diet): Liver cell type prediction and clustering
+- Cancer single-cell: PDX humanized mice vs wild-type mice
+
+- Serine - colorectal cancer study
 - Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB)
 
 </div>
