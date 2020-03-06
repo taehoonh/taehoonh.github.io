@@ -38,8 +38,8 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 - Taiwan study (data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)
 - Predicting aromatase levels using blood biomarker data
 
-- Bayesian model averaging approach for RNA-seq counts data (**BMA-seq**) and its application
-- R package development for **BMA-Seq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
+- Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application
+- R package development for **BMASeq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
 
 - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Mouse brain map
 - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver
