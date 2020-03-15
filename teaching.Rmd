@@ -1,5 +1,5 @@
 ---
-title: "Class"
+title: "Teaching"
 output:
   html_document:
     toc: true

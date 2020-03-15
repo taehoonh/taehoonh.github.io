@@ -11,7 +11,7 @@ navbar:
     - text: "Project"
       href: project.html
     - text: "Teaching"
-      href: class.html
+      href: teaching.html
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
