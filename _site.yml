@@ -10,13 +10,15 @@ navbar:
       href: post.html
     - text: "Project"
       href: project.html
-    - text: "Class"
+    - text: "Teaching"
       href: class.html
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
     - icon: fa-github fa-lg
       href: http://github.com/taehoonh
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/taeh00nha
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/taehoonha/
 output:
