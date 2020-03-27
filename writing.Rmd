@@ -1,0 +1,22 @@
+---
+title: "Writing"
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<br><br>
+
+### Public
+
++ Translating "How to interpret phylogenetic trees" into Korean, [*Nextstrain*](https://nextstrain.org/) (2020)
+    + [Korean](https://nextstrain.org/narratives/trees-background/ko)
+    + [English](https://nextstrain.org/narratives/trees-background/)
+
+<br><br>
+
+### Miscellaneous
++ [Alternative to kable function when knitting to MS word](/content/post/alternative-to-kable-function-when-knitting-to-ms-word.html)
+
++ [Monte Carlo simulation for causal inference( G-computation formula)](/content/post/Monte-Carlo-simulation-for-causal-inference.html)
+
++ [Summary of `data.table`](/content/post/data.table.html)
