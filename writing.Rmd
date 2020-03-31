@@ -1,5 +1,12 @@
 ---
 title: "Writing"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
@@ -8,7 +15,13 @@ title: "Writing"
 
 ### Public
 
-+ Translating "How to interpret phylogenetic trees" into Korean, [*Nextstrain*](https://nextstrain.org/) (2020)
++ Translating "Genomic analysis of COVID-19 spread. Situation report 2020-03-27" into Korean, [*Nextstrain*](https://nextstrain.org/) (Mar. 2020)
+    + [Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-03-27)
+    + [English](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-27)
+    
+<br><br>
+
++ Translating "How to interpret phylogenetic trees" into Korean, [*Nextstrain*](https://nextstrain.org/) (Mar. 2020)
     + [Korean](https://nextstrain.org/narratives/trees-background/ko)
     + [English](https://nextstrain.org/narratives/trees-background/)
 

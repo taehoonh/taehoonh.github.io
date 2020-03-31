@@ -1,2 +1,0 @@
-# taehoonh.github.io
-blog
