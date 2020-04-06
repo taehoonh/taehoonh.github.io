@@ -1,4 +1,6 @@
 ---
+pagetitle: "Contact"
+output: html_document
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
@@ -9,4 +11,4 @@ New York, NY 10065<br>
 919.308.3505<br>
 tah4002@med.cornell.edu<br>
 
-Or connect with me on [GitHub](https://github.com/taehoonh), or [LinkedIn](https://www.linkedin.com/in/taehoonha/).
+Or connect with me on [Twitter](https://twitter.com/taeh00nha), [GitHub](https://github.com/taehoonh), or [LinkedIn](https://www.linkedin.com/in/taehoonha/).

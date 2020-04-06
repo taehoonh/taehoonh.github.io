@@ -15,6 +15,10 @@ library(tidyverse)
 library(flextable)
 ```
 
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<br><br>
+
 ### Note
 For those who want to shadow this process, you may need two packages, `tidyverse` and `flextable`. This memo has been created under R version 3.5.1 (2018-07-02).
 

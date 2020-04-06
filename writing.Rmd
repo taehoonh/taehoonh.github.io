@@ -1,5 +1,5 @@
 ---
-title: "Writing"
+pagetitle: "Writing"
 output:
   html_document:
     toc: true
@@ -15,15 +15,13 @@ output:
 
 ### Public
 
-+ Translating "Genomic analysis of COVID-19 spread. Situation report 2020-03-27" into Korean, [*Nextstrain*](https://nextstrain.org/) (Mar. 2020)
-    + [Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-03-27)
-    + [English](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-27)
-    
-<br><br>
++ Genomic analysis of COVID-19 spread. Situation report 2020-04-03 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
+[[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-03)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/2020-04-03)]
 
-+ Translating "How to interpret phylogenetic trees" into Korean, [*Nextstrain*](https://nextstrain.org/) (Mar. 2020)
-    + [Korean](https://nextstrain.org/narratives/trees-background/ko)
-    + [English](https://nextstrain.org/narratives/trees-background/)
++ Genomic analysis of COVID-19 spread. Situation report 2020-03-27 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Mar. 2020)   
+[[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-03-27)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-27)]
+
++ How to interpret phylogenetic trees (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Mar. 2020) [[Korean](https://nextstrain.org/narratives/trees-background/ko)] [[English](https://nextstrain.org/narratives/trees-background/)]
 
 <br><br>
 

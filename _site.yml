@@ -1,5 +1,6 @@
 name: "Taehoon Ha"
 title: "Taehoon Ha"
+pagetitle: "Taehoon Ha"
 base_url: https://taehoonh.github.io/
 google_analytics: "UA-139119461-1"
 output_dir: "."
@@ -25,5 +26,8 @@ navbar:
       href: https://www.linkedin.com/in/taehoonha/
 output:
   html_document:
-    theme: paper
-    css: 'styles.css'
+    theme: flatly
+    include:
+      in_header: header.html
+      after_body: footer.html
+    css: styles.css
