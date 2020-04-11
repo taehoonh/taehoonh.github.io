@@ -27,4 +27,4 @@ output:
 <br>
 
 + **Fall 2019**
-  + [Master's level] [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall), Weill Cornell Medicine 
+  + [Master's level] [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall) by Dr. [Oleksandr (Aleks) Savenkov](https://ovsavenkov.github.io/), Weill Cornell Medicine 
