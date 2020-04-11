@@ -13,7 +13,30 @@ output:
 
 <br><br>
 
-### Public
+### Submitted
+
+David C. Montrose, Miguel Foronda, Suchandrima Saha, Erin M. McNally, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg. *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism and Growth*
+
+
+
+
+
+
+### In-preparation
+
++ **Taehoon Ha**, Hanhan Wang, Lingsong Meng, Xi Kathy Zhou. *A Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*
+
++ Bongsoo Park, Jeffrey Deiuliis, **Taehoon Ha**, Ji-Eun Park, Palanivel Rengassamy, Youngshim Choi, Sanjay Rajagopalan, Shyam Biswal. *Comprehensive transcriptome map of liver exposed to PM2.5*
+
++ B Park, S Kim, **Taehoon Ha**, JE Park, V Vinayachandran, KD Hansen, B Paul, S Rajagopalan, and S
+Biswal. *Brain transcriptome map of air pollution $PM_2.5$*
+
+
+
+
+
+
+### Technical translation
 
 + Genomic analysis of COVID-19 spread. Situation report 2020-04-010 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
 [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-10)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-04-10)]

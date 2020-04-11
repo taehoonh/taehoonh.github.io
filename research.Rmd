@@ -15,15 +15,7 @@ output:
 
 ## *2020*
 
-<br>
-
-#### Re-analysis of the DXA study RNA-seq data
-
-+ Waiting for the dataset
-
-<br>
-
-#### Analysis of data related to serine MS
+#### Dr. Arindam RoyChoudhury COVID-19 Korean data study
 
 + Waiting for the dataset
 
@@ -32,6 +24,22 @@ output:
 #### Predicting aromatase levels using blood biomarker data
 
 + Waiting for the dataset
+
+<br>
+
+#### Re-analysis of the DXA study RNA-seq data
+
++ Compare Ow/OB vs. Normal/Uw postmenopausal. Compare Ow/OB vs. Normal/Uw premenopausal.  What are the differences in the two comparisons?
++ Compare Ow/OB postmenopausal vs. Ow/OB premenopausal. What are the differences in gene expression?
++ Conduct 3-way comparison where you compare this subset of Ow/OB (that resemble normal/Uw) vs. all the other Ow/OB (majority of Ow/OB) vs. Normal/Uw.
++ Divide VEGF-A into high vs. low based on median value. Evaluate gene expression in these two groups analogous to the way you compared gene expression in high vs. low trunk fat or CLS-B+ vs. CLS-B-.
++ Compare all other covariates for high vs. low VEGF-A mRNA.
+
+<br>
+
+#### Analysis of data related to serine MS
+
++ Submission ready
 
 <br>
 

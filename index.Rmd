@@ -33,23 +33,48 @@ My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(03/06/2020 updated)` </strong> <br>
+<strong>On-going Projects `(04/11/2020 updated)` </strong> <br>
 
-- Re-analysis of the DXA study RNA-seq data
-- Analysis of data related to serine MS
-- Taiwan study (data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)
-- Predicting aromatase levels using blood biomarker data
+[Independent research]
+
+- Dr. Arindam RoyChoudhury COVID-19 Korean data study
 
 - Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application
+
 - R package development for **BMASeq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
 
-- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Mouse brain map
-- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver
-- Grem-free mice project: brain, liver, and microbiome datasets
-- Liver single-cell (Western diet): Liver cell type prediction and clustering
-- Cancer single-cell: PDX humanized mice vs wild-type mice
-
-- Serine - colorectal cancer study
 - Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB)
+
+
+<br>
+
+
+[Dr. Andrew J. Dannenberg collaboration]
+
+- Re-analysis of the DXA study RNA-seq data
+
+- Serine - colorectal cancer study: analysis of data related to serine MS
+
+- Taiwan study (analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker, body composition data, and RNAseq data)
+
+- Predicting aromatase levels using blood biomarker data
+
+- Srijani lab data analysis
+
+
+<br>
+
+
+[Dr. Bongsoo Park collaboration]
+
+- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Brain map
+
+- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver
+
+- Grem-free mice project: brain, liver, and microbiome datasets
+
+- Liver single-cell (Western diet): Liver cell type prediction and clustering
+
+- Cancer single-cell: PDX humanized mice vs wild-type mice
 
 </div>
