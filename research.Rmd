@@ -15,7 +15,7 @@ output:
 
 ## *2020*
 
-#### Dr. Arindam RoyChoudhury COVID-19 Korean data study
+#### [Dr. Arindam RoyChoudhury](http://vivo.med.cornell.edu/individual?uri=http%3A%2F%2Fvivo.med.cornell.edu%2Findividual%2Fcwid-arr2014) COVID-19 Korean data study
 
 + Waiting for a dataset
 

@@ -39,7 +39,7 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 
 [Independent research]
 
-- Dr. Arindam RoyChoudhury COVID-19 Korean data study
+- [Dr. Arindam RoyChoudhury](http://vivo.med.cornell.edu/individual?uri=http%3A%2F%2Fvivo.med.cornell.edu%2Findividual%2Fcwid-arr2014) COVID-19 Korean data study
 
 - Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application
 
