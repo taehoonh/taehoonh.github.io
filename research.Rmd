@@ -17,13 +17,13 @@ output:
 
 #### Dr. Arindam RoyChoudhury COVID-19 Korean data study
 
-+ Waiting for the dataset
++ Waiting for a dataset
 
 <br>
 
 #### Predicting aromatase levels using blood biomarker data
 
-+ Waiting for the dataset
++ Waiting for a dataset
 
 <br>
 
@@ -39,14 +39,14 @@ output:
 
 #### Analysis of data related to serine MS
 
-+ Submission ready
++ Paper submission ready
 
 <br>
 
 #### Taiwan study 
 
 + Data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)
-+ Analysis of the Taiwan study RNA-seq data (waiting for the dataset)
++ Analysis of the Taiwan study RNA-seq data
 
 <br>
 
@@ -77,10 +77,12 @@ output:
 
 #### Liver transcriptome map of air pollution $PM_{2.5}$
 
-+ Main interests: Gender and aging effect
-+ Time point: Wk05 and Wk17
-+ Gender: Male and Female
-+ Groups: Chow FA, Chow PM, High fat diet FA, and High fat diet PM
+<br>
+
+```{r out.width = "80%", echo = F, fig.align='center'}
+knitr::include_graphics("./content/project/LiverTranscriptome.png")
+```
+
 
 <br>
 

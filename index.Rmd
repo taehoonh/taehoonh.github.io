@@ -35,6 +35,8 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 <div class = "box">
 <strong>On-going Projects `(04/11/2020 updated)` </strong> <br>
 
+<br>
+
 [Independent research]
 
 - Dr. Arindam RoyChoudhury COVID-19 Korean data study
@@ -42,8 +44,6 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 - Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application
 
 - R package development for **BMASeq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
-
-- Relationship between human blood pressure, urine sodium intake and Angiotensin Receptor Blocker (ARB)
 
 
 <br>
