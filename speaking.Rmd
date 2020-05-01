@@ -13,6 +13,13 @@ output:
 
 <br><br>
 
+### Press interview
+
++ Analysis of 3,600 COVID-19 sequences on Nextstrain (April 28th, 2020), Donga Science [[Link](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=103&oid=584&aid=0000008582)]
+
+
+<br><br>
+
 ### Journal Club Slides
 
 + Journal Club 03/02/2020: The Single-cell Pathology Landscape of Breast Cancer [[Slide](/content/post/Journal Club 03_02 Presentation Slide.pdf)]

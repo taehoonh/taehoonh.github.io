@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Research Log</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139119461-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139119461-1');
+</script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Taehoon Ha</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="teaching.html">Teaching</a>
+</li>
+<li>
+  <a href="writing.html">Writing</a>
+</li>
+<li>
+  <a href="speaking.html">Speaking</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/taehoonh">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://twitter.com/taeh00nha">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/taehoonha/">
+    <span class="fa fa-linkedin fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<p><br><br><br></p>
+<div id="section" class="section level2">
+<h2><em>2020</em></h2>
+<div id="dr.-arindam-roychoudhury-covid-19-korean-data-study" class="section level4">
+<h4><a href="http://vivo.med.cornell.edu/individual?uri=http%3A%2F%2Fvivo.med.cornell.edu%2Findividual%2Fcwid-arr2014">Dr. Arindam RoyChoudhury</a> COVID-19 Korean data study</h4>
+<ul>
+<li>Waiting for a dataset</li>
+</ul>
+<p><br></p>
+</div>
+<div id="predicting-aromatase-levels-using-blood-biomarker-data" class="section level4">
+<h4>Predicting aromatase levels using blood biomarker data</h4>
+<ul>
+<li>Waiting for a dataset</li>
+</ul>
+<p><br></p>
+</div>
+<div id="re-analysis-of-the-dxa-study-rna-seq-data" class="section level4">
+<h4>Re-analysis of the DXA study RNA-seq data</h4>
+<ul>
+<li>Compare Ow/OB vs. Normal/Uw postmenopausal. Compare Ow/OB vs. Normal/Uw premenopausal. What are the differences in the two comparisons?</li>
+<li>Compare Ow/OB postmenopausal vs. Ow/OB premenopausal. What are the differences in gene expression?</li>
+<li>Conduct 3-way comparison where you compare this subset of Ow/OB (that resemble normal/Uw) vs. all the other Ow/OB (majority of Ow/OB) vs. Normal/Uw.</li>
+<li>Divide VEGF-A into high vs. low based on median value. Evaluate gene expression in these two groups analogous to the way you compared gene expression in high vs. low trunk fat or CLS-B+ vs. CLS-B-.</li>
+<li>Compare all other covariates for high vs. low VEGF-A mRNA.</li>
+</ul>
+<p><br></p>
+</div>
+<div id="analysis-of-data-related-to-serine-ms" class="section level4">
+<h4>Analysis of data related to serine MS</h4>
+<ul>
+<li>Paper submission ready</li>
+</ul>
+<p><br></p>
+</div>
+<div id="taiwan-study" class="section level4">
+<h4>Taiwan study</h4>
+<ul>
+<li>Data preparation and analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker and body composition data)</li>
+<li>Analysis of the Taiwan study RNA-seq data</li>
+</ul>
+<p><br></p>
+<p><br><br></p>
+<hr />
+</div>
+</div>
+<div id="section-1" class="section level2">
+<h2><em>2019</em></h2>
+<p><br></p>
+<div id="brca12-rnaseq-study" class="section level4">
+<h4>BRCA1/2 RNAseq study</h4>
+<ul>
+<li>DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) based on univariable analysis and maybe multivariable analyses later in the full cohort.</li>
+<li>DE genes identification in association with having invasive disease or not in the full cohort (n=130), BRCA1 cohort(n=70), and BRCA2 cohort (n=60)</li>
+<li>Univariable DEG analysis (CLSB, BMI.cat2, menopausal status) in subjects without invasive disease in the BRCA1/2 cohort (n=59), BRCA1 cohort (n=31), BRCA2 cohort (n=28)</li>
+<li>DE genes identification associated with type of BRCA mutation (BRCA2 vs. BRCA1) in subjects without invasive disease in the BRCA1/2 cohort (n=59)</li>
+</ul>
+<p><br></p>
+</div>
+<div id="bayesian-model-averaging-approach-for-rna-seq-counts-data-bma-seq-and-its-application" class="section level4">
+<h4>Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application</h4>
+<ul>
+<li>Develop a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.</li>
+<li>Develop R package <code>BMAseq</code> using Bayesian model averaging to analyze observational gene-expression data</li>
+<li>Apply the Bayesian model averaging method to large scale public RNA-seq gene expression data</li>
+<li>Apply the Bayesian model averaging method (<code>BMA-seq</code>) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting</li>
+</ul>
+<p><br></p>
+</div>
+<div id="liver-transcriptome-map-of-air-pollution-pm_2.5" class="section level4">
+<h4>Liver transcriptome map of air pollution <span class="math inline">\(PM_{2.5}\)</span></h4>
+<p><br></p>
+<p><img src="content/project/LiverTranscriptome.png" width="80%" style="display: block; margin: auto;" /></p>
+<p><br></p>
+</div>
+<div id="brain-transcriptome-map-of-air-pollution-pm_2.5" class="section level4">
+<h4>Brain transcriptome map of air pollution <span class="math inline">\(PM_{2.5}\)</span></h4>
+<ul>
+<li>Construct data pipeline of both EdgeR and DESeq2 to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5</li>
+<li>Check the distribution by Relative Log Expression (RLE) and Principal Component Analysis (PCA) plots</li>
+<li>Normalize each sample and removed unwanted variances and filtered top 5,000 genes by p-values from EdgeR and DESeq2</li>
+<li>Perform DE (Differential Expression) analysis using EdgeR and Gene Ontology (GO) Term analysis on six different brain sub-areas and liver cells.</li>
+<li>Conduct pathway analysis using Ingenuity Pathway Analysis (IPA) software</li>
+</ul>
+<p><br></p>
+</div>
+<div id="application-of-a-bayesian-model-averaging-method-to-observational-metabolomics-data-analysis" class="section level4">
+<h4>Application of a Bayesian Model Averaging Method to Observational Metabolomics Data Analysis</h4>
+<ul>
+<li>Assist the advisor with developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions.</li>
+<li><p>Apply the Bayesian model averaging method (<code>BMA-seq</code>) to observational metabolomics data to improve differentially expressed (DE) metabolites identification in high dimensional setting</p>
+<p><a href="/content/project/BMA_metabolomics(paper).pdf"><strong>Paper</strong></a><br />
+<a href="/content/project/BMA_metabolomics(slide).pdf"><strong>Slide</strong></a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="the-effect-of-right-heart-catheterization-rhc-during-the-first-24-hours-on-30-day-mortality-of-critically-ill-patients-in-intensive-care-units" class="section level4">
+<h4>The Effect of Right Heart Catheterization (RHC) During the First 24 Hours on 30-day Mortality of Critically Ill Patients in Intensive Care Units</h4>
+<ul>
+<li>Applied data adaptation method to estimate the propensity score</li>
+<li>Generated causal model estimands using multiple methods (random forest, GLM, elastic net, LASSO, and gradient boosting with SuperLearner)</li>
+<li><p>Conducted 5-fold cross-validation to evaluate each estimand’s performance and coefficient in the ensemble estimator</p>
+<p><a href="/content/project/RHC_paper.pdf"><strong>Paper</strong></a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="reproduction-of-sdy210-clinical-trial" class="section level4">
+<h4>Reproduction of SDY210 clinical trial</h4>
+<p><strong>Adding Exhaled Nitric Oxide to Guideline-based Asthma Treatment in Inner-City Adolescents and Young Adults: a Randomized Controlled Trial</strong></p>
+<ul>
+<li><p>Original study: <a href="https://www.immport.org/shared/study/SDY210">SDY210</a></p>
+<p><a href="/content/project/SDY210_paper.pdf"><strong>Paper</strong></a><br />
+<a href="/content/project/SDY210_slide.pdf"><strong>Slide</strong></a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="rate-of-general-anesthesia-use-for-cesarean-delivery-among-anesthesiologists-with-and-without-fellowship-training-in-obstetric-anesthesia" class="section level4">
+<h4>Rate Of General Anesthesia Use For Cesarean Delivery Among Anesthesiologists With And Without Fellowship Training in Obstetric Anesthesia</h4>
+<ul>
+<li>Fitted the logistic regression model to identify whether the fellowship-trained anesthesiologists are more or less likely to provide general anesthesia for non-routine C-section as compared to non-fellowship trained anesthesiologists</li>
+<li><p>Identified the significant difference between general and neuraxial anesthesia and the odds of using general anesthesia is 0.471 times lower in attending fellowship training anesthesiologists compared the non-fellowship training anesthesiologists</p>
+<p><a href="/content/project/anesthesia_paper.pdf"><strong>Report</strong></a><br />
+<a href="/content/project/anesthesia_slide.pdf"><strong>Slide</strong></a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="cost-effective-optimization-of-model-based-prediction-of-cardiovascular-disease-cvd" class="section level4">
+<h4>Cost-Effective Optimization of Model-Based Prediction of Cardiovascular Disease (CVD)</h4>
+<ul>
+<li>Aimed to increase the accuracy of CVD diagnosis using a model-based approach</li>
+<li>Determined the demographic factors and medical tests that help predict the likelihood of heart disease using proportional odds model and logistics regression</li>
+<li><p>Identified a combination of necessary medical tests that help predict the probability of heart disease in a cost-effective manner and reduced the exam cost by $110.17</p>
+<p><a href="/content/project/CVD_poster.pdf"><strong>Poster</strong></a></p></li>
+</ul>
+<p><br><br></p>
+<hr />
+</div>
+</div>
+<div id="section-2" class="section level2">
+<h2><em>2018</em></h2>
+<p><br></p>
+<div id="neuroendrocine-prostate-cancer-nepc" class="section level4">
+<h4>Neuroendrocine prostate cancer (NEPC)</h4>
+<ul>
+<li>Identified that there is no difference in the proportions of 3-month progression status between patients in the NEPC and non-NEPC group treated with alisertib</li>
+<li>Determined that there is no association between 3-month progression-free survival for all clinical characteristics and gene abnormalities</li>
+<li><p>Identified an association between PSA level and prior systemic therapies between NEPC and non-NEPC groups treated with alisertib</p>
+<p><a href="/content/project/NEPC_paper.pdf"><strong>Paper</strong></a><br />
+<a href="/content/project/NEPC_slide.pdf"><strong>Slide</strong></a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="major-risk-factors-of-low-birth-weight-babies" class="section level4">
+<h4>Major Risk Factors of Low Birth Weight Babies</h4>
+<ul>
+<li>Determined that low birth weight is associated with the mother’s premature labor history, race, smoking status, weight of the last menstrual period, and history of hypertension</li>
+<li><p>Fitted multiple generalized linear models with the model selection based on deviance and p-values</p>
+<p><a href="/content/project/lowbirthweight.pdf"><strong>Paper</strong></a></p></li>
+</ul>
+<p><br></p>
+</div>
+<div id="study-design-of-tommy-john-surgery-for-mlb-pitchers-by-statcast-measurements" class="section level4">
+<h4>Study design of Tommy John Surgery for MLB Pitchers by <em>Statcast</em> Measurements</h4>
+<p><strong>Primary Injury Factors of Ulnar Collateral Ligament Reconstruction for Major League Baseball Pitchers by Statcast Measures</strong></p>
+<ul>
+<li><p>Designed a study to identify major factors of Ulnar Collateral Ligament Reconstruction (a.k.a. Tommy John Surgery) for Major League Baseball Pitchers by <em>Statcast</em> measurements</p>
+<p><a href="/content/project/TJS_paper.pdf"><strong>Paper</strong></a><br />
+<a href="/content/project/TJS_slide.pdf"><strong>Slide</strong></a></p></li>
+</ul>
+</div>
+</div>
+
+<br><br>
+<footer>
+  <p class="copyright text-muted" align="center">Copyright &copy; 2017 Taehoon Ha</p>
+</footer>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = false;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

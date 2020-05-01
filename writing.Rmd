@@ -11,26 +11,7 @@ output:
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-<br><br>
-
-### Submitted
-
-+ David C. Montrose, Miguel Foronda, Suchandrima Saha, Erin M. McNally, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg. *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism and Growth*
-
-<br><br>
-
-### In-preparation
-
-+ **Taehoon Ha**, Hanhan Wang, Lingsong Meng, Xi Kathy Zhou. *A Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*
-
-+ *Interface between Obesity and Complement Activation: Potential Implications for COVID-19*
-
-+ Bongsoo Park, Jeffrey Deiuliis, **Taehoon Ha**, Ji-Eun Park, Palanivel Rengassamy, Youngshim Choi, Sanjay Rajagopalan, Shyam Biswal. *Comprehensive transcriptome map of liver exposed to PM2.5*
-
-+ B Park, S Kim, **Taehoon Ha**, JE Park, V Vinayachandran, KD Hansen, B Paul, S Rajagopalan, and S
-Biswal. *Brain transcriptome map of air pollution PM2.5*
-
-<br><br>
+<br><br><br>
 
 ### Technical translation
 

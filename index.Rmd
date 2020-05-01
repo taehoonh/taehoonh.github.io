@@ -33,13 +33,13 @@ My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(04/11/2020 updated)` </strong> <br>
+<strong>On-going Projects `(05/01/2020 updated)` </strong> <br>
 
 <br>
 
 [Independent research]
 
-- [Dr. Arindam RoyChoudhury](http://vivo.med.cornell.edu/individual?uri=http%3A%2F%2Fvivo.med.cornell.edu%2Findividual%2Fcwid-arr2014) COVID-19 Korean data study
+- Dr. Arindam RoyChoudhury's Korean COVID-19 data analysis
 
 - Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application
 
@@ -53,13 +53,9 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 
 - Re-analysis of the DXA study RNA-seq data
 
-- Serine - colorectal cancer study: analysis of data related to serine MS
-
 - Taiwan study (analysis of the clinicopathologic data, CLS-B, adipocyte diameter, biomarker, body composition data, and RNAseq data)
 
 - Predicting aromatase levels using blood biomarker data
-
-- Srijani lab data analysis
 
 
 <br>
