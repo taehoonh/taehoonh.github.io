@@ -15,10 +15,10 @@ output:
 
 ### Technical translation
 
-+ Genomic analysis of COVID-19 spread. Situation report 2020-05-08 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
++ Genomic analysis of COVID-19 spread. Situation report 2020-05-08 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (May. 2020)      
 [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-08)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-08)]
 
-+ Genomic analysis of COVID-19 spread. Situation report 2020-05-01 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
++ Genomic analysis of COVID-19 spread. Situation report 2020-05-01 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (May. 2020)      
 [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-01)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-01)]
 
 + Genomic analysis of COVID-19 spread. Situation report 2020-04-24 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
