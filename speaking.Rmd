@@ -20,7 +20,7 @@ output:
 
 <br><br>
 
-### Journal Club Slides
+### Presentation
 
 + Journal Club 03/02/2020: The Single-cell Pathology Landscape of Breast Cancer [[Slide](/content/post/Journal Club 03_02 Presentation Slide.pdf)]
 

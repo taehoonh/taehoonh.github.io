@@ -15,6 +15,12 @@ output:
 
 ### Technical translation
 
++ Genomic analysis of COVID-19 spread. Situation report 2020-05-08 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
+[[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-08)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-08)]
+
++ Genomic analysis of COVID-19 spread. Situation report 2020-05-01 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
+[[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-01)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-01)]
+
 + Genomic analysis of COVID-19 spread. Situation report 2020-04-24 (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Apr. 2020)      
 [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-24)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-04-24)]
 
@@ -33,6 +39,7 @@ output:
 + How to interpret phylogenetic trees (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (Mar. 2020) [[Korean](https://nextstrain.org/narratives/trees-background/ko)] [[English](https://nextstrain.org/narratives/trees-background/)]
 
 <br><br>
+
 
 ### Miscellaneous
 + [Alternative to kable function when knitting to MS word](/content/post/alternative-to-kable-function-when-knitting-to-ms-word.html)

@@ -1,5 +1,5 @@
 ---
-pagetitle: "Research Log"
+pagetitle: "Research"
 output:
   html_document:
     toc: true
@@ -15,15 +15,19 @@ output:
 
 ### Submitted
 
-+ David C. Montrose, Miguel Foronda, Suchandrima Saha, Erin M. McNally, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg. (April, 2020) *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism and Growth*, Cell Reports
++ Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. 
+Sharaiha, Rekha Kumar, **Taehoon Ha**, Akanksha Verma, Olivier Elemento5, 
+Michael Pollak, Jeffrey C. Laurence, Neil M. Iyengar and Andrew J. Dannenberg (May, 2020) *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*
+
++ David C. Montrose, Miguel Foronda, Suchandrima Saha, Erin M. McNally, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg. (April, 2020) *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism and Growth*
+
+
 
 <br><br>
 
 ### In-preparation
 
 + **Taehoon Ha**, Hanhan Wang, Lingsong Meng, Xi Kathy Zhou. *A Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*
-
-+ *Interface between Obesity and Complement Activation: Potential Implications for COVID-19*
 
 + Bongsoo Park, Jeffrey Deiuliis, **Taehoon Ha**, Ji-Eun Park, Palanivel Rengassamy, Youngshim Choi, Sanjay Rajagopalan, Shyam Biswal. *Comprehensive transcriptome map of liver exposed to PM2.5*
 
