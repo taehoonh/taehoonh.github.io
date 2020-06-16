@@ -19,9 +19,9 @@ I am currently working with [Xi Kathy Zhou, PhD](https://gradschool.weill.cornel
 
 Some other projects include developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions. We are preparing for publication "*Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*."
 
-Beyond the campus, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.linkedin.com/in/bongsoo-park-678b0416/) at [Johns Hopkins Bloomberg School of Public Heatlh](https://www.jhsph.edu/).
+Beyond the campus, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.linkedin.com/in/bongsoo-park-678b0416/) at National Insitute of Health and Johns Hopkins Bloomberg School of Public Heatlh.
 
-My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
+My full CV is available [here](./files/TaehoonHa_CV_202006.pdf).
 
 
 
@@ -33,7 +33,7 @@ My full CV is available [here](./files/TaehoonHa_CV_2019.pdf).
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>On-going Projects `(05/13/2020 updated)` </strong> <br>
+<strong>On-going Projects `(06/15/2020 updated)` </strong> <br>
 
 <br>
 
@@ -51,9 +51,9 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 
 [Dr. Andrew J. Dannenberg collaboration]
 
-- Re-analysis of the DXA study RNA-seq data
+- Srijani's fructose diet-cancer study
 
-- Glut5 study
+- DEXA study
 
 - Predicting aromatase levels using blood biomarker data
 
