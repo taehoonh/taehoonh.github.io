@@ -15,7 +15,7 @@ output:
 
 ### Submitted
 
-+ Iyengar NM, Zhou XK, Mendieta H, El-Hely O, Giri DD, Winston L, Falcone DJ, Wang H, Meng L, **Ha T**, Pollak M, Hudis CA, Morrow M, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, to be submitted to Nature Cancer.
++ Iyengar NM, Zhou XK, Mendieta H, El-Hely O, Giri DD, Winston L, Falcone DJ, Wang H, Meng L, **Ha T**, Pollak M, Hudis CA, Morrow M, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, Submitted to Nature Cancer.
 
 + Cho BA, Zhou XK, Morrow M, Giri DD, Sharaiha RZ, Kumar R, Yaghoobzadeh H, **Ha T**, Verma A, Elemento O, Pollak M, Laurence J, Iyengar NM, and Dannenberg AJ (2020), *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*, Submitted to JCI Insight.
 
