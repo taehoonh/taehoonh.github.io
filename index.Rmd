@@ -13,7 +13,7 @@ output: html_document
 <br>
 
 
-I am a Research Assistant in [Division of Biostatistics and Epidemiology](https://hpr.weill.cornell.edu/research-collaboration/our-divisions/biostatistics) of Department of Healthcare Policy & Research at Weill Cornell Medicine. I graduated from [Weill Cornell Medical College](https://weill.cornell.edu/) with a MS in biostatistics and data science in 2019.
+I am a Research Assistant - Biostatistics in [Division of Biostatistics and Epidemiology](https://hpr.weill.cornell.edu/research-collaboration/our-divisions/biostatistics) of Department of Healthcare Policy & Research at Weill Cornell Medicine. I graduated from [Weill Cornell Medical College](https://weill.cornell.edu/) with a MS in biostatistics and data science in 2019.
 
 I am currently working with [Xi Kathy Zhou, PhD](https://gradschool.weill.cornell.edu/faculty/xi-kathy-zhou) on a collaborative project with [Andrew J. Dannenberg, MD](https://research.cornell.edu/researchers/andrew-j-dannenberg) group that focuses on obesity, inflammation, and breast cancer.
 
@@ -23,11 +23,7 @@ Beyond the campus, I am also analyzing brain and liver transcriptome data to ide
 
 My full CV is available [here](./files/TaehoonHa_CV_202006.pdf).
 
-
-
 <br>
-
-
 
 <style>
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
