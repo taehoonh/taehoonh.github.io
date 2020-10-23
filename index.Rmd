@@ -19,7 +19,10 @@ Beyond the lab, I am also analyzing brain and liver transcriptome data to identi
 
 My full CV is available [here](./files/TaehoonHa_CV_202006.pdf).
 
-<!-- <br> -->
+
+<br><br><br><br>
+
+<center><strong>`10/22/2020 updated`</strong></center>
 
 <!-- <style> -->
 <!-- div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;} -->
