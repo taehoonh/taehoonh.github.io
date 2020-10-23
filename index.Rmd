@@ -13,60 +13,52 @@ output: html_document
 <br>
 
 
-I am a Research Assistant - Biostatistics in [Division of Biostatistics and Epidemiology](https://hpr.weill.cornell.edu/research-collaboration/our-divisions/biostatistics) of Department of Healthcare Policy & Research at Weill Cornell Medicine. I graduated from [Weill Cornell Medical College](https://weill.cornell.edu/) with a MS in biostatistics and data science in 2019.
+I am a biostatistician at [Cold Spring Harbor Laboratory](https://www.cshl.edu/research/cancer/animal-facility/). Previously, I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with a MS in biostatistics and data science, and worked as a research assistant at Weill Cornell Medicine in the [Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics).
 
-I am currently working with [Xi Kathy Zhou, PhD](https://gradschool.weill.cornell.edu/faculty/xi-kathy-zhou) on a collaborative project with [Andrew J. Dannenberg, MD](https://research.cornell.edu/researchers/andrew-j-dannenberg) group that focuses on obesity, inflammation, and breast cancer.
-
-Some other projects include developing a new statistical method using Bayesian model averaging to identify differentially expressed genes associated with one or more phenotypes, as well as their interactions. We are preparing for publication "*Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*."
-
-Beyond the campus, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.linkedin.com/in/bongsoo-park-678b0416/) at National Insitute of Health and Johns Hopkins Bloomberg School of Public Heatlh.
+Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.linkedin.com/in/bongsoo-park-678b0416/) at National Insitute of Health and Johns Hopkins Bloomberg School of Public Heatlh.
 
 My full CV is available [here](./files/TaehoonHa_CV_202006.pdf).
 
-<br>
+<!-- <br> -->
 
-<style>
-div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "box">
-<strong>On-going Projects `(06/15/2020 updated)` </strong> <br>
+<!-- <style> -->
+<!-- div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;} -->
+<!-- </style> -->
+<!-- <div class = "box"> -->
+<!-- <strong>On-going Projects `(10/22/2020 updated)` </strong> <br> -->
 
-<br>
+<!-- <br> -->
 
-[Independent research]
+<!-- [Dr. Andrew J. Dannenberg collaboration] -->
 
-- Dr. Arindam RoyChoudhury's Korean COVID-19 data
+<!-- - Srijani's fructose diet-cancer study -->
 
-- Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application
+<!-- - DEXA study -->
 
-- R package development for **BMASeq** to improve the identification of differentially expressed (DE) genes in high dimensional setting
-
-
-<br>
+<!-- - Predicting aromatase levels using blood biomarker data -->
 
 
-[Dr. Andrew J. Dannenberg collaboration]
-
-- Srijani's fructose diet-cancer study
-
-- DEXA study
-
-- Predicting aromatase levels using blood biomarker data
+<!-- <br> -->
 
 
-<br>
+<!-- [Dr. Bongsoo Park collaboration] -->
 
+<!-- - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Brain map -->
 
-[Dr. Bongsoo Park collaboration]
+<!-- - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver -->
 
-- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Brain map
+<!-- - Grem-free mice project: brain, liver, and microbiome datasets -->
 
-- Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver
+<!-- - Liver single-cell (Western diet): Liver cell type prediction and clustering -->
 
-- Grem-free mice project: brain, liver, and microbiome datasets
+<!-- - Cancer single-cell: PDX humanized mice vs wild-type mice -->
 
-- Liver single-cell (Western diet): Liver cell type prediction and clustering
+<!-- <br> -->
 
-- Cancer single-cell: PDX humanized mice vs wild-type mice
+<!-- [Independent research] -->
 
-</div>
+<!-- - Bayesian model averaging approach for RNA-seq counts data (**BMASeq**) and its application -->
+
+<!-- - R package development for **BMASeq** to improve the identification of differentially expressed (DE) genes in high dimensional setting -->
+
+<!-- </div> -->
