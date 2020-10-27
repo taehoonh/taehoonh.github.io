@@ -12,7 +12,7 @@ output: html_document
 </p>
 <br>
 
-My interest is in developing and applying novel statistical methods to better design biological and clinical studies. I recently jointed the [Cold Spring Harbor Laboratory](https://www.cshl.edu/research/cancer/animal-facility/) as a biostatistician. Previously, I worked as a research assistant at Weill Cornell Medicine in the [Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics), where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.
+My interest is in developing and applying novel statistical methods to better design biological and clinical studies. I recently joined the [Cold Spring Harbor Laboratory](https://www.cshl.edu/research/cancer/animal-facility/) as a biostatistician. Previously, I worked as a research assistant at Weill Cornell Medicine in the [Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics), where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.
 
 I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with a MS in biostatistics and data science in 2019.
 
