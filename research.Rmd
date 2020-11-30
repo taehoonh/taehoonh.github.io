@@ -13,9 +13,13 @@ output:
 
 <br><br><br>
 
-### Submitted
+### Accepted
 
-+ Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020), *CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*, TBD
++ Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020), *CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*, Clinical Cancer Research
+
+<br><br>
+
+### Submitted
 
 + Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, **Taehoon Ha**, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice*, TBD
 
