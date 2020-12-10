@@ -21,24 +21,24 @@ output:
 
 ### Submitted
 
-+ Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, Taehoon Ha, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*, Inflammatory Bowel Diseases
++ Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*, Inflammatory Bowel Diseases
 
-+ Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, **Taehoon Ha**, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice*, TBD
++ Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, **Taehoon Ha**, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice*, Carcinogenesis
 
-+ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, Submitted to Nature Cancer.
++ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, Nature Cancer.
 
-+ Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. Sharaiha, Rekha Kumar, Hooman Yaghoobzadeh, **Taehoon Ha**, Akanksha Verma, Olivier Elemento, Michael Pollak, Jeffrey Laurence, Neil M. Iyengar, and Andrew J. Dannenberg (2020), *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*, Submitted to JCI Insight.
++ Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. Sharaiha, Rekha Kumar, Hooman Yaghoobzadeh, **Taehoon Ha**, Akanksha Verma, Olivier Elemento, Michael Pollak, Jeffrey Laurence, Neil M. Iyengar, and Andrew J. Dannenberg (2020), *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*, JCI Insight.
 
-+ David C. Montrose, Miguel Foronda, Suchandrima Saha, Erin M. McNally, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow, and Andrew J. Dannenberg (2020), *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism and Growth*, Submitted to Cancer Research.
++ David C. Montrose, Miguel Foronda, Suchandrima Saha, Erin M. McNally, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow, and Andrew J. Dannenberg (2020), *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism and Growth*, Cancer Research.
 
 
 <br><br>
 
 ### In-preparation
 
-+ Bongsoo Park, Jeffrey A. Deiuliis, Rengasamy Palanivel, **Taehoon Ha**, Ji Eun Park, Sanjay Rajagopalan, and Shyam Biswal, *Sex-difference in the metabolic effects of air pollution exposure*
++ Bongsoo Park, Jeffrey A. Deiuliis, Rengasamy Palanivel, **Taehoon Ha**, Ji-Eun Park, Sanjay Rajagopalan, and Shyam Biswal, *Sex-difference in the metabolic effects of air pollution exposure*
 
-+ **Taehoon Ha**, Ji Eun Park, Rengasamy Palanivel, Sanjay Rajagopalan, Shyam Biswal, and Bongsoo Park. *Sex-difference in liver transcriptome with environmental exposure*
++ **Taehoon Ha**, Ji-Eun Park, Rengasamy Palanivel, Sanjay Rajagopalan, Shyam Biswal, and Bongsoo Park. *Sex-difference in liver transcriptome with environmental exposure*
 
 + B Park, S Kim, **T Ha**, JE Park, V Vinayachandran, KD Hansen, B Paul, S Rajagopalan, and S Biswal. *Brain transcriptome map of air pollution PM2.5*
 
