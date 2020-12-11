@@ -13,9 +13,9 @@ output:
 
 <br><br><br>
 
-### Accepted
+### Published
 
-+ Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020), *CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*, Clinical Cancer Research
++ Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020), [*CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*](https://clincancerres.aacrjournals.org/content/early/2020/12/08/1078-0432.CCR-20-3201), Clinical Cancer Research
 
 <br><br>
 
