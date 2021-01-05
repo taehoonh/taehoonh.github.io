@@ -1,0 +1,35 @@
+h1 {
+  font-size: 32px;
+}
+h1.title {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 100;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+details { 
+  padding: 2px 12px 2px 12px;
+  background-color: #f9f9f9;
+  border-style: solid;
+  border-width: .5px;
+  border-color: #333;
+}

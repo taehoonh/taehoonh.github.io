@@ -36,6 +36,15 @@
   gtag('config', 'UA-139119461-1');
 </script>
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
   pre:not([class]) {
@@ -80,6 +89,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -301,25 +311,25 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="contact.html">
-    <span class="fa fa-envelope fa-lg"></span>
+    <span class="fas fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="http://github.com/taehoonh">
-    <span class="fa fa-github fa-lg"></span>
+    <span class="fas fa-github fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://twitter.com/taeh00nha">
-    <span class="fa fa-twitter fa-lg"></span>
+    <span class="fas fa-twitter fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/taehoonha/">
-    <span class="fa fa-linkedin fa-lg"></span>
+    <span class="fas fa-linkedin fa-lg"></span>
      
   </a>
 </li>
@@ -336,7 +346,7 @@ $(document).ready(function () {
 </div>
 
 
-<p><link rel="stylesheet" href="styles.css" type="text/css"></p>
+<p><link rel="stylesheet" href="styles.css" type="text/css"> <link rel="stylesheet" href="academicons/css/academicons.min.css"/></p>
 <p><br></p>
 <p align="center">
 <img src="images/taehoonh.jpg" style="width:40%; border:1px solid; margin-right: 20px" align="center">
@@ -345,7 +355,7 @@ $(document).ready(function () {
 <p>My interest is in developing and applying novel statistical methods to better design biological and clinical studies. I recently joined the <a href="https://www.cshl.edu/research/cancer/animal-facility/">Cold Spring Harbor Laboratory</a> as a biostatistician. Previously, I worked as a research assistant at Weill Cornell Medicine in the <a href="https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics">Department of Population Health Sciences</a>, where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.</p>
 <p>I graduated from <a href="https://weill.cornell.edu/">Weill Cornell Medicine</a> with a MS in biostatistics and data science in 2019.</p>
 <p>Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of <a href="https://www.linkedin.com/in/bongsoo-park-678b0416/">Bongsoo Park, PhD</a> at National Insitute of Health and Johns Hopkins Bloomberg School of Public Heatlh.</p>
-<p>My full CV is available <a href="./files/TaehoonHa_CV_202006.pdf">here</a>.</p>
+<p>My full CV is available <a href="files/TaehoonHa_CV_202006.pdf">here</a>.</p>
 <p><br><br><br><br></p>
 <center>
 <strong><code>10/22/2020 updated</code></strong>
@@ -386,7 +396,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
