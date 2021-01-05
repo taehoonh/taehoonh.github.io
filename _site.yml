@@ -18,11 +18,11 @@ navbar:
   right:
     - icon: fa-envelope fa-lg
       href: contact.html
-    - icon: fa-github fa-lg
+    - icon: fa-github
       href: http://github.com/taehoonh
-    - icon: fa-twitter fa-lg
+    - icon: fa-twitter
       href: https://twitter.com/taeh00nha
-    - icon: fa-linkedin fa-lg
+    - icon: fa-linkedin
       href: https://www.linkedin.com/in/taehoonha/
 output:
   html_document:
