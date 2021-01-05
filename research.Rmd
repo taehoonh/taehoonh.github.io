@@ -17,6 +17,15 @@ output:
 
 + Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020), [*CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*](https://clincancerres.aacrjournals.org/content/early/2020/12/08/1078-0432.CCR-20-3201), Clinical Cancer Research
 
+<style>
+div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "box">
+<strong>Shiny App</strong> <br>
+
+The model is available as an online tool [HERE](https://sites.google.com/site/janowitzwilliamsgfr/). The default setting assumes that creatinine has been determined using an isotope dilution mass spectrometry (IDMS) calibrated method.
+</div>
+
 <br><br>
 
 ### Accepted
