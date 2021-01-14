@@ -31,6 +31,8 @@ The model is available as an online tool [HERE](https://sites.google.com/site/ja
 ### Accepted
 + David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2020), *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*, Cancer Research
 
++ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, npj Breast Cancer
+
 <br><br>
 
 ### Submitted
@@ -38,8 +40,6 @@ The model is available as an online tool [HERE](https://sites.google.com/site/ja
 + Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*, Inflammatory Bowel Diseases
 
 + Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, **Taehoon Ha**, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice*, Carcinogenesis
-
-+ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, Nature Cancer
 
 + Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. Sharaiha, Rekha Kumar, Hooman Yaghoobzadeh, **Taehoon Ha**, Akanksha Verma, Olivier Elemento, Michael Pollak, Jeffrey Laurence, Neil M. Iyengar, and Andrew J. Dannenberg (2020), *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*, JCI Insight
 
