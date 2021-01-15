@@ -13,7 +13,7 @@ output:
 
 <br><br><br>
 
-### *Teaching Assistant*
+### Teaching Assistant
 
 #### Lead lab sessions, hold regular office hours, write solutions and tutorials, and grade assignments
 

@@ -29,9 +29,9 @@ The model is available as an online tool [HERE](https://sites.google.com/site/ja
 <br><br>
 
 ### Accepted
-+ David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2020), *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*, Cancer Research
++ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2021), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, npj Breast Cancer
 
-+ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2020), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, npj Breast Cancer
++ David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2020), *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*, Cancer Research
 
 <br><br>
 
