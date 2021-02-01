@@ -15,7 +15,9 @@ output:
 
 ### Published
 
-+ Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020), [*CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*](https://clincancerres.aacrjournals.org/content/early/2020/12/08/1078-0432.CCR-20-3201), Clinical Cancer Research
++ David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2021). [*Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*](https://doi.org/10.1158/0008-5472.CAN-20-1541). Cancer Research.
+
++ Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, **Taehoon Ha**, Eva Gablenz,  Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2021). [*CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer*](https://doi.org/10.1158/1078-0432.CCR-20-3201).  Clinical Cancer Research.
 
 <style>
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
@@ -23,35 +25,33 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 <div class = "box">
 <strong>Shiny App</strong> <br>
 
-The model is available as an online tool [HERE](https://sites.google.com/site/janowitzwilliamsgfr/). The default setting assumes that creatinine has been determined using an isotope dilution mass spectrometry (IDMS) calibrated method.
+The glomerular filteration rate (GFR) estimate model is available as an online tool [HERE](https://sites.google.com/site/janowitzwilliamsgfr/). The default setting assumes that creatinine has been determined using an isotope dilution mass spectrometry (IDMS) calibrated method.
 </div>
 
 <br><br>
 
 ### Accepted
-+ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2021), *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*, npj Breast Cancer
++ Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, **Taehoon Ha**, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2021). *Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice*. Carcinogenesis.
 
-+ David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2020), *Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*, Cancer Research
++ Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2021). *Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations*. npj Breast Cancer.
 
 <br><br>
 
 ### Submitted
 
-+ Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*, Inflammatory Bowel Diseases
++ Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020). *GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*. Inflammatory Bowel Diseases.
 
-+ Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, **Taehoon Ha**, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2020), *Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice*, Carcinogenesis
-
-+ Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. Sharaiha, Rekha Kumar, Hooman Yaghoobzadeh, **Taehoon Ha**, Akanksha Verma, Olivier Elemento, Michael Pollak, Jeffrey Laurence, Neil M. Iyengar, and Andrew J. Dannenberg (2020), *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*, JCI Insight
++ Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. Sharaiha, Rekha Kumar, Hooman Yaghoobzadeh, **Taehoon Ha**, Akanksha Verma, Olivier Elemento, Michael Pollak, Jeffrey Laurence, Neil M. Iyengar, and Andrew J. Dannenberg (2020). *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*. JCI Insight.
 
 
 <br><br>
 
-### In-preparation
+<!-- ### In-preparation -->
 
-+ Bongsoo Park, Jeffrey A. Deiuliis, Rengasamy Palanivel, **Taehoon Ha**, Ji-Eun Park, Sanjay Rajagopalan, and Shyam Biswal, *Sex-difference in the metabolic effects of air pollution exposure*
+<!-- + Bongsoo Park, Jeffrey A. Deiuliis, Rengasamy Palanivel, **Taehoon Ha**, Ji-Eun Park, Sanjay Rajagopalan, and Shyam Biswal, *Sex-difference in the metabolic effects of air pollution exposure* -->
 
-+ **Taehoon Ha**, Ji-Eun Park, Rengasamy Palanivel, Sanjay Rajagopalan, Shyam Biswal, and Bongsoo Park. *Sex-difference in liver transcriptome with environmental exposure*
+<!-- + **Taehoon Ha**, Ji-Eun Park, Rengasamy Palanivel, Sanjay Rajagopalan, Shyam Biswal, and Bongsoo Park. *Sex-difference in liver transcriptome with environmental exposure* -->
 
-+ B Park, S Kim, **T Ha**, JE Park, V Vinayachandran, KD Hansen, B Paul, S Rajagopalan, and S Biswal. *Brain transcriptome map of air pollution PM2.5*
+<!-- + B Park, S Kim, **T Ha**, JE Park, V Vinayachandran, KD Hansen, B Paul, S Rajagopalan, and S Biswal. *Brain transcriptome map of air pollution PM2.5* -->
 
-+ Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Xi Kathy Zhou. *A Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application*
+<!-- + Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Xi Kathy Zhou. *A Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application* -->
