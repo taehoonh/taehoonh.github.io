@@ -13,13 +13,22 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -50,11 +59,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -67,32 +71,6 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
 
 
 <link rel="stylesheet" href="styles.css" type="text/css" />
@@ -104,10 +82,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -124,40 +98,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -185,7 +132,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -197,7 +144,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -208,10 +155,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -223,7 +183,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -355,13 +314,13 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
+<div class="row">
+<div class="col-sm-12 col-md-4 col-lg-3">
 <div id="TOC" class="tocify">
 </div>
 </div>
 
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+<div class="toc-content col-sm-12 col-md-8 col-lg-9">
 
 
 
@@ -421,7 +380,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -435,6 +394,7 @@ div.tocify {
 <h3>Published</h3>
 <ul>
 <li><p>David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, <strong>Taehoon Ha</strong>, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2021). <a href="https://doi.org/10.1158/0008-5472.CAN-20-1541"><em>Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil</em></a>. Cancer Research.</p></li>
+<li><p>Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, <strong>Taehoon Ha</strong>, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2021). <a href="https://doi.org/10.1038/s41523-021-00226-8">Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations</a>. npj Breast Cancer.</p></li>
 <li><p>Ryohei Nishiguchi, Srijani Basu, Hannah A. Staab, Naotake Ito, Xi Kathy Zhou, Hanhan Wang, <strong>Taehoon Ha</strong>, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2021). <a href="https://doi.org/10.1093/carcin/bgab007"><em>Dietary Interventions to Prevent High Fructose Diet-associated Worsening of Colitis and Colitis-associated Tumorigenesis in Mice</em></a>. Carcinogenesis.</p></li>
 <li><p>Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel Giglio, Hassal Lee, <strong>Taehoon Ha</strong>, Eva Gablenz, Nicholas Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A. Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, Tobias Janowitz (2020). <a href="https://doi.org/10.1158/1078-0432.CCR-20-3201"><em>CamGFR v2: A New Model for Estimating the Glomerular Filtration Rate from Standardized or Non-Standardized Creatinine in Patients with Cancer</em></a>. Clinical Cancer Research.</p></li>
 </ul>
@@ -449,9 +409,6 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </div>
 <div id="accepted" class="section level3">
 <h3>Accepted</h3>
-<ul>
-<li>Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, <strong>Taehoon Ha</strong>, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2021). <em>Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations</em>. npj Breast Cancer.</li>
-</ul>
 <p><br><br></p>
 </div>
 <div id="submitted" class="section level3">
@@ -501,7 +458,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
