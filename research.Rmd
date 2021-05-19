@@ -13,6 +13,10 @@ output:
 
 <br><br><br>
 
+For the most up to date list of publications, check out my [Google Scholar](https://scholar.google.com/citations?user=BM4yFdAAAAAJ&hl=en) page.
+
+<br>
+
 ### Published
 
 + David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2021). [*Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*](https://doi.org/10.1158/0008-5472.CAN-20-1541). Cancer Research.
