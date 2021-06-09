@@ -19,6 +19,8 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 ### Published
 
++ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). [Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer](http://doi.org/10.1200/JCO.2021.39.15_suppl.e16224). Journal of Clinical Oncology
+
 + David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2021). [*Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*](https://doi.org/10.1158/0008-5472.CAN-20-1541). Cancer Research.
 
 + Neil M. Iyengar, Xi Kathy Zhou, Hillary Mendieta, Omar El-Hely, Dilip D. Giri, Lisle A. Winston, Domenick J. Falcone, Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Michael Pollak, Clifford A. Hudis, Monica Morrow, Dannenberg AJ (2021). [Effects of Obesity on Breast Aromatase Expression and Systemic Metabo-Inflammation in Women with BRCA1 or BRCA2 Mutations](https://doi.org/10.1038/s41523-021-00226-8). npj Breast Cancer.
@@ -39,8 +41,6 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 <br><br>
 
 ### Accepted
-
-+ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer. Abstract, 2021 American Society of Clinical Oncology (ASCO) Annual Meeting
 
 <br><br>
 
