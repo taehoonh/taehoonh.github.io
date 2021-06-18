@@ -19,7 +19,9 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 ### Published
 
-+ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). [Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer](http://doi.org/10.1200/JCO.2021.39.15_suppl.e16224). Journal of Clinical Oncology
++ Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2021). [GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis](https://doi.org/10.1152/ajpgi.00059.2021). AJP Gastrointestinal and Liver Physiology.
+
++ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). [Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer](http://doi.org/10.1200/JCO.2021.39.15_suppl.e16224). Journal of Clinical Oncology.
 
 + David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2021). [*Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*](https://doi.org/10.1158/0008-5472.CAN-20-1541). Cancer Research.
 
@@ -45,8 +47,6 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 <br><br>
 
 ### Submitted
-
-+ Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2021). *GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*. American Journal of Physiology-Gastrointestinal and Liver Physiology.
 
 + Byuri Angela Cho, Xi Kathy Zhou, Monica Morrow, Dilip D. Giri, Reem Z. Sharaiha, Rekha Kumar, Hooman Yaghoobzadeh, **Taehoon Ha**, Akanksha Verma, Olivier Elemento, Michael Pollak, Jeffrey Laurence, Neil M. Iyengar, and Andrew J. Dannenberg (2020). *Overexpression of Complement-related Genes in Adipose Tissues of Obese Individuals: Implications for the Pathogenesis of COVID-19*. JCI Insight.
 

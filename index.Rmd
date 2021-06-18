@@ -9,17 +9,17 @@ output: html_document
 <br>
 
 <p align="center">
-<img src="images/taehoonh.jpg" style="width:40%; border:1px solid; margin-right: 20px" align="center">
+<img src="images/taehoonh.jpg" style="width:50%; border:0.5px solid; margin-right: 20px" align="center">
 </p>
 <br>
 
-My interest is in developing and applying novel statistical methods to better design biological and clinical studies. Currently, I am working as a biostatistican at [Cold Spring Harbor Laboratory](https://www.cshl.edu/research/cancer/animal-facility/). I collaborate extensively with a focus on cancer related laboratory and clinical studies.
+My interest is in developing and applying novel statistical methods to better design biological and clinical studies. Currently, I am working as a biostatistician at [Cold Spring Harbor Laboratory](https://www.cshl.edu/research/cancer/animal-facility/). I collaborate extensively with a focus on cancer-related laboratory and clinical studies.
 
 Previously, I worked as a research assistant at [Weill Cornell Medicine in the Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics), where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.
 
-I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with a MS in biostatistics and data science in 2019.
+I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science in 2019.
 
-Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM2.5, under the supervision of [Bongsoo Park, PhD](https://www.linkedin.com/in/bongsoo-park-678b0416/) at National Insitute of Health and Johns Hopkins Bloomberg School of Public Heatlh.
+Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM$_{2.5}$, under the supervision of [Bongsoo Park, Ph.D.](https://www.linkedin.com/in/bongsoo-park-678b0416/) at the National Insitute of Health and Johns Hopkins Bloomberg School of Public Health.
 
 My full CV is available [here](files/TaehoonHa_Biosketch_202104.pdf).
 
@@ -34,7 +34,7 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 
 My office hour is a Cancer Center sponsored core resource whose goal is to provide for, enhance, and/or facilitate statistical collaboration involving the design, conduct, analysis, or publication of biomedical research at the Cold Spring Harbor Laboratory Cancer Center. This is complimentary statistical advice only for the CSHL Cancer Center faculty, staff, and students.
 
-If you have additional questions, please feel free to reach out via ha@cshl.edu. Thank you.
+If you have additional questions, please feel free to reach out via ha@cshl.edu Thank you.
 <br>
 
 <!-- Calendly link widget begin -->
@@ -71,7 +71,7 @@ If you have additional questions, please feel free to reach out via ha@cshl.edu.
 
 <!-- - Transcriptome and epigenome atlas for air pollution $\text{PM}_{2.5}$: Liver -->
 
-<!-- - Grem-free mice project: brain, liver, and microbiome datasets -->
+<!-- - Germ-free mice project: brain, liver, and microbiome datasets -->
 
 <!-- - Liver single-cell (Western diet): Liver cell type prediction and clustering -->
 
