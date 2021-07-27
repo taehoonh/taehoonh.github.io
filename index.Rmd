@@ -21,10 +21,7 @@ I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS
 
 <!-- Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM$_{2.5}$, under the supervision of [Bongsoo Park, Ph.D.](https://www.linkedin.com/in/bongsoo-park-678b0416/) at the National Insitute of Health and Johns Hopkins Bloomberg School of Public Health. -->
 
-
-
-
-<br><br>
+<br>
 
 <style>
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
