@@ -15,13 +15,13 @@ output: html_document
 
 My interest is in developing and applying novel statistical methods to better design biological and clinical studies. Currently, I am working as a biostatistician at [Cold Spring Harbor Laboratory](https://www.cshl.edu/research/cancer/animal-facility/). I collaborate extensively with a focus on cancer-related laboratory and clinical studies.
 
-Previously, I worked as a research assistant at [Weill Cornell Medicine in the Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics), where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.
+Previously, I was a research assistant at [Weill Cornell Medicine in the Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics), where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.
 
-I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science in 2019.
+I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science in 2019. My full CV is available [here](files/TaehoonHa_Biosketch_202107.pdf).
 
-Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM$_{2.5}$, under the supervision of [Bongsoo Park, Ph.D.](https://www.linkedin.com/in/bongsoo-park-678b0416/) at the National Insitute of Health and Johns Hopkins Bloomberg School of Public Health.
+<!-- Beyond the lab, I am also analyzing brain and liver transcriptome data to identify differentially expressed genes associated with the exposure to ultra-fine dust, PM$_{2.5}$, under the supervision of [Bongsoo Park, Ph.D.](https://www.linkedin.com/in/bongsoo-park-678b0416/) at the National Insitute of Health and Johns Hopkins Bloomberg School of Public Health. -->
 
-My full CV is available [here](files/TaehoonHa_Biosketch_202104.pdf).
+
 
 
 <br><br>
