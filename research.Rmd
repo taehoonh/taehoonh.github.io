@@ -57,15 +57,15 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 <br><br>
 
-### In-preparation
+<!-- ### In-preparation -->
 
-+ COVID-19 treatment clinical trial for outpatient (Tobias)
+<!-- + COVID-19 treatment clinical trial for outpatient (Tobias) -->
 
-+ COVID-19 treatment efficacy for inpatient (Sandeep)
+<!-- + COVID-19 treatment efficacy for inpatient (Sandeep) -->
 
-+ Satge IV pancreactic cancer (Jung-In)
+<!-- + Satge IV pancreactic cancer (Jung-In) -->
 
-+ Tanzania traumatic brain injury (Dr. Mangat & Dr. Gerber)
+<!-- + Tanzania traumatic brain injury (Dr. Mangat & Dr. Gerber) -->
 
 
 
