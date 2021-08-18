@@ -48,7 +48,7 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Submitted
 
-+ Sonam Bhatia, Melissa Kramer, Suzanne Russo, Payal Naik, Kyle Brophy, Gayatri Arun, Peter Andrews, Cheng Fan, Charles M. Perou, Jonathan Preall, **Taehoon Ha**, Arvind Rishi, J Erby Wilkinson, W. Richard McCombie, Karen Kostroff, and David L. Spector (2021) [*Patient-derived triple negative breast cancer organoids provide robust model systems that recapitulate tumor intrinsic characteristics*](https://doi.org/10.1101/2021.08.09.455691). Cancer Cell.
++ Sonam Bhatia, Melissa Kramer, Suzanne Russo, Payal Naik, Kyle Brophy, Gayatri Arun, Peter Andrews, Cheng Fan, Charles M. Perou, Jonathan Preall, **Taehoon Ha**, Arvind Rishi, J Erby Wilkinson, W. Richard McCombie, Karen Kostroff, and David L. Spector (2021) [*Patient-derived triple negative breast cancer organoids provide robust model systems that recapitulate tumor intrinsic characteristics*](https://doi.org/10.1101/2021.08.09.455691). Cancer Discovery.
 
 + Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan, Jonathan J. Ipsaro, **Taehoon Ha**, Peter K. Koo, Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2021). [*ETV6 dependency in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer activation*](https://taehoonh.me/research.html#Submitted). Nature Genetics.
 
