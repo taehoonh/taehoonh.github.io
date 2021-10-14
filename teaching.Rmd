@@ -18,7 +18,7 @@ output:
 #### Instruct students who are interested in learning statistics principles (volunteer)
 
 + **Fall 2021**
-  + Intro to Statistics
+  + [Intro to Statistics](content/class/stat_seminar2021/toc.html)
   
 
 <br><br><br>
