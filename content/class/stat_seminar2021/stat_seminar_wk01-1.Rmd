@@ -82,9 +82,11 @@ hist(df$lifeExp,
      main = "Life expectancy", # plot title,
      xlab = "life exp.", # x-axis label
      ylab = "frequency", # y-axis label
-     breaks = "FD" # number of bins, default = "FD"
+     breaks = "FD" # number of bins
      )
 ```
+
++ For more methods on how to determine the number of bins, please click [HERE](https://r-charts.com/distribution/histogram-breaks/).
 
 <br><br><br><br>
 
