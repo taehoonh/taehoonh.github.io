@@ -17,8 +17,8 @@ output:
 
 | Week |  Topic                                                                                         | Lecture Note                                                      | Answer |
 |------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|--------|
-| 1    |  Introduction and course overview                                                              | .                                                                 | .      |
-|      |  Exploratory Data Analysis (EDA): numerical and graphical summaries                            | [Slide](stat_seminar_wk01-1.html)                                 | .      |
+| 1    |  Introduction and course overview                                                              | [Week1-1](stat_seminar_wk01-2.html)                               | .      |
+|      |  Exploratory Data Analysis (EDA): numerical and graphical summaries                            | [Week1-2](stat_seminar_wk01-2.html)                               | .      |
 | 2    |  Statistical inference: population, sampling                                                   |                                                                   |        |
 |      |  Family of distributions: Gaussian, Binomial, Poisson                                          |                                                                   |        |
 |      |  Data wrangling and tidy data                                                                  |                                                                   |        |

@@ -11,6 +11,11 @@ output:
 
 <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE)
+```
+
 <br><br><br>
 
 [< Back to Syllabus](toc.html)
