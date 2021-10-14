@@ -1,0 +1,49 @@
+---
+pagetitle: "Table of Contents"
+output:
+  html_document:
+    toc: false
+    toc_depth: 3
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+<!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+
+<br><br><br>
+
+# Intro to Statistics
+
+| Week |  Topic                                                                                         | Lecture Note                                                      | Answer |
+|------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|--------|
+| 1    |  Introduction and course overview                                                              | .                                                                 | .      |
+|      |  Exploratory Data Analysis (EDA): numerical and graphical summaries                            | [Slide](content/class/stat_seminar2021/stat_seminar_wk01-1.html)  | .      |
+| 2    |  Statistical inference: population, sampling                                                   |                                                                   |        |
+|      |  Family of distributions: Gaussian, Binomial, Poisson                                          |                                                                   |        |
+|      |  Data wrangling and tidy data                                                                  |                                                                   |        |
+| 3    |  Estimators and their distribution                                                             |                                                                   |        |
+|      |  The bootstrap and confidence intervals                                                        |                                                                   |        |
+|      |  Simulating data from parametric distributions                                                 |                                                                   |        |
+| 4    |  The central limit theorem                                                                     |                                                                   |        |
+|      |  Tests of significance / hypothesis testing                                                    |                                                                   |        |
+|      |  Sampling, resampling, and the bootstrap                                                       |                                                                   |        |
+| 5    |  Understanding the p-value                                                                     |                                                                   |        |
+|      |  Comparison of two means, the t-test                                                           |                                                                   |        |
+|      |  How to compute p-values using distributions, permutations, bootstrap                          |                                                                   |        |
+| 6    |  Comparison of two means, nonparametric                                                        |                                                                   |        |
+|      |  Type I error and power                                                                        |                                                                   |        |
+|      |  The t-test and its nonparametric alternatives                                                 |                                                                   |        |
+|      |  A case study: data cleaning, EDA, testing                                                     |                                                                   |        |
+| 8    |  Relationships between two continuous variables                                                |                                                                   |        |
+|      |  Measures of association for categorical variables                                             |                                                                   |        |
+|      |  Association versus causation – the simpson’s paradox                                          |                                                                   |        |
+| 9    |  Measure of association between continuous variables                                           |                                                                   |        |
+|      |  Simple linear regression                                                                      |                                                                   |        |
+|      |  Type I error and power: exploring the performance of the t-test on normal and non-normal data |                                                                   |        |
+| 10   |  Simple linear regression model                                                                |                                                                   |        |
+|      |  Hypotheses testing in simple linear regression                                                |                                                                   |        |
+|      |  The lm() function and linear models                                                           |                                                                   |        |
+| 11   |  Residuals, degrees of freedom, and goodness-of-fit                                            |                                                                   |        |
+|      |  No class - Thanksgiving                                                                       |                                                                   |        |
+|      |  A case study: data cleaning, EDA, modeling                                                    |                                                                   

@@ -1,0 +1,119 @@
+---
+pagetitle: "Week 1-1. Numeric and graphic summary"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<br><br><br>
+
+## Week 1-1. Numeric and graphic summary
+
+<br><br><br>
+
+Before we start ... let's install R packages first!
+
+```{r eval = F}
+install.packages(c("tidyverse", "ggplot2"))
+```
+
+```{r warning=FALSE, message=FALSE}
+library(tidyverse)
+library(ggplot2)
+```
+
+
+<br><br><br><br>
+
+### 1. Data types
+
+```{r echo = F}
+knitr::include_graphics("https://thefactfactor.com/wp-content/uploads/2019/06/Variables.png")
+```
+
+e.g.
+
+- Numeric-Continuous: height, weight, age, etc.
+- Numeric-Discrete: number of hospitalization to hospital A
+- Categorical-Ordinal: satisfaction score on a scale of 1-not at all happy to 5-very happy
+- Categorical-Nominal: 1-male/0-female, 1-smoker/0-non-smoker
+
+<br><br><br><br>
+
+
+### 2. Histogram
+
+```{r fig.width = 4, fig.height =4, echo = F, warning=FALSE, message=FALSE, fig.align='center'}
+set.seed(1)
+hist(round(rnorm(50, 50, 3)), breaks = "FD", main = "Age distribution", xlab = "Age")
+box()
+```
+
+- A `histogram` plots the distribution of a numeric variable's values using bars
+- Cannot plot a histogram with a categorical variable!
+- Histogram is about only one single variable. Histogram does not show the relationship of two variables.
+- Each bar represents a range of numeric values called "bin" or "class"
+- A bar's height = frequency of data points with a value within the corresponding bin.
+
+
+[R code]
+
+```{r}
+library(gapminder)
+df <- gapminder
+head(df)
+hist(df$lifeExp, 
+     main = "Life expectancy", # plot title,
+     xlab = "life exp.", # x-axis label
+     ylab = "frequency", # y-axis label
+     breaks = "FD" # number of bins, default = "FD"
+     )
+```
+
+<br><br><br><br>
+
+### 3. Multiple histograms in one screen
+
+- `par(mfrow = c(1, 2))`: makes side-by-side plots
+- Here, `c(1, 2)` indicates the number of rows and columns.
+
+```{r fig.width=10, fig.height=5}
+par(mfrow = c(1, 2))
+hist(df$pop, 
+     main = "Gapminder: population", 
+     xlab = "Population")
+hist(df$lifeExp, 
+     main = "Gapminder: life expectancy", 
+     xlab = "Life expectancy")
+```
+
+<br><br><br><br>
+
+### 4. Summary statistics
+
+- mean: `mean()`
+- median: `median()`
+- standard deviation: `sd()`
+- variance: `var()`
+- quantile: `quantile()`
+- minimum: `min()`
+- maximum: `max()`
+- `summary()` can show these numeric summaries at once
+
+```{r}
+mean(df$lifeExp)
+median(df$lifeExp)
+sd(df$lifeExp)
+var(df$lifeExp)
+quantile(df$lifeExp)
+min(df$lifeExp)
+max(df$lifeExp)
+summary(df$lifeExp)
+```
+

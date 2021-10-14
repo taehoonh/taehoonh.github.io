@@ -11,7 +11,7 @@
 
 
 
-<title>Teaching</title>
+<title>Week 1-1. Numeric and graphic summary</title>
 
 <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
@@ -390,41 +390,104 @@ div.tocify {
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
 <p><br><br><br></p>
-<div id="statistics-seminar" class="section level3">
-<h3>Statistics seminar</h3>
-<div id="instruct-students-who-are-interested-in-learning-statistics-principles-volunteer" class="section level4">
-<h4>Instruct students who are interested in learning statistics principles (volunteer)</h4>
-<ul>
-<li><strong>Fall 2021</strong>
-<ul>
-<li>Intro to Statistics</li>
-</ul></li>
-</ul>
+<div id="week-1-1.-numeric-and-graphic-summary" class="section level2">
+<h2>Week 1-1. Numeric and graphic summary</h2>
 <p><br><br><br></p>
-</div>
-</div>
-<div id="teaching-assistant" class="section level3">
-<h3>Teaching Assistant</h3>
-<div id="lead-lab-sessions-hold-regular-office-hours-write-solutions-and-tutorials-and-grade-assignments" class="section level4">
-<h4>Lead lab sessions, hold regular office hours, write solutions and tutorials, and grade assignments</h4>
-<p><br></p>
+<p>Before we start … let’s install R packages first!</p>
+<pre class="r"><code>install.packages(c(&quot;tidyverse&quot;, &quot;ggplot2&quot;))</code></pre>
+<pre class="r"><code>library(tidyverse)
+library(ggplot2)</code></pre>
+<p><br><br><br><br></p>
+<div id="data-types" class="section level3">
+<h3>1. Data types</h3>
+<p><img src="https://thefactfactor.com/wp-content/uploads/2019/06/Variables.png" /><!-- --></p>
+<p>e.g.</p>
 <ul>
-<li><strong>Spring 2020</strong>
-<ul>
-<li>[Master’s level] <a href="https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&amp;course_term=spring">Big Data in Medicine</a>, Weill Cornell Medicine
-<ul>
-<li>biomedical imaging (e.g. MRI, CT-Scan, X-ray etc.) by Prof. <a href="https://emsweene.github.io/">Elizabeth Sweeney</a></li>
-<li>genetics and genomics by Prof. <a href="https://drisso.github.io/">Daivde Risso</a></li>
-</ul></li>
-</ul></li>
+<li>Numeric-Continuous: height, weight, age, etc.</li>
+<li>Numeric-Discrete: number of hospitalization to hospital A</li>
+<li>Categorical-Ordinal: satisfaction score on a scale of 1-not at all happy to 5-very happy</li>
+<li>Categorical-Nominal: 1-male/0-female, 1-smoker/0-non-smoker</li>
 </ul>
-<p><br></p>
+<p><br><br><br><br></p>
+</div>
+<div id="histogram" class="section level3">
+<h3>2. Histogram</h3>
+<p><img src="stat_seminar_wk01-1_files/figure-html/unnamed-chunk-4-1.png" width="384" style="display: block; margin: auto;" /></p>
 <ul>
-<li><strong>Fall 2019</strong>
-<ul>
-<li>[Master’s level] <a href="https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&amp;course_term=fall">Categorical and Censored Data Analysis</a> by Dr. <a href="http://vivo.med.cornell.edu/display/cwid-ols2010">Oleksandr (Aleks) Savenkov</a>, Weill Cornell Medicine</li>
-</ul></li>
+<li>A <code>histogram</code> plots the distribution of a numeric variable’s values using bars</li>
+<li>Cannot plot a histogram with a categorical variable!</li>
+<li>Histogram is about only one single variable. Histogram does not show the relationship of two variables.</li>
+<li>Each bar represents a range of numeric values called “bin” or “class”</li>
+<li>A bar’s height = frequency of data points with a value within the corresponding bin.</li>
 </ul>
+<p>[R code]</p>
+<pre class="r"><code>library(gapminder)
+df &lt;- gapminder
+head(df)</code></pre>
+<pre><code>## # A tibble: 6 x 6
+##   country     continent  year lifeExp      pop gdpPercap
+##   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+## 1 Afghanistan Asia       1952    28.8  8425333      779.
+## 2 Afghanistan Asia       1957    30.3  9240934      821.
+## 3 Afghanistan Asia       1962    32.0 10267083      853.
+## 4 Afghanistan Asia       1967    34.0 11537966      836.
+## 5 Afghanistan Asia       1972    36.1 13079460      740.
+## 6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
+<pre class="r"><code>hist(df$lifeExp, 
+     main = &quot;Life expectancy&quot;, # plot title,
+     xlab = &quot;life exp.&quot;, # x-axis label
+     ylab = &quot;frequency&quot;, # y-axis label
+     breaks = &quot;FD&quot; # number of bins, default = &quot;FD&quot;
+     )</code></pre>
+<p><img src="stat_seminar_wk01-1_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><br><br><br><br></p>
+</div>
+<div id="multiple-histograms-in-one-screen" class="section level3">
+<h3>3. Multiple histograms in one screen</h3>
+<ul>
+<li><code>par(mfrow = c(1, 2))</code>: makes side-by-side plots</li>
+<li>Here, <code>c(1, 2)</code> indicates the number of rows and columns.</li>
+</ul>
+<pre class="r"><code>par(mfrow = c(1, 2))
+hist(df$pop, 
+     main = &quot;Gapminder: population&quot;, 
+     xlab = &quot;Population&quot;)
+hist(df$lifeExp, 
+     main = &quot;Gapminder: life expectancy&quot;, 
+     xlab = &quot;Life expectancy&quot;)</code></pre>
+<p><img src="stat_seminar_wk01-1_files/figure-html/unnamed-chunk-6-1.png" width="960" /></p>
+<p><br><br><br><br></p>
+</div>
+<div id="summary-statistics" class="section level3">
+<h3>4. Summary statistics</h3>
+<ul>
+<li>mean: <code>mean()</code></li>
+<li>median: <code>median()</code></li>
+<li>standard deviation: <code>sd()</code></li>
+<li>variance: <code>var()</code></li>
+<li>quantile: <code>quantile()</code></li>
+<li>minimum: <code>min()</code></li>
+<li>maximum: <code>max()</code></li>
+<li><code>summary()</code> can show these numeric summaries at once</li>
+</ul>
+<pre class="r"><code>mean(df$lifeExp)</code></pre>
+<pre><code>## [1] 59.47444</code></pre>
+<pre class="r"><code>median(df$lifeExp)</code></pre>
+<pre><code>## [1] 60.7125</code></pre>
+<pre class="r"><code>sd(df$lifeExp)</code></pre>
+<pre><code>## [1] 12.91711</code></pre>
+<pre class="r"><code>var(df$lifeExp)</code></pre>
+<pre><code>## [1] 166.8517</code></pre>
+<pre class="r"><code>quantile(df$lifeExp)</code></pre>
+<pre><code>##      0%     25%     50%     75%    100% 
+## 23.5990 48.1980 60.7125 70.8455 82.6030</code></pre>
+<pre class="r"><code>min(df$lifeExp)</code></pre>
+<pre><code>## [1] 23.599</code></pre>
+<pre class="r"><code>max(df$lifeExp)</code></pre>
+<pre><code>## [1] 82.603</code></pre>
+<pre class="r"><code>summary(df$lifeExp)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   23.60   48.20   60.71   59.47   70.85   82.60</code></pre>
 </div>
 </div>
 
