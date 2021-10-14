@@ -251,13 +251,15 @@ div.tocify {
 
 <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
 <p><br><br><br></p>
+<p><a href="toc.html">&lt; Back to Syllabus</a></p>
+<p><br><br><br></p>
 <div id="week-1-1.-numeric-and-graphic-summary" class="section level2">
 <h2>Week 1-1. Numeric and graphic summary</h2>
 <p><br><br><br></p>
 <p>Before we start … let’s install R packages first!</p>
-<pre class="r"><code>install.packages(c(&quot;tidyverse&quot;, &quot;ggplot2&quot;))</code></pre>
+<pre class="r"><code>install.packages(c(&quot;tidyverse&quot;, &quot;gapminder&quot;))</code></pre>
 <pre class="r"><code>library(tidyverse)
-library(ggplot2)</code></pre>
+library(gapminder)</code></pre>
 <p><br><br><br><br></p>
 <div id="data-types" class="section level3">
 <h3>1. Data types</h3>
@@ -282,8 +284,10 @@ library(ggplot2)</code></pre>
 <li>A bar’s height = frequency of data points with a value within the corresponding bin.</li>
 </ul>
 <p>[R code]</p>
-<pre class="r"><code>library(gapminder)
+<pre class="r"><code># Load the &#39;gapminder&#39; dataset 
 df &lt;- gapminder
+
+# Print first 6 rows
 head(df)</code></pre>
 <pre><code>## # A tibble: 6 x 6
 ##   country     continent  year lifeExp      pop gdpPercap
@@ -294,7 +298,8 @@ head(df)</code></pre>
 ## 4 Afghanistan Asia       1967    34.0 11537966      836.
 ## 5 Afghanistan Asia       1972    36.1 13079460      740.
 ## 6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
-<pre class="r"><code>hist(df$lifeExp, 
+<pre class="r"><code># Plot a histogram of life expectancy
+hist(df$lifeExp, 
      main = &quot;Life expectancy&quot;, # plot title,
      xlab = &quot;life exp.&quot;, # x-axis label
      ylab = &quot;frequency&quot;, # y-axis label
@@ -349,6 +354,9 @@ hist(df$lifeExp,
 <pre class="r"><code>summary(df$lifeExp)</code></pre>
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   23.60   48.20   60.71   59.47   70.85   82.60</code></pre>
+<p><br><br><br></p>
+<p><a href="toc.html">&lt; Back to Syllabus</a></p>
+<p><br><br><br></p>
 </div>
 </div>
 

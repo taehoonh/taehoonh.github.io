@@ -13,6 +13,12 @@ output:
 
 <br><br><br>
 
+[< Back to Syllabus](toc.html)
+
+<br><br><br>
+
+
+
 ## Week 1-1. Numeric and graphic summary
 
 <br><br><br>
@@ -20,12 +26,12 @@ output:
 Before we start ... let's install R packages first!
 
 ```{r eval = F}
-install.packages(c("tidyverse", "ggplot2"))
+install.packages(c("tidyverse", "gapminder"))
 ```
 
 ```{r warning=FALSE, message=FALSE}
 library(tidyverse)
-library(ggplot2)
+library(gapminder)
 ```
 
 
@@ -65,9 +71,13 @@ box()
 [R code]
 
 ```{r}
-library(gapminder)
+# Load the 'gapminder' dataset 
 df <- gapminder
+
+# Print first 6 rows
 head(df)
+
+# Plot a histogram of life expectancy
 hist(df$lifeExp, 
      main = "Life expectancy", # plot title,
      xlab = "life exp.", # x-axis label
@@ -117,3 +127,8 @@ max(df$lifeExp)
 summary(df$lifeExp)
 ```
 
+<br><br><br>
+
+[< Back to Syllabus](toc.html)
+
+<br><br><br>
