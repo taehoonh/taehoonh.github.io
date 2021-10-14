@@ -1,0 +1,441 @@
+---
+pagetitle: "Week 2-1. Numeric and graphic summary"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+<!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
+
+<br><br><br>
+
+[< Back to Syllabus](toc.html)
+
+<br><br><br>
+
+
+
+
+### 1. Statistical Inference
+
+- the process of learning some properties of the population starting from a sample drawn from this population.
+- For example, you may be in interested in learning about the cholesterol level of patient with heart disease, but we cannot measure the whole population.
+- But you can measure the cholesterol level of a **random sample** of the population and then **infer** or generalize the results to the entire population.
+
+
+
+- Terms we need to clarify:
+  - **Data generating distribution**: the **unknown** probability distribution that generates the data.
+  - **Empirical distribution**: the **observable distribution of the data in the sample.**
+  - **Parameter**: unknown object of interest
+  - **Estimator**: data-driven guess at the value of the parameter.
+- Usually we are interested in a **function** of the data generating distribution. This is often referred to as **parameter** (or the **parameter of interest**)
+- Use **sample** in order to estimate the **parameter of interest**
+- Use a function of empriical distribution, referred to as **estimator**.
+- (Mathematical notation) for parameters, Greek letters, while for estimate, Roman letter.
+- (Mathematical notation) "hat" notation places a "hat" over the Greek letter for the parameter.
+  - e.g. $\hat{\theta}$ is the estimator of the parameter $\theta$.
+  - e.g. $\hat{\theta}_n$  is used when you specifically want to **emphasize** that we are using a sample of $n$ observations to estimate the parameter. 
+
+
+
+### 2. Example: Cholesterol values in patients with heart disease
+
+Let's assume that we want to estimate the average cholesterol value of healthy individuals in the United States. Let's assume that we have cholesterol measurements for a random sample of the population (more on this later!).
+
+- *Parameter of Interest*: the mean cholesterol value of heart patients in the population, denoted as $\mu$
+- *How can we estimate the parameter using the data in our sample?*
+  - We would estimate the population mean cholesterol level $\mu$  with the mean (or average) cholesterol values computed from our sample, denoted by $\hat{\mu}$ or $\bar{x}$.  
+
+
+
+### 3. More on the data generating distribution
+
+The data generating distribution is unknown when we collect a sample from a population. In **non-parametric statistics** we aim at estimating this distribution from the empirical distribution of the sample, without making any assumptions on the shape of the distribution for the population values. However, it is often easier to make **some assumptions** about the data generating distribution. These assumptions are sometimes based on domain knowledge or on mathematical convenience.
+
+One commonly used strategy is to assume a **family of distributions** for the data generating distribution, for instance the **Gaussian distribution** or **normal distribution**.
+
+
+
+### 4. Random Variables and Probability Distributions
+
+#### 1) Probability
+
+In order to make inference from a **random** sample to the whole population, we need some notion of **randomness**. To study randomness we need the concept of **probability**. Hence, probability is one of the foundations of statistical inference.
+
+- What is a probability measure?
+  - Long story short, our main interest is a probability as a measure that quntifies the randomness of an event
+    - e.g. the probability of obtaining 'heads' when tossing a coin.
+- Principles
+  - The probability of an event is a number between 0 and 1.
+  - The sum of the probabilities of all possible events is 1.
+  - The probability of the union of two disjoint events is the sum of their probabilities.
+  - The probability of two independent events occurring is the product of their probabilities.
+
+#### 2) Random variables
+
+Recall that a **variable** is a measurement that describe a characteristic of a set of observations. A **random variable** (r.v.) is a variable that measures an intrinsically random process, e.g. a coin toss. Before observing the outcome, we will not know with certainty whether the toss will yield “heads” or “tails”, but that does not mean that we do not know **anything** about the process: we know that on average it will be heads half of the times and tails the other half. If we refer to **$X$** as the process of measuring the outcome of a coin toss, we say that $X$ is a **random variable**.
+
+- Random variables and statistical inference
+  - For instance, let’s say that we want to describe the height of a certain population. The height of an individual is not a random quantity! We can measure with a certain amount of precision the height of any individual.
+  - What is random is the process of **sampling a set of individuals** from the population?
+    - The randomness is the particular set of individuals (and their heights) that we get from the population. The height of a known individual in our sample is not random. Rather the fact that this particular individual is in our sample is random. Hence, the individuals that compose our particular sample is random. If two researchers each took a random sample of 100 adults from the population, they each would have a diﬀerent set of individuals (with maybe a few people being in both sets).
+    - the randomness comes from the sampling mechanism, not from the quantity that we are measuring: if we repeat the experiment, we will select a diﬀerent sample and we will obtain a diﬀerent set of measurements.
+- Continuous and discrete random variables
+  - A **discrete random variable** can only take a countable number of possible outcomes (e.g., a coin ﬂip, or the number of operations a patient has had).
+  - A **continuous random variable** can take any real value. An example of a continuous random variable is the weight of a participant in a clinical trial.
+
+
+
+### 5. Probability distributions
+
+- 4 key quantities:
+  - Probability Mass Function (PMF) for discrete / Probability Density Function (PDF) for continuous
+  - Cumulative Distribution Function (CDF)
+  - Quantiles
+  - Expected Value
+
+
+
+### 6. Probability Mass Function (PMF)
+
+- $S$: Sample space or the space of all the possible values of $X$
+
+- The PMF of a **discrete random variable $X$** is a function $p$ with the follwing properties.
+
+  - Non-negativity
+
+$$
+p(x)>=0 \quad \forall x) \in S
+$$
+
+  - Sum across all values is one
+
+$$
+\sum_{x \in S} p(x)=1
+$$
+
+- Example: Number of heads in 10 coin flips
+
+```{r}
+set.seed(1)
+rbinom(n = 1, size = 10, prob = 0.5)
+```
+
+- If we repeat the experiment,
+
+```{r}
+rbinom(n = 1, size = 10, prob = 0.5)
+```
+
+- Different result
+- Now we could ask, if we ﬂip a coin 10 times, what is the probability of getting 0 heads? 1 heads? 2 heads, . . . 10 heads?
+  - Since this is all the possibilities, this set of probabilities is the PMF.
+
+- What is the the PMF, e.g. what is the probability distribution of ﬂipping a coin 10 times?
+  - One way to answer is by repeating the experiment many, many times, say 1,000. We can have R repeat this experiment for us rather than us doing this tedious work.
+
+```{r}
+(x <- rbinom(n = 1000, size = 10, prob = 0.5))
+```
+
+- x: the number of times we got 0, 1, 2, 3, ..., 10 head out of 10 flips of a fair coin in 1000 experiments.
+- Plot  the probability distribution based on 1000 experiments
+
+```{r}
+plot(table(x) / sum(table(x)), type = 'h', col = 2, lwd = 4,
+    xlab = "Number of Successes",
+    ylab = "relative frequency",
+    main = "Number of heads in 10 coin flips, repeated 1,000 times")
+```
+
+
+
+### 7. Example of PMF: Binomial Distribution
+
+- There is also a mathematical formula that describes the PMF for the number of heads when ﬂipping a fair coin 10 times. It is called the **binomial distribution**.
+- PMF of the number of successes out of $n$tries where a probability of success is $\pi$ is 
+
+
+#### 1) `dbinom()` function -1
+
+- **`dbinom()`** function can be used to compute the binomial PMF.
+  - **`x`**: the number of "successes", which in this case is the number of heads.
+  - **size**: the number of "tries", which in this case 10 flips
+  - **prob**: the probability of getting a success in a single try, which in this case is the probability of getting a head in one flip, 0.5.
+
+```{r}
+dbinom(x = 5, size = 10, prob = 0.5)
+```
+
+#### 2) `dbinom()` function -2
+
+- **`dbinom()`** also can be used to show the entire distribution by **setting up x as a vector**.
+  - If we have 10 tries (ﬂips), then the set of the possible number of successes (heads) is x = 0, 1, 2, . . . , 10. We will save the probabilities in a variable ‘p’.
+
+```{r}
+(p <- dbinom(x = 0:10, size = 10, prob = 0.5))
+```
+
+#### 3) plotting the binomial distribution's PMF
+
+- x-axis: the possible values of the random variable
+- y-axis: the probability of observing that value
+
+```{r}
+pmf <- as.table(p)
+names(pmf) <- 0:10
+plot(pmf, col = 2, lwd = 4,
+    xlab = "Number of Successes",
+    ylab = "PMF",
+    main = "PMF of the Binomial Distribution")
+```
+
+#### 4) Accuracy of the simulation
+
+- We can verify that our simulation was actually quite accurate. 
+  - Speciﬁcally, recall that we used **`rbinom()`** function to simulate performing the experiment of 10 coin ﬂips 1000 times and for each experiment of 10 ﬂips, **we recorded the number of heads**.
+  -  Let’s compare how our computed distribution for the probability of each outcome compares to the exact probability obtained from the mathematical formula for the binomial PMF.
+
+```{r}
+table(x) / sum(table(x))
+```
+
+```{r}
+round(pmf, 3)
+```
+
+
+
+### 8. Probability Density Function (PDF) (i.e., density function)
+
+- The analog of the PMF for **continuous distributions** is the **probability density function**, or simply **density function**.
+- The properties of the PDF are similar to those of the PMF, but **extended to the case of real numbers**.
+  - Non-negativity: 
+  
+$$
+p(x)>=0 \quad \forall x) \in S
+$$
+  
+  - The total area under the curve is 1: 
+  
+$$
+\int_{x \in S} f(x)=1
+$$
+
+- Areas under the PDF represent probabilities.
+  - In particular, the probability of an individual value.
+  - Say $x$ is 0. However,  the probability of $x-\delta x \text { to } x+\delta x$ is a number greater than 0 for any $\delta$, no matter how small.
+
+
+
+### 9. Example of PDF: Gaussian (Normal) Distribution
+
+- To denote a particular normal distribution, you need to specify its **mean** and its **variance**.
+- A **standard normal** is a normal random variable with **mean zero and variance of one**.
+
+$$
+f(x)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{-\frac{(x-\mu)^{2}}{2 \sigma^{2}}}, \text { where }-\infty<x<\infty
+$$
+
+- Plotting the normal distribution
+
+```{r}
+curve(dnorm, from = -4, to = 4,
+     xlab = 'x',
+     ylab = "PDF",
+     main = "PDF of Standard Normal Distribution")
+```
+
+
+- Just like **`dbinom()`**, we can use **`dnorm()`** function to get the value of the **density** for any real number.
+- However, this is **NOT** the probability of getting that value
+  - **`dnorm(1)`** gives the **`f(1)`**, which is the value from the curve for a standard normal distribution (**since specific values for the mean and standard deviation were note specified**) and it is **NOT** the probability of getting a 1 from a standard normal distribution.
+  - Instead, this probability would be **0 (zero)**.
+- **(NOTE)** **PDF does not give you the probability of the event!**
+- **Since continuous variables can take inﬁnite number of values, the probability of any speciﬁc value is 0. (otherwise the sum under the curve would be greater than 1).**
+- Thus, we always make statements on the **probabilities of intervals**.
+  - e.g. if X is a standard normal random variable, what is the probability that X is less than -1?
+
+
+```{r}
+curve(dnorm, from = -4, to = 4,
+     ylab = 'PDF',
+     main = 'Pr(X <= -1)')
+coord.x <- c(-4, seq(-4, -1, by = 0.1), -1)
+coord.y <- c(0, dnorm(seq(-4, -1, by = 0.1)), 0)
+polygon(coord.x, coord.y, col = 2)
+```
+
+
+
+### 10. Cumulative Distribution Function (CDF)
+
+- One important quantity linked to the area under the PDF is the **cumulative distribution function**. 
+- the probability that a random variable is less or equal than a certain number.
+
+$$
+F(x)=\operatorname{Pr}(X \leq x)
+$$
+
+
+- Both applies to **continuous** and **discrete** random variables.
+  - Relationship between PDF-CDF:
+  
+$$
+F(x)=\int_{X \leq x} f(x) d x
+$$
+
+  - Relationship between PMF-CDF: 
+  
+$$
+F(x)=\sum_{X \leq x} p(x) d x
+$$
+
+#### Example: Gaussian (Normal) Distribution
+
+- **`pnorm()`**: to compute the **CDF** of the normal distribution variable, or to compute the probability of any **interval**.
+  - e.g. the probability that $X$ is less than -1 is
+
+```{r}
+pnorm(-1, 0, 1)
+```
+
+- e.g. ***Pr(X>2)=1-Pr(X<=2)=1-F(2)***
+
+```{r}
+1 - pnorm(2)
+```
+
+- e.g. the probability that $X$ is between -1 and 1 
+- i.e., ***Pr(-1<=X<=1)=Pr(X<=1) - Pr(X<=-1) = F(1) - F(-1)***
+
+```{r} 
+pnorm(1) - pnorm(-1)
+```
+
+
+
+### 11. Quantiles
+
+- the $p$ quantile is the number $q$ such that $p$ X 100% of the observations are less than or equal to $q$.
+
+$$
+F(q)=\operatorname{Pr}(X \leq q)=p
+$$
+
+- Note that we are interested in the quantile $q$, after fixing the probability $p$, therefore 
+
+$$
+q=F^{-1}(p)
+$$
+
+#### Example: Gaussian (Normal) Distribution
+
+- **`qnorm()`**: to compute the quantiles of the standard normal distribution.
+  - e.g. 0.95-quantile for a standard normal
+
+```{r}
+qnorm(0.95) # equal to qnorm(0.95, 0, 1)
+```
+
+
+
+### 12. Summary: PDF, CDF, and quantiles in R
+
+- **`dnorm()`**: to compute the PDF of a normal random variable
+- **`pnorm()`**: to compute its CDF
+- **`qnorm()`**: to compute is quantile.
+- **`rnorm()`**: to generate (siulate) a random sample from the normal distribution
+
+
+
+### 13. Expected Value and Variance
+
+#### 1) Expected Value
+
+- The **expected value** or **mean** of a random variable is the **center of its distribution**.
+
+- In case $X$ is a discrete random variable, the expected value is
+
+$$
+E[X]=\sum_{x \in S} x p(x)
+$$ 
+
+where ***p(x)*** is the **PMF of X**.
+
+
+- In case $X$ is a continuous random variable, the expected value is
+
+$$
+E[X]=\int_{x \in S} x f(x) d x
+$$
+
+where ***f(x)*** is the **PDF of X**.
+
+#### 2) Expected Value and Sample Mean
+
+- **Sample mean** is what we will use to **estimate** the **expected value**, or the mean of the data generating distribution.
+- **Sample mean**: the mean of the **empricial distribution of the sample**, which is obtained by giving probability 1/n to each observed value.
+
+$$
+p_{n}(x)=\sum_{i=1}^{n} x_{i} p_{n}\left(x_{i}\right)=\frac{1}{n} \sum_{i=1}^{n} x_{i}
+$$
+
+#### 3) Variance
+
+- **Variance** of a random variable is the following way.
+- In case of the $\mu$, the epected value of $X$, the variance is
+
+$$
+\operatorname{Var}(X)=E\left[(X-\mu)^{2}\right]
+$$
+
+$$
+\operatorname{Var}(X)=E\left[X^{2}\right]-E[X]^{2}
+$$
+
+#### 4) Sample Variance
+
+- Formula
+
+$$
+S^{2}=\frac{1}{n-1} \sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}
+$$
+
+where $\bar{x}$ is sample mean.
+
+
+- As the variance is the mean of the squared differences from the expected value, the sample variance is (almost) the mean of the squared differences from the sample mean.
+
+
+
+<!-- #### 5) Example: Expected Value and Variance of the Binomial Distribution -->
+
+<!-- - The PMF of a binomial distribution is: ![binom pmf](https://ws4.sinaimg.cn/large/006tNbRwly1fw21tbvakfj308300v3yd.jpg) -->
+
+<!-- - The expected value and the variance are: ![evvar](https://ws3.sinaimg.cn/large/006tNbRwly1fw23xqc1k0j307800s745.jpg) -->
+
+<!-- - The expected value and the variance of the normal distribution is: ![ndevvar](https://ws4.sinaimg.cn/large/006tNbRwly1fw23z35fohj305h00uweb.jpg) -->
+
+
+
+### 14. Parameters of a distribution
+
+- binomial distribution
+  - $n$: the number of trials
+  - $\pi$: the probability of success
+- normal distribution
+  - $\mu$: the expected value or the mean
+  - $\sigma$: standard deviation
+
+
+<br><br><br>
+
+[< Back to Syllabus](toc.html)
+
+<br><br><br>
