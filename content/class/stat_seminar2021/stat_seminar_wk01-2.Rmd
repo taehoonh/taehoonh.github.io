@@ -1,5 +1,5 @@
 ---
-pagetitle: "Week 1-2. Numeric and graphic summary"
+pagetitle: "Week 1-2. EDA"
 output:
   html_document:
     toc: true

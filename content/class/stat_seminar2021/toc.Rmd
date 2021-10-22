@@ -17,14 +17,12 @@ output:
 
 | Week |  Topic                                                                                         | Lecture Note                                                      |
 |------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| 1    |  Introduction and course overview                                                              | [Week1-1](stat_seminar_wk01-1.html)                               |
-|      |  Exploratory Data Analysis (EDA)                                                               | [Week1-2](stat_seminar_wk01-2.html)                               |
+| 1    |  Course overview                                                                               | [Week1-1](stat_seminar_wk01-1.html)                               |
+|      |  Exploratory data analysis (EDA)                                                               | [Week1-2](stat_seminar_wk01-2.html)                               |
 | 2    |  Statistical inference                                                                         | [Week2-1](stat_seminar_wk02-1.html)                               |
-|      |  Distributions: Normal, Binomial, Poisson                                                      |                                                                   |
-|      |  Data wrangling and tidy data                                                                  |                                                                   |
-| 3    |  Estimators and their distribution                                                             |                                                                   |
-|      |  The bootstrap and confidence intervals                                                        |                                                                   |
-|      |  Simulating data from parametric distributions                                                 |                                                                   |
+|      |  Common distributions: normal, binomial, poisson                                               | [Week2-2](stat_seminar_wk02-2.html)                               |
+| 3    |  Estimate of population proportion                                                             | [Week3-1](stat_seminar_wk03-1.html)                               |
+|      |  Hypothesis testing for a population proportion                                                | [Week3-2](stat_seminar_wk03-2.html)                               |
 | 4    |  The central limit theorem                                                                     |                                                                   |
 |      |  Tests of significance / hypothesis testing                                                    |                                                                   |
 |      |  Sampling, resampling, and the bootstrap                                                       |                                                                   |

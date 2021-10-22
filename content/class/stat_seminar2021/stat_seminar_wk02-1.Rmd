@@ -1,5 +1,5 @@
 ---
-pagetitle: "Week 2-1. Numeric and graphic summary"
+pagetitle: "Week 2-1. Statistical inference"
 output:
   html_document:
     toc: true
