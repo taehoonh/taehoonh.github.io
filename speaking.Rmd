@@ -10,6 +10,7 @@ output:
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/>
 
 <br><br>
 

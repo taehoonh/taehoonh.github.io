@@ -18,14 +18,16 @@ navbar:
   right:
     - icon: fas fa-envelope
       href: contact.html
-    - icon: fab fa-researchgate
-      href: https://www.researchgate.net/profile/Taehoon-Ha-3
     - icon: fab fa-github
       href: http://github.com/taehoonh
     - icon: fab fa-twitter
       href: https://twitter.com/taeh00nha
     - icon: fab fa-linkedin-in
       href: https://www.linkedin.com/in/taehoonha/
+    - icon: ai-google-scholar ai-lg
+      href: https://scholar.google.com/citations?user=BM4yFdAAAAAJ&hl=en
+    - icon: ai-researchgate ai-lg #fab fa-researchgate
+      href: https://www.researchgate.net/profile/Taehoon-Ha-3
 output:
   html_document:
     theme: flatly

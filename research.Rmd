@@ -10,10 +10,11 @@ output:
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/>
 
 <br><br><br>
 
-For the most up to date list of publications, check out my [Google Scholar](https://scholar.google.com/citations?user=BM4yFdAAAAAJ&hl=en) page.
+For the most up to date list of publications, check out my [Google Scholar](https://scholar.google.com/citations?user=BM4yFdAAAAAJ&hl=en) or [Researchgate](https://www.researchgate.net/profile/Taehoon-Ha-3) page.
 
 <br>
 
