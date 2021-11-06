@@ -18,6 +18,8 @@ navbar:
   right:
     - icon: fas fa-envelope
       href: contact.html
+    - icon: fab fa-researchgate
+      href: https://www.researchgate.net/profile/Taehoon-Ha-3
     - icon: fab fa-github
       href: http://github.com/taehoonh
     - icon: fab fa-twitter
