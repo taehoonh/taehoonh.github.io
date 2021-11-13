@@ -23,12 +23,10 @@ output:
 |      |  Common distributions: normal, binomial, poisson                                               | [Week2-2](stat_seminar_wk02-2.html)                               |
 | 3    |  Estimate of population proportion                                                             | [Week3-1](stat_seminar_wk03-1.html)                               |
 |      |  Hypothesis testing for a population proportion                                                | [Week3-2](stat_seminar_wk03-2.html)                               |
-| 4    |  The central limit theorem                                                                     |                                                                   |
-|      |  Tests of significance / hypothesis testing                                                    |                                                                   |
-|      |  Sampling, resampling, and the bootstrap                                                       |                                                                   |
-| 5    |  Understanding the p-value                                                                     |                                                                   |
-|      |  Comparison of two means, the t-test                                                           |                                                                   |
-|      |  How to compute p-values using distributions, permutations, bootstrap                          |                                                                   |
+| 4    |  Bootstrapping                                                                                 | [Week4-1](stat_seminar_wk04-1.html)                               |
+|      |  Type I & II error and Power                                                                   | [Week4-2](stat_seminar_wk04-2.html)                               |
+| 5    |  Bootstrap hypothesis testing and Normal approximation                                         | [Week5-1](stat_seminar_wk05-1.html)                               |
+|      |  Maximum Likelihood Estimator (MLE) for Normal, Asymptotics, and Central Limit Theorem (CLT)   | [Week5-2](stat_seminar_wk05-2.html)                               |
 | 6    |  Comparison of two means, nonparametric                                                        |                                                                   |
 |      |  Type I error and power                                                                        |                                                                   |
 |      |  The t-test and its nonparametric alternatives                                                 |                                                                   |
