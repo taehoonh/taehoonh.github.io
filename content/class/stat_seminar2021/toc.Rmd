@@ -11,9 +11,14 @@ output:
 
 <!-- <link rel="stylesheet" href="styles.css" type="text/css"> -->
 
-<br><br><br>
+<br><br><br><br>
 
-# Intro to Statistics
+
+<p align="center">
+<img src="introstat_hexa.png" style="width:30%; border:0px solid; margin-right: 0px" align="center">
+</p>
+<br>
+
 
 | Week |  Topic                                                                                         | Lecture Note                                                      |
 |------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
