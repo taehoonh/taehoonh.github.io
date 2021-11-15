@@ -31,7 +31,7 @@ output:
 + [커피챗](https://coffeechat.kr/with/glavine)
 
 
-+ [스텝바이스탯](uslife101.tistory.com) 블로그: 미국의 다른 현직 데이터 분석가 분들과 함께 통계학/데이터 사이언스 석사 지원, 인턴십, 취업, 이직 등의 다양한 이야기를 나누고 있습니다.
++ [스텝바이스탯](https://uslife101.tistory.com) 블로그: 미국의 다른 현직 데이터 분석가 분들과 함께 통계학/데이터 사이언스 석사 지원, 인턴십, 취업, 이직 등의 다양한 이야기를 나누고 있습니다.
 
 <br><br>
 
@@ -43,6 +43,8 @@ output:
 
 
   + [Intro to Statistics](content/class/stat_seminar2021/toc.html)
+  
+  
   + [온라인 Group Study 멘토링](https://www.notion.so/R-Public-c365dfa57f2d4c749d9e8c73e5a5ea7b)
   
 <br>
