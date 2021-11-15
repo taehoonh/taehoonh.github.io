@@ -42,6 +42,24 @@ If you have additional questions, please feel free to reach out via ha@cshl.edu 
 
 </div>
 
+<br>
+
+<div>
+<style>
+div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "box">
+<strong>* 미국 통계학/데이터 석사 지원 & 커리어 QnA </strong> <br>
+
+지난 몇 년간 주변 지인분들과 유학생들에게 통계/데이터 사이언스로의 커리어 전환과 미국 유학에 대해서 많은 질문을 받아왔었고, 여러 경험들을 바탕으로 멘토링을 시작하게 되었습니다. 제 경험이 데이터 석사 유학과 현지 취업을 준비하시는 지원자 분들에게 조금이나마 도움이 되었으면 좋겠습니다.
+
+[Learn more](mentoring.html)
+
+</div>
+
+
+
+
 <!-- <style> -->
 <!-- div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;} -->
 <!-- </style> -->
