@@ -3,7 +3,7 @@ pagetitle: "Mentoring"
 output:
   html_document:
     toc: true
-    toc_depth: 3
+    toc_depth: 4
     toc_float:
      collapsed: false
      smooth_scroll: false
@@ -24,17 +24,24 @@ output:
 저 또한 멘토링을 하면서 다양한 영역에서 일하시는 지원자분들을 만날 수 있어서 좋고 그 분들로부터 많은 에너지와 열정을 얻어서 저 개인적으로도 정말 큰 힘이 됩니다. 제 경험이 데이터 석사 유학과 현지 취업을 준비하시는 지원자 분들에게 조금이나마 도움이 되었으면 좋겠습니다.
 
 
-<br>
+<br><br>
 
-### 미국 통계학/데이터 사이언스 석사 지원 & 커리어 QnA
+#### 미국 통계학/데이터 사이언스 석사 지원 & 커리어 QnA
 
 + [커피챗](https://coffeechat.kr/with/glavine)
 
-<br>
 
-### 통계/R programming 교육 멘토링
++ [스텝바이스탯](uslife101.tistory.com) 블로그: 미국의 다른 현직 데이터 분석가 분들과 함께 통계학/데이터 사이언스 석사 지원, 인턴십, 취업, 이직 등의 다양한 이야기를 나누고 있습니다.
+
+<br><br>
+
+#### 통계/R 프로그래밍 교육 멘토링
+
+미국 석/박사를 앞두고 있는 학생들에게 통계/R 프로그래밍 교육을 진행하고 있습니다.
 
 + **Fall 2021**
+
+
   + [Intro to Statistics](content/class/stat_seminar2021/toc.html)
   + [온라인 Group Study 멘토링](https://www.notion.so/R-Public-c365dfa57f2d4c749d9e8c73e5a5ea7b)
   
