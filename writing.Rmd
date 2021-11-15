@@ -17,14 +17,14 @@ output:
 ### Technical translation
 
 + Genomic analysis of COVID-19 spread. Situation report (Korean ver.), [*Nextstrain*](https://nextstrain.org/) (2020)
-  + 05/15: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-15)]   [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-15)]
-  + 05/08: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-08)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-08)]
-  + 05/01: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-01)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-05-01)]
-  + 04/24: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-24)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-04-24)]
-  + 04/17: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-17)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-04-17)]
-  + 04/10: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-10)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/en/2020-04-10)]
-  + 04/03: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-03)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/2020-04-03)]
-  + 03/27: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-03-27)] [[English](https://nextstrain.org/narratives/ncov/sit-rep/2020-03-27)]
+  + 05/15: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-15)] 
+  + 05/08: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-08)]
+  + 05/01: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-05-01)] 
+  + 04/24: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-24)] 
+  + 04/17: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-17)] 
+  + 04/10: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-10)] 
+  + 04/03: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-04-03)] 
+  + 03/27: [[Korean](https://nextstrain.org/narratives/ncov/sit-rep/ko/2020-03-27)] 
 
 <br>
 
