@@ -45,6 +45,6 @@ output:
   + [Intro to Statistics](content/class/stat_seminar2021/toc.html)
   
   
-  + [온라인 Group Study 멘토링](https://www.notion.so/R-Public-c365dfa57f2d4c749d9e8c73e5a5ea7b)
+  + 온라인 Group Study 멘토링
   
 <br>
