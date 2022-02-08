@@ -16,8 +16,8 @@ navbar:
     - text: "Speaking"
       href: speaking.html
   right:
-    - text: 멘토링
-      href: mentoring.html
+#    - text: 멘토링
+#      href: mentoring.html
     - icon: fas fa-envelope
       href: contact.html
     - icon: fab fa-github
