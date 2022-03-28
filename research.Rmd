@@ -63,8 +63,6 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 <!-- + COVID-19 treatment efficacy for inpatient (Sandeep) -->
 
-<!-- + Satge IV pancreactic cancer (Jung-In) -->
-
 <!-- + Tanzania traumatic brain injury (Dr. Mangat & Dr. Gerber) -->
 
 
