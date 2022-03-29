@@ -22,6 +22,8 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 + Christina M Brennan, Sandeep Nadella, Xiang Zhao, Richard J Dima, Nicole Jordan-Martin, Breanna R Demestichas, Sam O Kleeman, Miriam Ferrer, Eva Carlotta von Gablenz, Nicholas Mourikis, Michael E Rubin, Harsha Adnani, Hassal Lee, **Taehoon Ha**, Soma Prum, Cheryl B Schleicher, Sharon S Fox, Michael G Ryan, Christina Pili, Gary Goldberg, James M Crawford, Sara Goodwin, Xiaoyue Zhang, Jonathan B Preall, Ana S H Costa, Joseph Conigliaro, Joseph R Masci, Jie Yang, David A Tuveson, Kevin J Tracey, and Tobias Janowitz (2022). [*Oral famotidine versus placebo in non-hospitalised patients with COVID-19: a randomised, double-blind, data-intense, phase 2 clinical trial*](http://dx.doi.org/10.1136/gutjnl-2022-326952). Gut.
 
++ Sonam Bhatia, Melissa Kramer, Suzanne Russo, Payal Naik, Gayatri Arun, Kyle Brophy, Peter Andrews, Cheng Fan, Charles Perou, Jonathan Preall, **Taehoon Ha**, Dennis Plenker, David Tuveson, Arvind Rishi, John Wilkinson, W. Richard McCombie, Karen Kostroff, and David Spector (2022). [*Patient-derived triple negative breast cancer organoids provide robust model systems that recapitulate tumor intrinsic characteristics*](https://aacrjournals.org/cancerres/article-abstract/doi/10.1158/0008-5472.CAN-21-2807/681619/Patient-derived-triple-negative-breast-cancer?redirectedFrom=fulltext). Cancer Research.
+
 + Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2021). [*GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*](https://doi.org/10.1152/ajpgi.00059.2021). AJP Gastrointestinal and Liver Physiology.
 
 + Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). [*Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer*](http://doi.org/10.1200/JCO.2021.39.15_suppl.e16224). Journal of Clinical Oncology.
@@ -47,7 +49,7 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Accepted
 
-+ Sonam Bhatia, Melissa Kramer, Suzanne Russo, Payal Naik, Gayatri Arun, Kyle Brophy, Peter Andrews, Cheng Fan, Charles Perou, Jonathan Preall, **Taehoon Ha**, Dennis Plenker, David Tuveson, Arvind Rishi, John Wilkinson, W. Richard McCombie, Karen Kostroff, and David Spector (2021). [*Patient-derived triple negative breast cancer organoids provide robust model systems that recapitulate tumor intrinsic characteristics*](https://doi.org/10.1101/2021.08.09.455691). Cancer Research.
+
 
 <br><br>
 
