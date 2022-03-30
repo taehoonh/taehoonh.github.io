@@ -11,7 +11,7 @@ library(lmerTest)
 # For those who do not have packages above, please uncomment the following line and install packages.
 # install.packages(c("dplyr", "readxl", "multcomp", "ggplot2", "lme4", "lmerTest"))
 
-# Today's dataset - Diet (low fat vs. high fat) and Ovx (shamOVX vs. OVX)
+# Today's dataset1 - Diet (low fat vs. high fat) and Ovx (shamOVX vs. OVX)
 # Place the dataset and this R script file in the same folder and click [Session]-[Set working directory]-[To source file location] on the menu.
 dat.work <- read_xlsx("CoreKnowledge.xlsx", sheet = 1)
 
