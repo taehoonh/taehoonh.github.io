@@ -22,7 +22,7 @@ output:
 <br><br>
 
 ### Presentation
-+ Core Knowledge: Biostatistics Workshop 03/30/2022, Cold Spring Harbor Laboratory    [[Slide]("/content/post/CoreKnowledge_03302022.pdf")] [[R Code](/content/post/CoreKnowledge_03302022.R)] [[Data](/post/CoreKnowledge.xlsx)]
++ Core Knowledge: Biostatistics Workshop 03/30/2022, Cold Spring Harbor Laboratory    [[Slide]("/content/post/CoreKnowledge_03302022.pdf")] [[R Code](/content/post/CoreKnowledge_03302022.R)] [[Data](/content/post/CoreKnowledge.xlsx)]
 
 + Core Knowledge: Biostatistics Workshop 01/21/2021, Cold Spring Harbor Laboratory
 
