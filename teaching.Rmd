@@ -18,8 +18,11 @@ output:
 
 #### Instruct students who are interested in learning statistics principles (volunteer)
 
-+ **Fall 2021**
-  + [Intro to Statistics](content/class/stat_seminar2021/toc.html)
++ **Fall 2021 ~ **
+  + Intro to Statistics
+  + Regression
+  + Machine Learning
+  + Data Structures and SQL
   
 
 <br><br><br>
