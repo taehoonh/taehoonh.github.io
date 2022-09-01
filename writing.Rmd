@@ -38,4 +38,4 @@ output:
 
 + [Monte Carlo simulation for causal inference( G-computation formula)](/content/post/Monte-Carlo-simulation-for-causal-inference.html)
 
-+ [Summary of `data.table`](/content/post/data.table.html)
+<!-- + [Summary of `data.table`](/content/post/data.table.html) -->

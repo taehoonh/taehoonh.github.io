@@ -12,17 +12,17 @@ output:
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/>
 
-<br><br><br>
+<!-- <br><br><br> -->
 
-### Voluntary Statistics Instructor
+<!-- ### Voluntary Statistics Instructor -->
 
-#### Instruct students who are interested in learning statistics principles (volunteer)
+<!-- #### Instruct students who are interested in learning statistics principles (volunteer) -->
 
-+ **Fall 2021 ~ **
-  + Intro to Statistics
-  + Regression
-  + Machine Learning
-  + Data Structures and SQL
+<!-- + **Fall 2021 ~ ** -->
+<!--   + Intro to Statistics -->
+<!--   + Regression -->
+<!--   + Machine Learning -->
+<!--   + Data Structures and SQL -->
   
 
 <br><br><br>
