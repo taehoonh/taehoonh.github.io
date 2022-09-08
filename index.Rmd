@@ -27,7 +27,10 @@ I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS
 div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 </style>
 <div class = "box">
-<strong>* Office Hour (Thursday 2-4 pm)</strong> <br>
+
+![](https://img.shields.io/badge/Cold%20Spring%20Harbor%20Laboratory-Biostatistics%20Offce%20Hours-9cf)
+
+<strong>Thursday 2-4 pm</strong> <br>
 
 My office hour is a Cancer Center sponsored core resource whose goal is to provide for, enhance, and/or facilitate statistical collaboration involving the design, conduct, analysis, or publication of biomedical research at Cold Spring Harbor Laboratory. This is one-hour complimentary statistical advice only for the CSHL Cancer Center faculty, staff, and students.
 
