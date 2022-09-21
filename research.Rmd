@@ -20,7 +20,7 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 ### Published
 
-+ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Astrid Desch??nes, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, Daniel King (2022). [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://doi.org/10.1200/JCO.2022.40.16_suppl.e16285). 2022 ASCO Annual Meeting
++ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Astrid Desch??nes, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, Daniel King (2022). [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://doi.org/10.1200/JCO.2022.40.16_suppl.e16285). Journal of Clinical Oncology [2022 ASCO Annual Meeting].
 
 + Sonam Bhatia, Melissa Kramer, Suzanne Russo, Payal Naik, Gayatri Arun, Kyle Brophy, Peter Andrews, Cheng Fan, Charles Perou, Jonathan Preall, **Taehoon Ha**, Dennis Plenker, David Tuveson, Arvind Rishi, John Wilkinson, W. Richard McCombie, Karen Kostroff, and David Spector (2022). [*Patient-derived triple negative breast cancer organoids provide robust model systems that recapitulate tumor intrinsic characteristics*](https://doi.org/10.1158/0008-5472.CAN-21-2807). Cancer Research.
 
@@ -28,7 +28,7 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 + Srijani Basu, Catherine Liu, Xi Kathy Zhou, Nishiguchi Ryohei, **Taehoon Ha**, Justin Chen, Melanie Johncilla, Rhonda K. Yantiss, David C. Montrose and Andrew J. Dannenberg (2021). [*GLUT5 is a Determinant of Dietary Fructose-mediated Exacerbation of Experimental Colitis*](https://doi.org/10.1152/ajpgi.00059.2021). AJP Gastrointestinal and Liver Physiology.
 
-+ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). [*Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer*](http://doi.org/10.1200/JCO.2021.39.15_suppl.e16224). Journal of Clinical Oncology.
++ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Craig E. Devoe, Xinhua Zhu, and Jeff Boyd (2021). [*Association of TP53 mutation status and GATA6 amplification with clinical outcome of pancreatic cancer*](http://doi.org/10.1200/JCO.2021.39.15_suppl.e16224). Journal of Clinical Oncology [2021 ASCO Annual Meeting].
 
 + David C. Montrose, Suchandrima Saha, Miguel Foronda, Erin M. McNally, Justin Chen, Xi Kathy Zhou, **Taehoon Ha**, Jan Krumsiek, Mustafa Buyukozkan, Akanksha Verma, Olivier Elemento, Rhonda K. Yantiss, Qiuying Chen, Steven S. Gross, Lorenzo Galluzzi, Lukas E. Dow and Andrew J. Dannenberg (2021). [*Exogenous and Endogenous Sources of Serine Contribute to Colon Cancer Metabolism, Growth and Resistance to 5-Fluorouracil*](https://doi.org/10.1158/0008-5472.CAN-20-1541). Cancer Research.
 
@@ -51,7 +51,7 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Accepted
 
-+ Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan, Jonathan J. Ipsaro, **Taehoon Ha**, Peter K. Koo, Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2021). [*ETV6 dependency in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer activation*](https://taehoonh.me/research.html#Submitted). Nature Cell Biology.
++ Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan, Jonathan J. Ipsaro, **Taehoon Ha**, Peter K. Koo, Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2022). [*ETV6 dependency in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer activation*](https://taehoonh.me/research.html#Submitted). Nature Cell Biology.
 
 <br><br>
 

@@ -32,7 +32,7 @@ div.box { background-color:#F6F6F6; border-radius: 5px; padding: 20px;}
 
 <strong>Thursday 2-4 pm</strong> <br>
 
-My office hour is a Cancer Center sponsored core resource whose goal is to provide for, enhance, and/or facilitate statistical collaboration involving the design, conduct, analysis, or publication of biomedical research at Cold Spring Harbor Laboratory. This is one-hour complimentary statistical advice only for the CSHL Cancer Center faculty, staff, and students.
+My office hour is a Cancer-Center-sponsored core resource whose goal is to provide for, enhance, and/or facilitate statistical collaboration involving the design, conduct, analysis, or publication of biomedical research at Cold Spring Harbor Laboratory. This is one-hour complimentary statistical advice only for the CSHL Cancer Center faculty, staff, and students.
 
 If you have additional questions, please feel free to reach out via ha@cshl.edu Thank you.
 <br>
