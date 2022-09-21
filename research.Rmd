@@ -51,13 +51,11 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Accepted
 
-
++ Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan, Jonathan J. Ipsaro, **Taehoon Ha**, Peter K. Koo, Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2021). [*ETV6 dependency in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer activation*](https://taehoonh.me/research.html#Submitted). Nature Cell Biology.
 
 <br><br>
 
 ### Submitted
-
-+ Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan, Jonathan J. Ipsaro, **Taehoon Ha**, Peter K. Koo, Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2021). [*ETV6 dependency in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer activation*](https://taehoonh.me/research.html#Submitted). Nature Cell.
 
 <br><br>
 
