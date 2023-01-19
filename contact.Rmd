@@ -10,7 +10,7 @@ output: html_document
 
 #### <b>Cold Spring Harbor Laboratory</b> <img src="images/cshl_logo_alternate_RGB.png" style="width:20%;" align="right">
 
-One Bungtown Road<br>
+1 Bungtown Road<br>
 Cold Spring Harbor, NY 11724<br>
 267.225.2588<br>
 ha@cshl.edu<br>

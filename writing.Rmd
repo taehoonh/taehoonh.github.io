@@ -1,5 +1,5 @@
 ---
-pagetitle: "Writing"
+pagetitle: "[Writing]"
 output:
   html_document:
     toc: true

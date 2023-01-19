@@ -1,5 +1,5 @@
 ---
-pagetitle: "Teaching"
+pagetitle: "[Teaching]"
 output:
   html_document:
     toc: true
@@ -26,6 +26,13 @@ output:
   
 
 <br><br><br>
+
+### Instructor: T32 Biostatistics Course (TBD)
+
++ **Summer 2023**
+
+
+<br>
 
 ### Teaching Assistant
 
