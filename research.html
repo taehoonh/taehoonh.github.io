@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -158,11 +158,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -416,6 +420,12 @@ page.</p>
 <div id="published" class="section level3">
 <h3>Published</h3>
 <ul>
+<li><p>Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan
+Toneyan, Jonathan J. Ipsaro, <strong>Taehoon Ha</strong>, Peter K. Koo,
+Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2023). <a
+href="https://doi.org/10.1038/s41556-022-01060-1"><em>ETV6 dependency in
+Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer
+activation</em></a>. Nature Cell Biology.</p></li>
 <li><p>Jung-In Yang, <strong>Taehoon Ha</strong>, Edward Zhou, Chris
 Tzanavaris, Astrid Desch??nes, Jeff Boyd, Christopher Hollweg, Xinhua
 Zhu, Daniel King (2022). <a
@@ -482,7 +492,7 @@ Carcinogenesis.</p></li>
 <li><p>Edward H. Williams, Thomas R. Flint, Claire M. Connell, Daniel
 Giglio, Hassal Lee, <strong>Taehoon Ha</strong>, Eva Gablenz, Nicholas
 Bird, James M. J. Weaver, Harry Potts, Cameron T. Whitley, Michael A.
-Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavar??, and Tobias
+Bookman, Andy G. Lynch, Hannah V. Meyer, Simon Tavaré, and Tobias
 Janowitz (2020). <a
 href="https://doi.org/10.1158/1078-0432.CCR-20-3201"><em>CamGFR v2: A
 New Model for Estimating the Glomerular Filtration Rate from
@@ -504,18 +514,18 @@ isotope dilution mass spectrometry (IDMS) calibrated method.</p>
 </div>
 <div id="accepted" class="section level3">
 <h3>Accepted</h3>
-<ul>
-<li>Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan,
-Jonathan J. Ipsaro, <strong>Taehoon Ha</strong>, Peter K. Koo, Mikala
-Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2022). <a
-href="https://taehoonh.me/research.html#Submitted"><em>ETV6 dependency
-in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer
-activation</em></a>. Nature Cell Biology.</li>
-</ul>
 <p><br><br></p>
 </div>
 <div id="submitted" class="section level3">
 <h3>Submitted</h3>
+<ul>
+<li>Jung-In Yang, Taehoon Ha, Edward Zhou, Chris Tzanavaris, Amber
+Habowski, Astrid Deschenes, Pascal Belleau, Jeff Boyd, Christopher
+Hollweg, Xinhua Zhu, Daniel A. King1<a
+href="https://taehoonh.me/research.html#Submitted"><em>GATA6
+amplification is associated with improved survival of TP53-mutated
+pancreatic cancer</em></a>. TBD.</li>
+</ul>
 <p><br><br></p>
 <!-- ### In-preparation -->
 <!-- + COVID-19 treatment efficacy for inpatient (Sandeep) -->
