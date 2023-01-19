@@ -57,7 +57,7 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Submitted
 
-<!-- + Jung-In Yang, Taehoon Ha, Edward Zhou, Chris Tzanavaris, Amber Habowski, Astrid Deschenes, Pascal Belleau, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, Daniel A. King (2023). [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://taehoonh.me/research.html#Submitted). TBD.. -->
+<!-- + Jung-In Yang, Taehoon Ha, Edward Zhou, Chris Tzanavaris, Amber Habowski, Astrid Deschenes, Pascal Belleau, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, Daniel A. King (2023). [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://taehoonh.me/research.html#Submitted). TBD. -->
 
 <br><br>
 
