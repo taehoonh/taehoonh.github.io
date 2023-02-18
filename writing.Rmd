@@ -34,6 +34,8 @@ output:
 
 
 ### Miscellaneous
++ [GPT-like large language model development using tiny Shakespear dataset](https://nbviewer.org/github/taehoonh/gpt-like-development/blob/main/gpt_dev.ipynb)
+
 + [Alternative to kable function when knitting to MS word](/content/post/alternative-to-kable-function-when-knitting-to-ms-word.html)
 
 + [Monte Carlo simulation for causal inference( G-computation formula)](/content/post/Monte-Carlo-simulation-for-causal-inference.html)
