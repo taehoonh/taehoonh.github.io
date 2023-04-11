@@ -17,7 +17,7 @@ My interest is in developing and applying novel statistical methods to better de
 
 Previously, I was a research assistant at [Weill Cornell Medicine in the Department of Population Health Sciences](https://phs.weill.cornell.edu/research-collaboration/our-divisions/biostatistics), where I worked primarily in breast cancer, colorectal cancer, obesity, and inflammation.
 
-I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science. My resume is available [here](files/Resume_TaehoonHa_202207.pdf).
+I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science. My resume is available [here](files/Resume_TaehoonHa_GC.pdf).
 
 <br>
 
