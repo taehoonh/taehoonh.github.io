@@ -55,7 +55,7 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Submitted
 
-+ Jung-In Yang, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Astrid Deschênes, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, Daniel King (2023). [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://doi.org/10.1101/2023.03.06.23286147). medRxiv.
++ Jung-In Yang, Amber Habowski, Astrid Deschênes, Pascal Belleau, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, David Tuveson, Daniel A. King. [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://doi.org/10.1101/2023.03.06.23286147). Pancreas.
 <!-- https://doi.org/10.1200/JCO.2022.40.16_suppl.e16285 -->
 
 <br><br>
@@ -65,13 +65,5 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 <!-- + COVID-19 treatment efficacy for inpatient (Sandeep) -->
 
 <!-- + Tanzania traumatic brain injury (Dr. Mangat & Dr. Gerber) -->
-
-
-
-<!-- + Bongsoo Park, Jeffrey A. Deiuliis, Rengasamy Palanivel, **Taehoon Ha**, Ji-Eun Park, Sanjay Rajagopalan, and Shyam Biswal, *Sex-difference in the metabolic effects of air pollution exposure* -->
-
-<!-- + **Taehoon Ha**, Ji-Eun Park, Rengasamy Palanivel, Sanjay Rajagopalan, Shyam Biswal, and Bongsoo Park. *Sex-difference in liver transcriptome with environmental exposure* -->
-
-<!-- + B Park, S Kim, **T Ha**, JE Park, V Vinayachandran, KD Hansen, B Paul, S Rajagopalan, and S Biswal. *Brain transcriptome map of air pollution PM2.5* -->
 
 <!-- + Hanhan Wang, Lingsong Meng, **Taehoon Ha**, Xi Kathy Zhou. *A Bayesian model averaging approach for RNA-seq counts data (BMA-seq) and its application* -->
