@@ -12,31 +12,21 @@ output:
 <link rel="stylesheet" href="styles.css" type="text/css">
 <link rel="stylesheet" href="site_libs/academicons-1.9.1/css/academicons.min.css"/>
 
-<!-- <br><br><br> -->
-
-<!-- ### Voluntary Statistics Instructor -->
-
-<!-- #### Instruct students who are interested in learning statistics principles (volunteer) -->
-
-<!-- + **Fall 2021 ~ ** -->
-<!--   + Intro to Statistics -->
-<!--   + Regression -->
-<!--   + Machine Learning -->
-<!--   + Data Structures and SQL -->
-  
-
 <br><br><br>
 
-### Instructor: T32 Biostatistics Course (TBD)
+### Instructor: T32 Biostatistics Course
 
-+ **Summer 2023 (July)**
+##### Enhanced a biostatistics course curriculum for a cohort of 40 students, featuring dynamic lab sessions and delivering highly effective instruction, sponsored by the prestigious T32 Research Training Grant awarded by the National Institutes of Health (NIH).
+
++ **Summer 2023**
+    + [Biostatistics Course](files/Biostatistics Course Flyer.pdf) with [Justin B. Kinney](https://www.cshl.edu/research/faculty-staff/justin-kinney/)
 
 
 <br>
 
 ### Teaching Assistant
 
-#### Lead lab sessions, hold regular office hours, write solutions and tutorials, and grade assignments
+##### Led interactive and engaging lab sessions, offering valuable guidance during regular office hours, creating comprehensive solutions and tutorials, and meticulously grading assignments.
 
 <br>
 
