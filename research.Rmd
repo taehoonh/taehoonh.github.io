@@ -55,10 +55,10 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Submitted
 
-+ Jung-In Yang, Amber Habowski, Astrid Deschênes, Pascal Belleau, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, David Tuveson, and Daniel A. King (2023). [*GATA6 amplification is associated with improved survival of TP53-mutated pancreatic cancer*](https://doi.org/10.1101/2023.03.06.23286147). Pancreas.
++ Jung-In Yang, Amber Habowski, Astrid Deschênes, Pascal Belleau, **Taehoon Ha**, Edward Zhou, Chris Tzanavaris, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, David Tuveson, and Daniel A. King (2023). [*GATA6 Amplification is Associated with Improved Survival of TP53-Mutated Pancreatic Cancer*](https://doi.org/10.1101/2023.03.06.23286147). Pancreas.
 <!-- https://doi.org/10.1200/JCO.2022.40.16_suppl.e16285 -->
 
-+ Olaf Klingbeil, Damianos Skopelitis, Claudia Tonelli, Aktan Alpsoy, Francesca Minicozzi, Disha Aggarwal, **Taehoon Ha**, Osama E. Demerdash, David L. Spector, David A. Tuveson, Paolo Cifani, and Christopher R. Vakoc (2023). [*MARK2/MARK3 kinases are catalytic co-dependencies of YAP/TAZ in human cancer*](https://taehoonh.me/research.html). TBD.
++ Olaf Klingbeil, Damianos Skopelitis, Claudia Tonelli, Aktan Alpsoy, Francesca Minicozzi, Disha Aggarwal, **Taehoon Ha**, Osama E. Demerdash, David L. Spector, David A. Tuveson, Paolo Cifani, and Christopher R. Vakoc (2023). [*MARK2/MARK3 kinases are catalytic co-dependencies of YAP/TAZ in human cancer*](https://taehoonh.me/research.html). Nature.
 
 
 <br><br>
