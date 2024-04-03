@@ -51,11 +51,11 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Accepted
 
++ Samantha Henry, Steven M. Lewis, Samantha L. Cyrill, Mackenzie K. Callaway, Deeptiman Chatterjee, Amritha V. H. Somasundara, Gina Jones, Xue-Yan He, Giuseppina Caligiuri, Michael F. Ciccone, Isabella A. Diaz, Amelia Biswas, Evelyn Hernandez, **Taehoon Ha**, John E. Wilkinson, Mikala E. Egeblad, David A. Tuveson, Camila O. dos Santos (2024). [*Host response during unresolved urinary tract infection alters mammary tissue homeostasis through collagen deposition and TIMP1*](https://www.biorxiv.org/content/10.1101/2024.02.05.578977v1). Nature Communications.
+
 <br><br>
 
 ### Submitted
-
-+ Samantha Henry, Steven M. Lewis, Samantha L. Cyrill, Mackenzie K. Callaway, Deeptiman Chatterjee, Amritha V. H. Somasundara, Gina Jones, Xue-Yan He, Giuseppina Caligiuri, Michael F. Ciccone, Isabella A. Diaz, Amelia Biswas, Evelyn Hernandez, **Taehoon Ha**, John E. Wilkinson, Mikala E. Egeblad, David A. Tuveson, Camila O. dos Santos (2024). [*Host response during unresolved urinary tract infection alters mammary tissue homeostasis through collagen deposition and TIMP1*](https://www.biorxiv.org/content/10.1101/2024.02.05.578977v1). bioRxiv.
 
 + Olaf Klingbeil, Damianos Skopelitis, Claudia Tonelli, Aktan Alpsoy, Francesca Minicozzi, Disha Aggarwal, **Taehoon Ha**, Osama E. Demerdash, David L. Spector, David A. Tuveson, Paolo Cifani, and Christopher R. Vakoc (2023). [*MARK2/MARK3 kinases are catalytic co-dependencies of YAP/TAZ in human cancer*](https://doi.org/10.1101/2024.02.26.582171). bioRxiv.
 
