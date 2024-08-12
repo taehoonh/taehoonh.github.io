@@ -19,7 +19,7 @@ navbar:
 #    - text: 멘토링
 #      href: mentoring.html
     - icon: ai-cv ai-lg
-      href: files/Resume_TaehoonHa_202312.pdf
+      href: files/Resume_TaehoonHa_202408.pdf
     - icon: fas fa-envelope
       href: contact.html
     - icon: fab fa-github
