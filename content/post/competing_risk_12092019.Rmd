@@ -1,0 +1,211 @@
+---
+title: "Analyzing Survival Data with Competing Risks Based on R-packages"
+author: "Taehoon Ha, Research Assistant at Weill Cornell Medicine"
+date: "December 9th, 2019"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float:
+     collapsed: false
+     smooth_scroll: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
+library(dplyr)
+library(knitr)
+library(dplyr)
+library(survival)
+library(ggplot2)
+library(tibble)
+library(tidycmprsk)
+library(ggsurvfit)
+```
+
+<br><br><br>
+
+### Introduction to Competing Risk Analysis
+
+In studies involving time-to-event data, subjects often face multiple possible outcomes, each of which competes with the others. This situation is common in medical research, where patients might experience various events such as recurrence, death from the disease, or death from other causes. For example, in a study on cancer, potential events could include:
+
+- Recurrence of cancer
+- Death due to cancer
+- Death from unrelated causes
+- Response to treatment
+
+Each of these outcomes represents a "competing risk," and the presence of multiple potential outcomes can complicate the analysis. The challenge arises because the occurrence of one event may alter the probability of observing other events. For instance, if a patient experiences a recurrence, this could increase their likelihood of dying, which means that the times to recurrence and death are not independent.
+
+<br>
+
+### Approaches to Competing Risk Analysis
+
+When faced with multiple possible outcomes, there are two main statistical approaches to analyze the data:
+
+1. **Cause-Specific Hazard**: This method focuses on the rate of occurrence of a particular event, considering only those who haven't experienced any other competing events. It answers the question, "Among those who haven't experienced a competing event, what is the rate of the event of interest?"
+
+2. **Subdistribution Hazard**: This approach looks at the rate of occurrence of an event, including the influence of competing events. It provides insight into the overall impact of an event, considering the presence of other competing risks.
+
+Each approach highlights different aspects of the data, and the choice between them should be driven by the research question. For example, to understand the effect of a treatment on a specific event, the cause-specific hazard might be more informative. On the other hand, if the goal is to evaluate the overall impact of a treatment, including the possibility of competing events, the subdistribution hazard might be preferable.
+
+<br>
+
+### Key Considerations in Competing Risk Analysis
+
+In an ideal scenario where events are independent (which is rarely the case), the cause-specific hazard approach provides an unbiased estimate. However, when events are dependent, the results can vary depending on the chosen method.
+
+The cumulative incidence calculated using traditional methods, such as 1 minus the Kaplan-Meier estimate, tends to overestimate the actual cumulative incidence. The extent of this overestimation depends on the rates of the events and their dependence. Therefore, it's crucial to carefully select the appropriate method based on the specific research question and the nature of the data.
+
+For instance, to demonstrate that a covariate is influencing the event of interest, cause-specific hazards are often preferred. On the other hand, if the goal is to establish overall benefit, subdistribution hazards might be more suitable for building predictive models or assessing health economics.
+
+<br>
+
+### The `Melanoma` Dataset
+
+To illustrate these concepts, we'll use the `Melanoma` dataset from the {MASS} package. This dataset includes variables such as:
+
+- `time`: Survival time in days (potentially censored)
+- `status`: Event status (1 = died from melanoma, 2 = alive, 3 = dead from other causes)
+- `sex`: 1 = male, 0 = female
+- `age`: Age in years
+- `year`: Year of operation
+- `thickness`: Tumor thickness in mm
+- `ulcer`: 1 = presence of ulceration, 0 = absence
+
+Let's start by loading the data and recoding the `status` variable for clarity:
+
+```{r}
+# Load the Melanoma dataset
+data(Melanoma, package = "MASS")
+
+# Recode the status variable
+Melanoma <- 
+  Melanoma %>% 
+  mutate(
+    status = as.factor(recode(status, `2` = 0, `1` = 1, `3` = 2))
+  )
+```
+
+Now, the `status` variable is recoded as:
+
+- `status`: 0 = alive, 1 = died from melanoma, 2 = dead from other causes
+
+Let's take a look at the first six records of the dataset:
+
+```{r}
+head(Melanoma)
+```
+
+<br>
+
+### Estimating Cumulative Incidence in the Presence of Competing Risks
+
+To estimate the cumulative incidence of an event in the presence of competing risks, we can use the `cuminc` function from the {tidycmprsk} package. This function provides a non-parametric estimate of the cumulative incidence for each event type, taking into account the competing risks.
+
+```{r}
+cuminc(Surv(time, status) ~ 1, data = Melanoma)
+```
+
+We can visualize the cumulative incidence using the `ggcuminc()` function from the {ggsurvfit} package. The plot below shows the cumulative incidence of death due to melanoma:
+
+```{r, message = FALSE}
+cuminc(Surv(time, status) ~ 1, data = Melanoma) %>% 
+  ggcuminc() + 
+  labs(
+    x = "Days"
+  ) + 
+  add_confidence_interval() +
+  add_risktable()
+```
+
+To include both event types in the plot, specify the outcomes in the `ggcuminc(outcome=)` argument:
+
+```{r}
+cuminc(Surv(time, status) ~ 1, data = Melanoma) %>% 
+  ggcuminc(outcome = c("1", "2")) +
+  ylim(c(0, 1)) + 
+  labs(
+    x = "Days"
+  )
+```
+
+<br>
+
+### Comparing Groups: Cumulative Incidence by Ulceration Status
+
+Next, let's examine the cumulative incidence of death due to melanoma, stratified by ulceration status. We'll use the `tbl_cuminc()` function from the {tidycmprsk} package to create a table of cumulative incidences at various time points, and we'll add Gray's test to compare the groups.
+
+```{r warning = FALSE}
+cuminc(Surv(time, status) ~ ulcer, data = Melanoma) %>% 
+  tbl_cuminc(
+    times = 1826.25, 
+    label_header = "**{time/365.25}-year cuminc**") %>% 
+  add_p()
+```
+
+We can also plot the cumulative incidence of death due to melanoma according to ulceration status:
+
+```{r fig.height = 6, message = FALSE}
+cuminc(Surv(time, status) ~ ulcer, data = Melanoma) %>% 
+  ggcuminc() + 
+  labs(
+    x = "Days"
+  ) + 
+  add_confidence_interval() +
+  add_risktable()
+```
+
+<br>
+
+### Competing Risks Regression
+
+There are two main approaches to competing risks regression:
+
+1. **Cause-Specific Hazards**: This approach estimates the instantaneous rate of the event of interest in individuals who are currently event-free. It's typically done using Cox regression with the `coxph` function.
+
+2. **Subdistribution Hazards**: This method estimates the instantaneous rate of occurrence of the event of interest, considering the presence of competing events. It can be estimated using Fine-Gray regression with the `crr` function.
+
+Let's explore the effect of age and sex on the hazard of death due to melanoma, with death from other causes as a competing event. We'll start with the subdistribution hazards approach:
+
+```{r}
+crr(Surv(time, status) ~ sex + age, data = Melanoma)
+```
+
+We can generate a table of the results using the `tbl_regression()` function from the {gtsummary} package, setting `exp = TRUE` to obtain hazard ratios:
+
+```{r}
+crr(Surv(time, status) ~ sex + age, data = Melanoma) %>% 
+  tbl_regression(exp = TRUE)
+```
+
+<br>
+
+Our analysis reveals that male sex (1 = male, 0 = female) is significantly associated with an increased hazard of death due to melanoma, while age does not show a significant association.
+
+If we were to use the cause-specific hazards approach, we would first need to censor patients who died from other causes, then apply Cox regression:
+
+```{r}
+coxph(
+  Surv(time, ifelse(status == 1, 1, 0)) ~ sex + age, 
+  data = Melanoma
+  ) %>% 
+  tbl_regression(exp = TRUE)
+```
+
+<br>
+
+Interestingly, both the cause-specific and subdistribution hazards approaches provide similar results in this case.
+
+<br>
+
+### Conclusion
+
+Competing risks analysis is a crucial tool in survival analysis, allowing researchers to account for multiple potential outcomes that can influence the event of interest. Understanding the differences between cause-specific and subdistribution hazards, and when to apply each, is essential for accurate data interpretation and decision-making in clinical research.
+
+By carefully selecting the appropriate method, you can ensure that your analysis provides meaningful insights into the event of interest, considering the complexities introduced by competing risks.
+
+For further reading and in-depth understanding, consider referring to the following references:
+
+- Dignam JJ, Zhang Q, Kocherginsky M. (2012). The use and interpretation of competing risks regression models. Clin Cancer Res, 18(8), 2301-8.
+- Kim HT. (2007). Cumulative incidence in competing risks data and competing risks regression analysis. Clin Cancer Res, 13(2 Pt 1), 559-65.
+- Satagopan JM, Ben-Porat L, Berwick M, Robson M, Kutler D, Auerbach AD. (2004). A note on competing risks in survival data analysis. Br J Cancer, 91(7), 1229-35.
