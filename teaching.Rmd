@@ -14,20 +14,18 @@ output:
 
 <br><br><br>
 
-### Instructor: T32 Biostatistics Course
+### Instructor, Cold Spring Harbor Laboratory
 
 ##### Enhanced a biostatistics course curriculum for a cohort of 40 students, featuring dynamic lab sessions and delivering highly effective instruction, sponsored by the prestigious T32 Research Training Grant awarded by the National Institutes of Health (NIH).
 
-+ **Summer 2024**
-    + [Biostatistics Course](http://taehoonh.me/CSHLbiostat2024/index.html) with [Justin B. Kinney](https://www.cshl.edu/research/faculty-staff/justin-kinney/)
++ **Summer 2024**: [Biostatistics Course](http://taehoonh.me/CSHLbiostat2024/index.html)
 
-+ **Summer 2023**
-    + [Biostatistics Course](http://taehoonh.me/CSHLbiostat2023/index.html) with [Justin B. Kinney](https://www.cshl.edu/research/faculty-staff/justin-kinney/)
++ **Summer 2023**: [Biostatistics Course](http://taehoonh.me/CSHLbiostat2023/index.html) with Prof. [Justin B. Kinney](https://www.cshl.edu/research/faculty-staff/justin-kinney/) (T32 Biostatistics Course)
 
 
 <br>
 
-### Teaching Assistant
+### Teaching Assistant, Weill Cornell Medicine
 
 ##### Led interactive and engaging lab sessions, offering valuable guidance during regular office hours, creating comprehensive solutions and tutorials, and meticulously grading assignments.
 
@@ -41,4 +39,4 @@ output:
 <br>
 
 + **Fall 2019**
-  + [Master's level] [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall) by Dr. [Oleksandr (Aleks) Savenkov](http://vivo.med.cornell.edu/display/cwid-ols2010), Weill Cornell Medicine 
+  + [Master's level] [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall) by Prof. [Oleksandr (Aleks) Savenkov](http://vivo.med.cornell.edu/display/cwid-ols2010), Weill Cornell Medicine 
