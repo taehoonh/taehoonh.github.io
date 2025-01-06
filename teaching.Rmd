@@ -14,6 +14,15 @@ output:
 
 <br><br><br>
 
+### Teaching Assistant, Stony Brook Medicine
+
+##### Led interactive and engaging lab sessions, offering valuable guidance during regular office hours, creating comprehensive solutions and tutorials, and meticulously grading assignments.
+
++ **Spring 2025**
+  + [HBH 550: Statistics in Life Sciences](https://www.stonybrook.edu/sb/graduatebulletin/current/courses/hbh/) by Prof. [Jie Yang](https://renaissance.stonybrookmedicine.edu/family_population_preventive_medicine/divisions/epidemiology-biostatistics/jie-yang), Renaissance School of Medicine Stony Brook University
+  
+<br>
+
 ### Instructor, Cold Spring Harbor Laboratory
 
 ##### Enhanced a biostatistics course curriculum for a cohort of 40 students, featuring dynamic lab sessions and delivering highly effective instruction, sponsored by the prestigious T32 Research Training Grant awarded by the National Institutes of Health (NIH).
