@@ -19,7 +19,7 @@ Currently, I work as a biostatistician at [Stony Brook Medicine](https://osa.sto
 
 Previously, I worked as a biostatistician at [Cold Spring Harbor Laboratory](https://www.cshl.edu), where I was in charge of the Biostatistics Core, effectively serving as its director. In this role, I led statistical efforts for groundbreaking research in cancer biology, neuroscience, and genomics, overseeing experimental design, data analysis, and collaboration with multidisciplinary teams. Before this, I was a research assistant at [Weill Cornell Medicine](https://weillcornell.org) in the Department of Population Health Sciences, where I focused on breast cancer, colorectal cancer, obesity, and inflammation research. At both institutions, I developed expertise in managing large-scale health data, integrating advanced statistical methodologies, and mentoring researchers to address complex biological and clinical questions.
 
-I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science. My resume is available [here](files/Resume_TaehoonHa_202501.pdf).
+I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science. My resume is available [here](files/Resume_TaehoonHa_202503.pdf).
 
 <br>
 
