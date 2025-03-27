@@ -21,7 +21,7 @@ navbar:
     - icon: ai-cv ai-lg
       href: files/Resume_TaehoonHa_202503.pdf
     - icon: fas fa-envelope
-      href: contact.html
+      href: mailto:taehoonh91@gmail.com
     - icon: fab fa-github
       href: http://github.com/taehoonh
     - icon: fab fa-twitter
