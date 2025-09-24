@@ -19,16 +19,9 @@ Previously, I led the Biostatistics Core at **Cold Spring Harbor Laboratory**, s
 
 Before that, I was a research assistant at **Cornell**, where I applied data science and statistical modeling to large-scale oncology and metabolic health studies. My work focused on integrating clinical, genomic, and survey data, using methods such as Bayesian modeling and predictive analytics to identify key risk factors and generate actionable insights for breast cancer, colorectal cancer, obesity, and inflammation research.
 
-<<<<<<< HEAD
+
 I hold an MS in Business Analytics (MQM) from **Duke University**'s Fuqua School of Business, where I worked on data-driven strategy and optimization projects, and an MS in Biostatistics & Data Science from **Cornell University**. This combined background enables me to bridge business analytics and machine learning with applied data science.
 
 My resume is available [HERE](files/Resume_TaehoonHa_202408.pdf).
-=======
-I graduated from [Weill Cornell Medicine](https://weill.cornell.edu/) with an MS in biostatistics and data science. My resume is available [here](files/Resume_TaehoonHa_202504G.pdf).
->>>>>>> 6909edd6fa5bbcc624857ef2b00e3339539fc60f
 
-<br>
-
-
-<br>
-
+<br><br>
