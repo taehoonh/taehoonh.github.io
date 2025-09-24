@@ -20,6 +20,10 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 ### Published
 
++ Olaf Klingbeil, Damianos Skopelitis, Claudia Tonelli, Toyoki Yoshimoto, Aktan Alpsoy, Maria Panepinto, Francesca Minicozzi, Joseph Merrill, Amanda Cafiero, Disha Aggarwal, Suzanne Russo, **Taehoon Ha**, Osama Demerdash, David Spector, Scott Lyons, David Tuveson, Paolo Cifani, and Christopher Vakoc (2024). [*MARK2/MARK3 kinases are catalytic co-dependencies of YAP/TAZ in human cancer*](https://doi.org/10.1158/2159-8290.CD-23-1529). Cancer Discovery.
+
++ Edward Zhou, Jung-In Yang, Amber Habowski, Astrid Deschênes, Pascal Belleau, **Taehoon Ha**, Chris Tzanavaris, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, David Tuveson, and Daniel A. King (2024). [*GATA6 Amplification is Associated with Improved Survival of TP53-Mutated Pancreatic Cancer*](https://doi.org/10.1097/MPA.0000000000002431). Pancreas.
+
 + Samantha Henry, Steven M. Lewis, Samantha L. Cyrill, Mackenzie K. Callaway, Deeptiman Chatterjee, Amritha V. H. Somasundara, Gina Jones, Xue-Yan He, Giuseppina Caligiuri, Michael F. Ciccone, Isabella A. Diaz, Amelia Biswas, Evelyn Hernandez, **Taehoon Ha**, John E. Wilkinson, Mikala E. Egeblad, David A. Tuveson, Camila O. dos Santos (2024). [*Host response during unresolved urinary tract infection alters mammary tissue homeostasis through collagen deposition and TIMP1*](https://doi.org/10.1038/s41467-024-47462-7). Nature Communications.
 
 + Yuan Gao, Xue-Yan He, Xiaoli S. Wu, Yu-Han Huang, Shushan Toneyan, Jonathan J. Ipsaro, **Taehoon Ha**, Peter K. Koo, Mikala Egeblad, Leemor Joshua-Tor, and Christopher R. Vakoc (2023). [*ETV6 dependency in Ewing sarcoma through antagonism of EWS-FLI1- mediated enhancer activation*](https://doi.org/10.1038/s41556-022-01060-1). Nature Cell Biology.
@@ -53,15 +57,8 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 
 ### Accepted
 
-+ Olaf Klingbeil, Damianos Skopelitis, Claudia Tonelli, Toyoki Yoshimoto, Aktan Alpsoy, Maria Panepinto, Francesca Minicozzi, Joseph Merrill, Amanda Cafiero, Disha Aggarwal, Suzanne Russo, **Taehoon Ha**, Osama Demerdash, David Spector, Scott Lyons, David Tuveson, Paolo Cifani, and Christopher Vakoc (2024). [*MARK2/MARK3 kinases are catalytic co-dependencies of YAP/TAZ in human cancer*](https://doi.org/10.1101/2024.02.26.582171). Cancer Discovery.
-
 <br><br>
 
 ### Submitted
-
-+ Edward Zhou, Jung-In Yang, Amber Habowski, Astrid Deschênes, Pascal Belleau, **Taehoon Ha**, Chris Tzanavaris, Jeff Boyd, Christopher Hollweg, Xinhua Zhu, David Tuveson, and Daniel A. King (2024). [*GATA6 Amplification is Associated with Improved Survival of TP53-Mutated Pancreatic Cancer*](https://doi.org/10.1101/2023.03.06.23286147). Pancreas.
-<!-- https://doi.org/10.1200/JCO.2022.40.16_suppl.e16285 -->
-
-
 
 <br><br>
