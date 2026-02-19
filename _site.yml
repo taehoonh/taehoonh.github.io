@@ -1,0 +1,41 @@
+name: "Taehoon Ha"
+title: "Taehoon Ha"
+pagetitle: "Taehoon Ha"
+base_url: https://taehoonh.github.io/
+google_analytics: "UA-139119461-1"
+output_dir: "."
+navbar:
+  title: "Taehoon Ha"
+  left:
+    - text: "Research"
+      href: research.html
+    - text: "Teaching"
+      href: teaching.html
+    - text: "Writing"
+      href: writing.html
+    - text: "Speaking"
+      href: speaking.html
+  right:
+#    - text: 멘토링
+#      href: mentoring.html
+    - icon: ai-cv ai-lg
+      href: files/Resume_TaehoonHa_202509.pdf
+    - icon: fas fa-envelope
+      href: mailto:taehoonh91@gmail.com
+    - icon: fab fa-github
+      href: http://github.com/taehoonh
+    - icon: fab fa-twitter
+      href: https://twitter.com/taeh00nha
+    - icon: fab fa-linkedin-in
+      href: https://www.linkedin.com/in/taehoonha/
+    - icon: ai-google-scholar ai-lg
+      href: https://scholar.google.com/citations?user=BM4yFdAAAAAJ&hl=en
+    - icon: ai-researchgate ai-lg #fab fa-researchgate
+      href: https://www.researchgate.net/profile/Taehoon-Ha-3
+output:
+  html_document:
+    theme: flatly
+    include:
+      in_header: header.html
+      after_body: footer.html
+    css: styles.css
