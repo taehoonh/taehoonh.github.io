@@ -18,8 +18,9 @@ output:
 
 ##### Led interactive and engaging lab sessions, offering valuable guidance during regular office hours, creating comprehensive solutions and tutorials, and meticulously grading assignments.
 
-+ **Spring 2025**
-  + [HBH 550: Statistics in Life Sciences](https://www.stonybrook.edu/sb/graduatebulletin/current/courses/hbh/) by Prof. [Jie Yang](https://renaissance.stonybrookmedicine.edu/family_population_preventive_medicine/divisions/epidemiology-biostatistics/jie-yang), Renaissance School of Medicine Stony Brook University
++ **Spring 2026**: [HBH 550: Statistics in Life Sciences](https://www.stonybrook.edu/sb/graduatebulletin/current/courses/hbh/) by Prof. [Jie Yang](https://renaissance.stonybrookmedicine.edu/family_population_preventive_medicine/divisions/epidemiology-biostatistics/jie-yang)
++ **Spring 2025**: [HBH 550: Statistics in Life Sciences](https://www.stonybrook.edu/sb/graduatebulletin/current/courses/hbh/) by Prof. [Jie Yang](https://renaissance.stonybrookmedicine.edu/family_population_preventive_medicine/divisions/epidemiology-biostatistics/jie-yang)
+
   
 <br>
 
@@ -28,7 +29,6 @@ output:
 ##### Enhanced a biostatistics course curriculum for a cohort of 40 students, featuring dynamic lab sessions and delivering highly effective instruction, sponsored by the prestigious T32 Research Training Grant awarded by the National Institutes of Health (NIH).
 
 + **Summer 2024**: [Biostatistics Course](http://taehoonh.me/CSHLbiostat2024/index.html)
-
 + **Summer 2023**: [Biostatistics Course](http://taehoonh.me/CSHLbiostat2023/index.html) with Prof. [Justin B. Kinney](https://www.cshl.edu/research/faculty-staff/justin-kinney/) (T32 Biostatistics Course)
 
 
@@ -38,14 +38,7 @@ output:
 
 ##### Led interactive and engaging lab sessions, offering valuable guidance during regular office hours, creating comprehensive solutions and tutorials, and meticulously grading assignments.
 
-<br>
-
-+ **Spring 2020**
-  + [Master's level] [Big Data in Medicine](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=spring), Weill Cornell Medicine 
++ **Spring 2020**: [Big Data in Medicine](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=spring), Weill Cornell Medicine 
     + biomedical imaging (e.g. MRI, CT-Scan, X-ray etc.) by Prof. [Elizabeth Sweeney](https://emsweene.github.io/)
     + genetics and genomics by Prof. [Daivde Risso](https://drisso.github.io/)
-
-<br>
-
-+ **Fall 2019**
-  + [Master's level] [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall) by Prof. [Oleksandr (Aleks) Savenkov](http://vivo.med.cornell.edu/display/cwid-ols2010), Weill Cornell Medicine 
++ **Fall 2019**: [Categorical and Censored Data Analysis](https://hpr.weill.cornell.edu/graduate-education-clinical-training/course-catalog?related_program=16&course_term=fall) by Prof. [Oleksandr (Aleks) Savenkov](http://vivo.med.cornell.edu/display/cwid-ols2010), Weill Cornell Medicine 
