@@ -62,6 +62,8 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 <br><br>
 
 ### Submitted
++ Oliver J. Standring, Julien T. Hohenleitner, Lyudmyla Demyan, Shruti Koti, Nandan Vithlani, Taemoon Chung, Amber N. Habowski, **Taehoon Ha**, Sepideh Gholami, James M. Crawford, Youngkyu Park, Oliver Jonas, Zhen Zhao, Scott Lyons, Daniel A. King, David A. Tuveson, and Matthew J. Weiss (2026). [*Implantable Microdevices for In Vivo Assessment of Chemotherapy Response in Patient Derived Organoid Orthotopic Pancreatic Cancer Models*](https://journals.lww.com/annalsofsurgery/pages/default.aspx). Annals of Surgery.
+
 + John Servider, Noah Lubin, Justin Passman, Richard Rosin, Ryan Lebens, Claire Parker, Gregory Sacks, **Taehoon Ha**, Susan Fiore, and Harry Mushlin (2026). [*Abdominal Aortic Atherosclerosis and Lumbar Bone Density: A Quantitative Analysis*](https://journals.sagepub.com/home/GSJ). Global Spine Journal.
 
 + Andrea Allmer Kabacinski, Amanda Groveman, Natalie Rivas, Julie Luengas, **Taehoon Ha**, Jie Yang, and Meghan Doelger (2026). [*Reproducibility in Practice: Validation of a Predictive Fall Risk Model in a New Electronic Health Record Environment*](https://www.jointcommissionjournal.com/). The Joint Commission Journal on Quality and Patient Safety.
