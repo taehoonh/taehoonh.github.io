@@ -20,6 +20,8 @@ For the most up to date list of publications, check out my [Google Scholar](http
 
 ### Published
 
++ Oliver J. Standring, Julien T. Hohenleitner, Lyudmyla Demyan, Shruti Koti, Nandan Vithlani, Taemoon Chung, Amber N. Habowski, **Taehoon Ha**, Sepideh Gholami, James M. Crawford, Youngkyu Park, Oliver Jonas, Zhen Zhao, Scott Lyons, Daniel A. King, David A. Tuveson, and Matthew J. Weiss (2026). [*Implantable Microdevices for In Vivo Assessment of Chemotherapy Response in Patient Derived Organoid Orthotopic Pancreatic Cancer Models*](https://doi.org/10.1097/SLA.0000000000007071). Annals of Surgery.
+
 + Ann-Margaret Navarra, **Taehoon Ha**, Eva Liang, Maurade Gormley, David R. Garcia, Jason Fletcher, Lloyd A. Goldsamt, Michael G. Rosenberg, Karin Hasegawa, and Jie Yang (2025). [*Characterization of Antiretroviral Therapy (ART) Adherence Phenotypes and Psychosocial Symptom Clusters Among Black/African American (AA) and Hispanic/Latine Adolescents and Young Adults (AYAs) with HIV in the Adherence Connection for Counseling, Education, and Support (ACCESS-II) Trial*](https://doi.org/10.3390/tropicalmed10120332). Trop. Med. Infect. Dis.
 
 + Olaf Klingbeil, Damianos Skopelitis, Claudia Tonelli, Toyoki Yoshimoto, Aktan Alpsoy, Maria Panepinto, Francesca Minicozzi, Joseph Merrill, Amanda Cafiero, Disha Aggarwal, Suzanne Russo, **Taehoon Ha**, Osama Demerdash, David Spector, Scott Lyons, David Tuveson, Paolo Cifani, and Christopher Vakoc (2024). [*MARK2/MARK3 kinases are catalytic co-dependencies of YAP/TAZ in human cancer*](https://doi.org/10.1158/2159-8290.CD-23-1529). Cancer Discovery.
@@ -58,8 +60,6 @@ The glomerular filteration rate (GFR) estimate model is available as an online t
 <br><br>
 
 ### Accepted
-
-+ Oliver J. Standring, Julien T. Hohenleitner, Lyudmyla Demyan, Shruti Koti, Nandan Vithlani, Taemoon Chung, Amber N. Habowski, **Taehoon Ha**, Sepideh Gholami, James M. Crawford, Youngkyu Park, Oliver Jonas, Zhen Zhao, Scott Lyons, Daniel A. King, David A. Tuveson, and Matthew J. Weiss (2026). [*Implantable Microdevices for In Vivo Assessment of Chemotherapy Response in Patient Derived Organoid Orthotopic Pancreatic Cancer Models*](https://journals.lww.com/annalsofsurgery/pages/default.aspx). Annals of Surgery.
 
 <br><br>
 
