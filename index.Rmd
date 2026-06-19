@@ -13,14 +13,11 @@ output: html_document
 </p>
 <br>
 
-My focus is on building scalable data pipelines and applying machine learning to extract actionable insights from complex datasets. At **Stony Brook Medicine**, I design modeling strategies that integrate survey and clinical data, applying clustering, regression, and mixed-effects approaches in SAS/R to deliver reproducible, high-accuracy, and scalable analytics.
+I am a data scientist in quantitative analytics. I work end to end: data pipelines, statistical and machine learning models, and the clear, decision-ready answer at the other end. My current focus is putting machine learning and large language models into everyday analytics, fast but validated, with humans in the loop.
 
-Previously, I led the Biostatistics Core at **Cold Spring Harbor Laboratory**, serving as its director and overseeing all analytics for the Cancer Center. I managed end-to-end statistical strategy and data science support for projects funded by multiple NIH mechanisms (R01, R21, P01), working with datasets spanning preclinical models, patient records, and high-dimensional molecular data. In this role, I designed scalable pipelines in R/Python, guided experimental design, and applied machine learning approaches—from regression frameworks to classification models—to accelerate discovery, improve data quality, and ensure reproducibility across dozens of cross-disciplinary teams. 
+I came to industry from research. Over nearly six years in quantitative and computational science, I directed the Biostatistics Core at **Cold Spring Harbor Laboratory**, leading analytics for its Cancer Center across NIH-funded programs (R01, R21, P01), worked on clinical and survey modeling at **Stony Brook Medicine**, and supported large-scale oncology studies at **Cornell**. That work taught me to build pipelines, analyze messy high-dimensional data rigorously, and turn it into something a non-technical decision maker can act on.
 
-Before that, I was a research assistant at **Cornell**, where I applied data science and statistical modeling to large-scale oncology and metabolic health studies. My work focused on integrating clinical, genomic, and survey data, using methods such as Bayesian modeling and predictive analytics to identify key risk factors and generate actionable insights for breast cancer, colorectal cancer, obesity, and inflammation research.
-
-
-I hold an MS in Business Analytics (MQM) from **Duke University**'s Fuqua School of Business, where I worked on data-driven strategy and optimization projects, and an MS in Biostatistics & Data Science from **Cornell University**. This combined background enables me to bridge business analytics and machine learning with applied data science.
+I hold an MS in Business Analytics from **Duke**'s Fuqua School of Business and an MS in Biostatistics and Data Science from **Cornell**.
 
 My resume is available [HERE](files/Resume_TaehoonHa_202511.pdf).
 
